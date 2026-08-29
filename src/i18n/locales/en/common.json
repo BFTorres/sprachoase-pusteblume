@@ -1,7 +1,8 @@
 {
   "brand": {
     "name": "SprachOase Pusteblume",
-    "tagline": "English courses for children in Hanover"
+    "tagline": "English courses for children in Hanover",
+    "homeLabel": "SprachOase Pusteblume – return to the top"
   },
   "common": {
     "close": "Close",
@@ -9,6 +10,11 @@
   },
   "nav": {
     "label": "Main navigation",
+    "mobileLabel": "Mobile main navigation",
+    "openMenu": "Open menu",
+    "menuTitle": "Menu",
+    "menuDescription": "Navigation and personal display settings",
+    "preferences": "Display",
     "courses": "Courses",
     "method": "Method",
     "cambridge": "Cambridge",

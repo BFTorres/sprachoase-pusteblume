@@ -1,5 +1,5 @@
 import { beforeEach, describe, expect, it } from 'vitest'
-import { render, screen } from '@testing-library/react'
+import { render, screen, within } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 import App from '@/App'
 import i18n from '@/i18n'
@@ -61,5 +61,51 @@ describe('App', () => {
       }),
     ).toBeInTheDocument()
     expect(document.documentElement).toHaveAttribute('lang', 'en')
+  })
+
+  it('opens the mobile navigation and closes it after selecting a section', async () => {
+    const user = userEvent.setup()
+    render(<App />)
+
+    await user.click(screen.getByRole('button', { name: 'Menü öffnen' }))
+
+    const menuDialog = screen.getByRole('dialog', { name: 'Menü' })
+    const mobileNavigation = within(menuDialog).getByRole('navigation', {
+      name: 'Mobile Hauptnavigation',
+    })
+
+    await user.click(
+      within(mobileNavigation).getByRole('link', { name: /Kurse/ }),
+    )
+
+    expect(
+      screen.queryByRole('dialog', { name: 'Menü' }),
+    ).not.toBeInTheDocument()
+  })
+
+  it('applies accessibility preferences to the document root', async () => {
+    const user = userEvent.setup()
+    render(<App />)
+
+    await user.click(
+      screen.getByRole('button', {
+        name: 'Einstellungen zur Barrierefreiheit öffnen',
+      }),
+    )
+
+    const accessibilityDialog = screen.getByRole('dialog', {
+      name: 'Barrierefreiheit',
+    })
+
+    await user.click(
+      within(accessibilityDialog).getByRole('switch', {
+        name: 'Links stärker hervorheben',
+      }),
+    )
+
+    expect(document.documentElement).toHaveAttribute(
+      'data-high-visibility-links',
+      'true',
+    )
   })
 })

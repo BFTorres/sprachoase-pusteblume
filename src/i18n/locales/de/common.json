@@ -1,7 +1,8 @@
 {
   "brand": {
     "name": "SprachOase Pusteblume",
-    "tagline": "Englischkurse für Kinder in Hannover"
+    "tagline": "Englischkurse für Kinder in Hannover",
+    "homeLabel": "SprachOase Pusteblume – zum Seitenanfang"
   },
   "common": {
     "close": "Schließen",
@@ -9,6 +10,11 @@
   },
   "nav": {
     "label": "Hauptnavigation",
+    "mobileLabel": "Mobile Hauptnavigation",
+    "openMenu": "Menü öffnen",
+    "menuTitle": "Menü",
+    "menuDescription": "Navigation und persönliche Anzeigeeinstellungen",
+    "preferences": "Darstellung",
     "courses": "Kurse",
     "method": "Methode",
     "cambridge": "Cambridge",

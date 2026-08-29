@@ -26,7 +26,7 @@ export default function App() {
     <div className="bg-background text-foreground min-h-svh">
       <SkipLink />
       <Navbar />
-      <main id="content">
+      <main id="content" className="pt-24 sm:pt-28">
         <HeroSection />
         {sections.map((section) => (
           <PlaceholderSection key={section.id} {...section} />
