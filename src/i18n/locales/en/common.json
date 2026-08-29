@@ -294,12 +294,41 @@
       "description": "An approved portrait, Pat's fuller biography, specific education and additional qualifications, and optionally a personal statement."
     }
   },
-  "sections": {
-    "testimonials": {
-      "eyebrow": "Parent voices",
-      "title": "Experiences with SprachOase",
-      "description": "Only verified excerpts from existing Google reviews will appear here."
+  "testimonials": {
+    "eyebrow": "Family voices",
+    "title": "What families say about SprachOase.",
+    "description": "Three short excerpts from the currently visible public Google reviews show how families and former learners experience their long-term learning journey with Pat.",
+    "listLabel": "Selected Google reviews",
+    "reviewBadge": "Excerpt {{number}}",
+    "rating": {
+      "label": "Current Google Maps rating",
+      "source": "Google Maps",
+      "value": "5.0",
+      "stars": "5 out of 5 stars",
+      "count": "7 reviews",
+      "date": "Publicly visible as of 29 August 2026"
     },
+    "items": {
+      "roman": {
+        "quote": "Pat follows the ‘learning with all the senses’ approach. The children move a lot in class and learn through play.",
+        "author": "Roman S.",
+        "source": "Translated from the German Google review"
+      },
+      "osman": {
+        "quote": "I learned English with dear Pat every Wednesday for 13 years. ❤️ And every Wednesday put me in a good mood!",
+        "author": "Osman S.",
+        "source": "Translated from the German Google review"
+      },
+      "oya": {
+        "quote": "Thank you for everything, dear Pat! Both of my children have been attending Pat's classes for many years.",
+        "author": "Oya K.",
+        "source": "Translated from the German Google review"
+      }
+    },
+    "disclaimer": "The excerpts were shortened and public surnames abbreviated for privacy. Google notes that reviews are not verified.",
+    "action": "View reviews on Google"
+  },
+  "sections": {
     "faq": {
       "eyebrow": "Frequently asked questions",
       "title": "Prepared for the first course",

@@ -65,6 +65,13 @@ describe('App', () => {
     expect(
       screen.getByRole('heading', { level: 3, name: 'Pat Weber' }),
     ).toBeInTheDocument()
+    expect(
+      screen.getByRole('list', { name: 'Ausgewählte Google-Rezensionen' }),
+    ).toBeInTheDocument()
+    expect(screen.getByText('5,0')).toBeInTheDocument()
+    expect(
+      screen.getByRole('link', { name: 'Rezensionen bei Google ansehen' }),
+    ).toHaveAttribute('href', expect.stringContaining('google.com/maps/place'))
   })
 
   it('switches between the two supported themes', async () => {
@@ -117,6 +124,12 @@ describe('App', () => {
       screen.getByRole('heading', {
         level: 2,
         name: 'Personally led. Supported step by step.',
+      }),
+    ).toBeInTheDocument()
+    expect(
+      screen.getByRole('heading', {
+        level: 2,
+        name: 'What families say about SprachOase.',
       }),
     ).toBeInTheDocument()
     expect(document.documentElement).toHaveAttribute('lang', 'en')

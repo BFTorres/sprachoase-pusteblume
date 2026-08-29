@@ -294,12 +294,41 @@
       "description": "Ein freigegebenes Porträt, Pats ausführlichere Biografie, konkrete Ausbildungs- und Zusatzqualifikationen sowie optional ein persönliches Statement."
     }
   },
-  "sections": {
-    "testimonials": {
-      "eyebrow": "Stimmen von Eltern",
-      "title": "Erfahrungen mit der SprachOase",
-      "description": "Hier werden ausschließlich verifizierte Auszüge aus vorhandenen Google-Rezensionen verwendet."
+  "testimonials": {
+    "eyebrow": "Stimmen von Familien",
+    "title": "Was Familien über die SprachOase sagen.",
+    "description": "Drei kurze Auszüge aus den aktuell öffentlich sichtbaren Google-Rezensionen zeigen, wie Familien und ehemalige Schüler den langfristigen Lernweg mit Pat erleben.",
+    "listLabel": "Ausgewählte Google-Rezensionen",
+    "reviewBadge": "Auszug {{number}}",
+    "rating": {
+      "label": "Aktuelle Bewertung bei Google Maps",
+      "source": "Google Maps",
+      "value": "5,0",
+      "stars": "5 von 5 Sternen",
+      "count": "7 Rezensionen",
+      "date": "Öffentlich sichtbarer Stand: 29. August 2026"
     },
+    "items": {
+      "roman": {
+        "quote": "Pat verfolgt das „Lernen mit allen Sinnen“. Im Unterricht bewegen sich die Kinder viel und lernen spielerisch.",
+        "author": "Roman S.",
+        "source": "Öffentliche Google-Rezension"
+      },
+      "osman": {
+        "quote": "Ich habe 13 Jahre lang jeden Mittwoch Englisch bei der lieben Pat gelernt. ❤️ Und jeder Mittwoch hat mir gute Laune gemacht!",
+        "author": "Osman S.",
+        "source": "Öffentliche Google-Rezension"
+      },
+      "oya": {
+        "quote": "Danke, liebe Pat, für alles! Meine beiden Kinder besuchen Pat schon seit vielen Jahren.",
+        "author": "Oya K.",
+        "source": "Öffentliche Google-Rezension"
+      }
+    },
+    "disclaimer": "Die Auszüge wurden gekürzt, die öffentlichen Nachnamen aus Datenschutzgründen abgekürzt. Google weist darauf hin, dass Rezensionen nicht überprüft werden.",
+    "action": "Rezensionen bei Google ansehen"
+  },
+  "sections": {
     "faq": {
       "eyebrow": "Häufige Fragen",
       "title": "Gut vorbereitet in den ersten Kurs",
