@@ -1,0 +1,104 @@
+{
+  "brand": {
+    "name": "SprachOase Pusteblume",
+    "tagline": "English courses for children in Hanover"
+  },
+  "common": {
+    "close": "Close",
+    "reset": "Reset"
+  },
+  "nav": {
+    "label": "Main navigation",
+    "courses": "Courses",
+    "method": "Method",
+    "cambridge": "Cambridge",
+    "about": "About Pat",
+    "faq": "FAQ",
+    "contact": "Contact"
+  },
+  "language": {
+    "switchTo": "Switch language to German",
+    "short": "DE"
+  },
+  "theme": {
+    "light": "Activate light colour scheme",
+    "dark": "Activate dark colour scheme"
+  },
+  "a11y": {
+    "skipToContent": "Skip to content",
+    "open": "Open accessibility settings",
+    "title": "Accessibility",
+    "description": "Adjust the presentation to your personal needs.",
+    "fontSize": "Font size",
+    "fontFamily": "Font family",
+    "lineHeight": "Line spacing",
+    "fontSizes": {
+      "small": "Small",
+      "default": "Default",
+      "large": "Large",
+      "extraLarge": "Extra large"
+    },
+    "fontFamilies": {
+      "system": "System font",
+      "readable": "Readable font"
+    },
+    "lineHeights": {
+      "normal": "Normal",
+      "relaxed": "Relaxed",
+      "loose": "Loose"
+    },
+    "reducedMotion": "Reduce motion",
+    "highVisibilityLinks": "Increase link visibility",
+    "strongFocusOutline": "Strengthen focus indicators",
+    "highlightHeadings": "Highlight headings"
+  },
+  "hero": {
+    "eyebrow": "Learning English in Hanover",
+    "title": "English that grows with children.",
+    "description": "Age-appropriate English courses from toddlerhood through the teenage years – playful, personal and guided by a clear learning journey.",
+    "primaryAction": "Explore courses",
+    "secondaryAction": "Request a trial lesson",
+    "placeholder": "Placeholder for a future illustration or photograph"
+  },
+  "sections": {
+    "courses": {
+      "eyebrow": "Learning journey",
+      "title": "Courses for different age groups",
+      "description": "This will become the visual course journey from Garden Snail through Seeds and Sprouts to Dandelions and Parachutes."
+    },
+    "method": {
+      "eyebrow": "Teaching method",
+      "title": "Learning English with all the senses",
+      "description": "Immersion, children's songs, rhymes, movement and creative learning materials will be explained as clear, accessible learning elements."
+    },
+    "cambridge": {
+      "eyebrow": "Cambridge",
+      "title": "Focused preparation for language exams",
+      "description": "This area will explain learning levels, preparation and the exam process. All success and performance claims remain provisional until confirmed."
+    },
+    "about": {
+      "eyebrow": "About Pat",
+      "title": "Personal guidance backed by experience",
+      "description": "Biography, qualifications and teaching philosophy will be added once Pat approves the final content and a suitable image."
+    },
+    "testimonials": {
+      "eyebrow": "Parent voices",
+      "title": "Experiences with SprachOase",
+      "description": "Only verified excerpts from existing Google reviews will appear here."
+    },
+    "faq": {
+      "eyebrow": "Frequently asked questions",
+      "title": "Prepared for the first course",
+      "description": "The final answers about starting ages, trial lessons, group sizes and course routines will be confirmed with Pat."
+    },
+    "contact": {
+      "eyebrow": "Contact",
+      "title": "Request a trial lesson",
+      "description": "The preferred contact channel and binding contact details will be confirmed before publication."
+    }
+  },
+  "footer": {
+    "status": "Local development version with provisional content.",
+    "copyright": "SprachOase Pusteblume"
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "brand": {
+    "name": "SprachOase Pusteblume",
+    "tagline": "Englischkurse für Kinder in Hannover"
+  },
+  "common": {
+    "close": "Schließen",
+    "reset": "Zurücksetzen"
+  },
+  "nav": {
+    "label": "Hauptnavigation",
+    "courses": "Kurse",
+    "method": "Methode",
+    "cambridge": "Cambridge",
+    "about": "Über Pat",
+    "faq": "FAQ",
+    "contact": "Kontakt"
+  },
+  "language": {
+    "switchTo": "Sprache zu Englisch wechseln",
+    "short": "EN"
+  },
+  "theme": {
+    "light": "Helles Farbschema aktivieren",
+    "dark": "Dunkles Farbschema aktivieren"
+  },
+  "a11y": {
+    "skipToContent": "Zum Inhalt springen",
+    "open": "Einstellungen zur Barrierefreiheit öffnen",
+    "title": "Barrierefreiheit",
+    "description": "Passe die Darstellung an deine persönlichen Bedürfnisse an.",
+    "fontSize": "Schriftgröße",
+    "fontFamily": "Schriftart",
+    "lineHeight": "Zeilenabstand",
+    "fontSizes": {
+      "small": "Klein",
+      "default": "Standard",
+      "large": "Groß",
+      "extraLarge": "Sehr groß"
+    },
+    "fontFamilies": {
+      "system": "Systemschrift",
+      "readable": "Gut lesbare Schrift"
+    },
+    "lineHeights": {
+      "normal": "Normal",
+      "relaxed": "Entspannt",
+      "loose": "Weit"
+    },
+    "reducedMotion": "Bewegungen reduzieren",
+    "highVisibilityLinks": "Links stärker hervorheben",
+    "strongFocusOutline": "Fokusmarkierung verstärken",
+    "highlightHeadings": "Überschriften hervorheben"
+  },
+  "hero": {
+    "eyebrow": "Englisch lernen in Hannover",
+    "title": "Englisch, das mit Kindern wächst.",
+    "description": "Altersgerechte Englischkurse vom Kleinkindalter bis zu den Teenagerjahren – spielerisch, persönlich und mit einem klaren Lernweg.",
+    "primaryAction": "Kurse ansehen",
+    "secondaryAction": "Probestunde anfragen",
+    "placeholder": "Platzhalter für eine spätere Illustration oder ein Foto"
+  },
+  "sections": {
+    "courses": {
+      "eyebrow": "Lernweg",
+      "title": "Kurse für unterschiedliche Altersstufen",
+      "description": "Hier entsteht der visuelle Kursweg von Garden Snail über Seeds und Sprouts bis zu Dandelions und Parachutes."
+    },
+    "method": {
+      "eyebrow": "Methodik und Didaktik",
+      "title": "Englisch lernen mit allen Sinnen",
+      "description": "Immersion, Kinderlieder, Reime, Bewegung und kreative Lernmaterialien werden später als verständliche, zugängliche Lernbausteine erklärt."
+    },
+    "cambridge": {
+      "eyebrow": "Cambridge",
+      "title": "Gezielte Vorbereitung auf Sprachprüfungen",
+      "description": "Dieser Bereich erklärt künftig Lernstufen, Vorbereitung und Ablauf. Alle Erfolgs- und Leistungsangaben bleiben bis zur Bestätigung vorläufig."
+    },
+    "about": {
+      "eyebrow": "Über Pat",
+      "title": "Persönliche Begleitung mit Erfahrung",
+      "description": "Biografie, Qualifikationen und Lehrphilosophie werden ergänzt, sobald Pat die endgültigen Inhalte und ein geeignetes Bild freigibt."
+    },
+    "testimonials": {
+      "eyebrow": "Stimmen von Eltern",
+      "title": "Erfahrungen mit der SprachOase",
+      "description": "Hier werden ausschließlich verifizierte Auszüge aus vorhandenen Google-Rezensionen verwendet."
+    },
+    "faq": {
+      "eyebrow": "Häufige Fragen",
+      "title": "Gut vorbereitet in den ersten Kurs",
+      "description": "Die endgültigen Antworten zu Einstieg, Probestunde, Gruppengröße und Kursablauf werden mit Pat abgestimmt."
+    },
+    "contact": {
+      "eyebrow": "Kontakt",
+      "title": "Eine Probestunde anfragen",
+      "description": "Der bevorzugte Kontaktweg und die verbindlichen Kontaktdaten werden vor der Veröffentlichung bestätigt."
+    }
+  },
+  "footer": {
+    "status": "Lokaler Entwicklungsstand mit vorläufigen Inhalten.",
+    "copyright": "SprachOase Pusteblume"
+  }
+}
