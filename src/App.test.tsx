@@ -1,5 +1,5 @@
-import { beforeEach, describe, expect, it } from 'vitest'
-import { render, screen, within } from '@testing-library/react'
+import { beforeEach, describe, expect, it, vi } from 'vitest'
+import { fireEvent, render, screen, within } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 import App from '@/App'
 import i18n from '@/i18n'
@@ -12,6 +12,10 @@ import { useThemeStore } from '@/stores/theme-store'
 describe('App', () => {
   beforeEach(async () => {
     localStorage.clear()
+    Object.defineProperty(window, 'scrollY', {
+      configurable: true,
+      value: 0,
+    })
     await i18n.changeLanguage('de')
     useThemeStore.setState({ theme: 'light' })
     useAccessibilityStore.setState(defaultAccessibilityPreferences)
@@ -82,20 +86,30 @@ describe('App', () => {
         name: 'Bestätigte Eckpunkte zum Kurseinstieg',
       }),
     ).toBeInTheDocument()
+    expect(
+      screen.getByRole('link', { name: 'SMS an Pat schreiben' }),
+    ).toHaveAttribute('href', 'sms:+4917628729985')
+    expect(
+      screen.getByRole('link', { name: 'E-Mail an Pat schreiben' }),
+    ).toHaveAttribute('href', 'mailto:pat@sprachoase-pusteblume.de')
   })
 
   it('switches between the two supported themes', async () => {
     const user = userEvent.setup()
     render(<App />)
 
-    await user.click(
-      screen.getByRole('button', { name: 'Dunkles Farbschema aktivieren' }),
-    )
+    const themeButtons = screen.getAllByRole('button', {
+      name: 'Dunkles Farbschema aktivieren',
+    })
+
+    expect(themeButtons.length).toBeGreaterThan(1)
+    await user.click(themeButtons[0]!)
 
     expect(document.documentElement).toHaveAttribute('data-theme', 'dark')
     expect(
-      screen.getByRole('button', { name: 'Helles Farbschema aktivieren' }),
-    ).toBeInTheDocument()
+      screen.getAllByRole('button', { name: 'Helles Farbschema aktivieren' })
+        .length,
+    ).toBeGreaterThan(1)
   })
 
   it('switches the page language to English', async () => {
@@ -148,6 +162,12 @@ describe('App', () => {
         name: 'Answers before the first trial lesson.',
       }),
     ).toBeInTheDocument()
+    expect(
+      screen.getByRole('heading', {
+        level: 2,
+        name: 'The first step is a short message.',
+      }),
+    ).toBeInTheDocument()
     expect(document.documentElement).toHaveAttribute('lang', 'en')
   })
 
@@ -164,6 +184,45 @@ describe('App', () => {
     expect(
       screen.getByText(/bestehende Website beschreibt die Schnupperstunde/),
     ).toBeVisible()
+  })
+
+  it('reveals the back-to-top control after scrolling', async () => {
+    const user = userEvent.setup()
+    const scrollTo = vi.fn()
+    window.scrollTo = scrollTo
+    Object.defineProperty(window, 'scrollY', {
+      configurable: true,
+      value: 900,
+    })
+
+    render(<App />)
+    fireEvent.scroll(window)
+
+    await user.click(
+      screen.getByRole('button', { name: 'Zurück zum Seitenanfang' }),
+    )
+
+    expect(scrollTo).toHaveBeenCalledWith({ top: 0, behavior: 'smooth' })
+  })
+
+  it('avoids smooth scrolling when reduced motion is enabled', async () => {
+    const user = userEvent.setup()
+    const scrollTo = vi.fn()
+    window.scrollTo = scrollTo
+    Object.defineProperty(window, 'scrollY', {
+      configurable: true,
+      value: 900,
+    })
+    useAccessibilityStore.setState({ reducedMotion: true })
+
+    render(<App />)
+    fireEvent.scroll(window)
+
+    await user.click(
+      screen.getByRole('button', { name: 'Zurück zum Seitenanfang' }),
+    )
+
+    expect(scrollTo).toHaveBeenCalledWith({ top: 0, behavior: 'auto' })
   })
 
   it('opens the mobile navigation and closes it after selecting a section', async () => {

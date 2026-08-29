@@ -6,14 +6,11 @@ import { CourseJourneySection } from '@/components/sections/CourseJourneySection
 import { HeroSection } from '@/components/sections/HeroSection'
 import { MethodSection } from '@/components/sections/MethodSection'
 import { AboutSection } from '@/components/sections/AboutSection'
-import { PlaceholderSection } from '@/components/sections/PlaceholderSection'
 import { TestimonialsSection } from '@/components/sections/TestimonialsSection'
 import { FaqSection } from '@/components/sections/FaqSection'
+import { ContactSection } from '@/components/sections/ContactSection'
+import { ScrollToTopButton } from '@/components/layout/ScrollToTopButton'
 import { usePreferenceEffects } from '@/hooks/usePreferenceEffects'
-
-const sections = [
-  { id: 'contact', translationKey: 'sections.contact', tone: 'blue' },
-] as const
 
 export default function App() {
   usePreferenceEffects()
@@ -30,11 +27,10 @@ export default function App() {
         <AboutSection />
         <TestimonialsSection />
         <FaqSection />
-        {sections.map((section) => (
-          <PlaceholderSection key={section.id} {...section} />
-        ))}
+        <ContactSection />
       </main>
       <Footer />
+      <ScrollToTopButton />
     </div>
   )
 }

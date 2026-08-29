@@ -8,6 +8,9 @@
     "close": "Schließen",
     "reset": "Zurücksetzen"
   },
+  "scrollToTop": {
+    "label": "Zurück zum Seitenanfang"
+  },
   "nav": {
     "label": "Hauptnavigation",
     "mobileLabel": "Mobile Hauptnavigation",
@@ -376,11 +379,40 @@
     },
     "action": "Zur Probestunden-Anfrage"
   },
-  "sections": {
-    "contact": {
-      "eyebrow": "Kontakt",
-      "title": "Eine Probestunde anfragen",
-      "description": "Der bevorzugte Kontaktweg und die verbindlichen Kontaktdaten werden vor der Veröffentlichung bestätigt."
+  "contact": {
+    "eyebrow": "Kontakt",
+    "title": "Der erste Schritt ist eine kurze Nachricht.",
+    "description": "Probestunden werden direkt mit Pat vereinbart. Für eine erste Einordnung reichen wenige Angaben zu Alter und möglicher Vorerfahrung des Kindes.",
+    "note": {
+      "title": "Direkter Kontakt ohne Webformular",
+      "description": "Diese Version überträgt oder speichert keine Anfrage auf der Website. SMS und E-Mail öffnen die vorhandene App auf dem eigenen Gerät."
+    },
+    "sms": {
+      "badge": "Bevorzugter Anfrageweg",
+      "title": "Probestunde per SMS anfragen",
+      "description": "Eine kurze Nachricht mit Alter, möglicher Englisch-Vorerfahrung und Rückrufmöglichkeit genügt für den ersten Kontakt.",
+      "action": "SMS an Pat schreiben"
+    },
+    "email": {
+      "badge": "Alternative",
+      "title": "Oder eine E-Mail senden",
+      "description": "Für ausführlichere Fragen kann die Anfrage direkt an Pat geschickt werden.",
+      "action": "E-Mail an Pat schreiben"
+    },
+    "details": {
+      "hours": {
+        "label": "Telefonische Sprechzeiten",
+        "value": "Montag bis Mittwoch, 9–11 Uhr",
+        "action": "Pat anrufen"
+      },
+      "location": {
+        "label": "Kursraum",
+        "value": "Vahrenwalder Straße 78, 30165 Hannover-Vahrenwald-List"
+      },
+      "language": {
+        "label": "Geschäftssprache",
+        "value": "Deutsch"
+      }
     }
   },
   "footer": {
