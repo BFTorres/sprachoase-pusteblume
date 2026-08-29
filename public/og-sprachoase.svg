@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-labelledby="title description">
+  <title id="title">SprachOase Pusteblume</title>
+  <desc id="description">Englisch, das mit Kindern wächst</desc>
+  <rect width="1200" height="630" fill="#fffbeb"/>
+  <rect x="54" y="54" width="1092" height="522" rx="48" fill="#facc15" stroke="#111827" stroke-width="8"/>
+  <rect x="70" y="70" width="1092" height="522" rx="48" fill="none" stroke="#111827" stroke-width="8"/>
+  <rect x="112" y="118" width="112" height="112" rx="28" fill="#1d4ed8" stroke="#111827" stroke-width="8"/>
+  <text x="168" y="194" text-anchor="middle" font-family="Arial, sans-serif" font-size="68" font-weight="900" fill="#ffffff">P</text>
+  <text x="270" y="164" font-family="Arial, sans-serif" font-size="34" font-weight="800" fill="#111827">SprachOase Pusteblume</text>
+  <text x="112" y="348" font-family="Arial, sans-serif" font-size="72" font-weight="900" fill="#111827">Englisch, das mit</text>
+  <text x="112" y="432" font-family="Arial, sans-serif" font-size="72" font-weight="900" fill="#111827">Kindern wächst.</text>
+  <text x="112" y="510" font-family="Arial, sans-serif" font-size="30" font-weight="600" fill="#334155">Englischkurse für Kinder in Hannover</text>
+</svg>

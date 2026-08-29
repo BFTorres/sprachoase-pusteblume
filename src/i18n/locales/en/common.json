@@ -4,6 +4,11 @@
     "tagline": "English courses for children in Hanover",
     "homeLabel": "SprachOase Pusteblume – return to the top"
   },
+  "seo": {
+    "title": "SprachOase Pusteblume | English courses for children in Hannover",
+    "description": "Personally led English courses for children and teenagers in Hannover-Vahrenwald: playful beginnings, Cambridge preparation and trial lessons.",
+    "imageAlt": "SprachOase Pusteblume – English that grows with children"
+  },
   "common": {
     "close": "Close",
     "reset": "Reset"

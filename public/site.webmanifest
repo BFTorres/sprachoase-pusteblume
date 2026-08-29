@@ -1,0 +1,19 @@
+{
+  "name": "SprachOase Pusteblume",
+  "short_name": "SprachOase",
+  "description": "Englischkurse für Kinder und Jugendliche in Hannover.",
+  "lang": "de",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#fffbeb",
+  "theme_color": "#1d4ed8",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

@@ -12,6 +12,7 @@ import { useThemeStore } from '@/stores/theme-store'
 describe('App', () => {
   beforeEach(async () => {
     localStorage.clear()
+    window.history.replaceState({}, '', '/')
     Object.defineProperty(window, 'scrollY', {
       configurable: true,
       value: 0,
@@ -92,6 +93,16 @@ describe('App', () => {
     expect(
       screen.getByRole('link', { name: 'E-Mail an Pat schreiben' }),
     ).toHaveAttribute('href', 'mailto:pat@sprachoase-pusteblume.de')
+    expect(document.title).toBe(
+      'SprachOase Pusteblume | Englischkurse für Kinder in Hannover',
+    )
+    expect(document.querySelector('link[rel="canonical"]')).toHaveAttribute(
+      'href',
+      'https://sprachoase-pusteblume.de/',
+    )
+    expect(
+      document.querySelector('#sprachoase-structured-data')?.textContent,
+    ).toContain('EducationalOrganization')
   })
 
   it('switches between the two supported themes', async () => {
@@ -169,6 +180,14 @@ describe('App', () => {
       }),
     ).toBeInTheDocument()
     expect(document.documentElement).toHaveAttribute('lang', 'en')
+    expect(window.location.pathname).toBe('/en/')
+    expect(document.title).toBe(
+      'SprachOase Pusteblume | English courses for children in Hannover',
+    )
+    expect(document.querySelector('link[rel="canonical"]')).toHaveAttribute(
+      'href',
+      'https://sprachoase-pusteblume.de/en/',
+    )
   })
 
   it('opens a FAQ answer', async () => {

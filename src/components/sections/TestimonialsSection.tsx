@@ -1,11 +1,9 @@
 import { ExternalLink, Quote, ShieldCheck, Star } from 'lucide-react'
 import { useTranslation } from 'react-i18next'
 import { Container } from '@/components/layout/Container'
+import { siteConfig } from '@/config/site'
 
 const reviewKeys = ['roman', 'osman', 'oya'] as const
-
-const googleReviewsUrl =
-  'https://www.google.com/maps/place/SprachOase+Pusteblume/@52.3921371,9.7352779,17z/data=!4m8!3m7!1s0x47b00b37db6c95d7:0x3b7accaa9de23109!8m2!3d52.3921371!4d9.7352779!9m1!1b1!16s%2Fg%2F11c2nqfq6m?entry=ttu&g_ep=EgoyMDI2MDgyNi4wIKXMDSoASAFQAw%3D%3D'
 
 export function TestimonialsSection() {
   const { t } = useTranslation()
@@ -101,7 +99,7 @@ export function TestimonialsSection() {
             {t('testimonials.disclaimer')}
           </p>
           <a
-            href={googleReviewsUrl}
+            href={siteConfig.googleProfileUrl}
             target="_blank"
             rel="noreferrer"
             className="border-foreground bg-background text-foreground shadow-brutal inline-flex min-h-12 shrink-0 items-center justify-center gap-2 rounded-xl border-2 px-5 py-3 font-black"

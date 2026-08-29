@@ -22,9 +22,10 @@ void i18n
       escapeValue: false,
     },
     detection: {
-      order: ['localStorage', 'navigator'],
+      order: ['path', 'localStorage', 'navigator'],
       caches: ['localStorage'],
       lookupLocalStorage: 'sprachoase-language',
+      lookupFromPathIndex: 0,
     },
     react: {
       useSuspense: false,

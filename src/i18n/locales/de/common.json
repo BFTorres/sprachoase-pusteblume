@@ -4,6 +4,11 @@
     "tagline": "Englischkurse für Kinder in Hannover",
     "homeLabel": "SprachOase Pusteblume – zum Seitenanfang"
   },
+  "seo": {
+    "title": "SprachOase Pusteblume | Englischkurse für Kinder in Hannover",
+    "description": "Persönlich geleitete Englischkurse für Kinder und Jugendliche in Hannover-Vahrenwald: spielerischer Einstieg, Cambridge-Vorbereitung und Probestunden.",
+    "imageAlt": "SprachOase Pusteblume – Englisch, das mit Kindern wächst"
+  },
   "common": {
     "close": "Schließen",
     "reset": "Zurücksetzen"

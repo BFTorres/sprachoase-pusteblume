@@ -11,9 +11,11 @@ import { FaqSection } from '@/components/sections/FaqSection'
 import { ContactSection } from '@/components/sections/ContactSection'
 import { ScrollToTopButton } from '@/components/layout/ScrollToTopButton'
 import { usePreferenceEffects } from '@/hooks/usePreferenceEffects'
+import { useSeoEffects } from '@/hooks/useSeoEffects'
 
 export default function App() {
   usePreferenceEffects()
+  useSeoEffects()
 
   return (
     <div className="bg-background text-foreground min-h-svh">
