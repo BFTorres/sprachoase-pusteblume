@@ -1,12 +1,12 @@
 import { Footer } from '@/components/layout/Footer'
 import { Navbar } from '@/components/layout/Navbar'
 import { SkipLink } from '@/components/layout/SkipLink'
+import { CourseJourneySection } from '@/components/sections/CourseJourneySection'
 import { HeroSection } from '@/components/sections/HeroSection'
 import { PlaceholderSection } from '@/components/sections/PlaceholderSection'
 import { usePreferenceEffects } from '@/hooks/usePreferenceEffects'
 
 const sections = [
-  { id: 'courses', translationKey: 'sections.courses', tone: 'yellow' },
   { id: 'method', translationKey: 'sections.method', tone: 'default' },
   { id: 'cambridge', translationKey: 'sections.cambridge', tone: 'blue' },
   { id: 'about', translationKey: 'sections.about', tone: 'default' },
@@ -28,6 +28,7 @@ export default function App() {
       <Navbar />
       <main id="content" className="pt-24 sm:pt-28">
         <HeroSection />
+        <CourseJourneySection />
         {sections.map((section) => (
           <PlaceholderSection key={section.id} {...section} />
         ))}

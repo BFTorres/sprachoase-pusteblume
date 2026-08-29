@@ -64,14 +64,70 @@
     "description": "Age-appropriate English courses from toddlerhood through the teenage years – playful, personal and guided by a clear learning journey.",
     "primaryAction": "Explore courses",
     "secondaryAction": "Request a trial lesson",
-    "placeholder": "Placeholder for a future illustration or photograph"
+    "visual": {
+      "badge": "Visual asset needed",
+      "title": "Pat, the classroom or a dandelion world",
+      "description": "For the final version, this placeholder will be replaced by an approved photograph or an original illustration."
+    },
+    "factsLabel": "SprachOase at a glance",
+    "facts": {
+      "experience": {
+        "value": "Since 2008",
+        "label": "Experience teaching English"
+      },
+      "approach": {
+        "value": "Playful",
+        "label": "With music, rhymes and creativity"
+      },
+      "location": {
+        "value": "In Hanover",
+        "label": "Courses in Vahrenwald-List"
+      }
+    }
+  },
+  "courses": {
+    "eyebrow": "Learning journey",
+    "title": "A course journey that grows with them.",
+    "description": "The existing course groups form a clear journey from a child's first playful contact with English to more advanced learning goals in their teenage years.",
+    "listLabel": "Course stages by age",
+    "items": {
+      "gardenSnail": {
+        "name": "Garden Snail",
+        "age": "8–12 months",
+        "description": "First English sounds, rhymes and playful impulses for the youngest learners."
+      },
+      "seeds": {
+        "name": "Seeds",
+        "age": "Ages 2–4",
+        "description": "Words and short phrases become familiar through music, movement and repetition."
+      },
+      "sprouts": {
+        "name": "Sprouts",
+        "age": "Ages 5–6",
+        "description": "Playful routines strengthen listening comprehension and confidence in speaking."
+      },
+      "blossoms": {
+        "name": "Blossoms",
+        "age": "Ages 7–8",
+        "description": "Vocabulary grows through stories, creative activities and shared discovery."
+      },
+      "dandelions": {
+        "name": "Dandelions",
+        "age": "Ages 9–10",
+        "description": "Greater confidence in everyday English, reading and age-appropriate learning projects."
+      },
+      "parachutes": {
+        "name": "Parachutes",
+        "age": "Ages 11–14",
+        "description": "English skills are deepened with a view towards more advanced learning goals."
+      }
+    },
+    "note": {
+      "title": "Still to be confirmed with Pat",
+      "description": "The age groups come from existing materials. The transition between 12 months and age 2, as well as current availability, will be confirmed before publication."
+    }
   },
   "sections": {
-    "courses": {
-      "eyebrow": "Learning journey",
-      "title": "Courses for different age groups",
-      "description": "This will become the visual course journey from Garden Snail through Seeds and Sprouts to Dandelions and Parachutes."
-    },
     "method": {
       "eyebrow": "Teaching method",
       "title": "Learning English with all the senses",

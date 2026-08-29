@@ -30,6 +30,15 @@ describe('App', () => {
     expect(
       screen.getByRole('navigation', { name: 'Hauptnavigation' }),
     ).toBeInTheDocument()
+    expect(
+      screen.getByRole('list', { name: 'Kursstufen nach Alter' }),
+    ).toBeInTheDocument()
+    expect(
+      screen.getByRole('heading', { level: 3, name: 'Garden Snail' }),
+    ).toBeInTheDocument()
+    expect(
+      screen.getByRole('heading', { level: 3, name: 'Parachutes' }),
+    ).toBeInTheDocument()
   })
 
   it('switches between the two supported themes', async () => {
@@ -58,6 +67,12 @@ describe('App', () => {
       screen.getByRole('heading', {
         level: 1,
         name: 'English that grows with children.',
+      }),
+    ).toBeInTheDocument()
+    expect(
+      screen.getByRole('heading', {
+        level: 2,
+        name: 'A course journey that grows with them.',
       }),
     ).toBeInTheDocument()
     expect(document.documentElement).toHaveAttribute('lang', 'en')

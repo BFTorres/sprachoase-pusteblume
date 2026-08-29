@@ -64,14 +64,70 @@
     "description": "Altersgerechte Englischkurse vom Kleinkindalter bis zu den Teenagerjahren – spielerisch, persönlich und mit einem klaren Lernweg.",
     "primaryAction": "Kurse ansehen",
     "secondaryAction": "Probestunde anfragen",
-    "placeholder": "Platzhalter für eine spätere Illustration oder ein Foto"
+    "visual": {
+      "badge": "Bildmaterial benötigt",
+      "title": "Pat, Kursraum oder Pusteblumenwelt",
+      "description": "Für die finale Version ersetzen wir diesen Platzhalter durch ein freigegebenes Foto oder eine eigene Illustration."
+    },
+    "factsLabel": "Kurzfakten zur SprachOase",
+    "facts": {
+      "experience": {
+        "value": "Seit 2008",
+        "label": "Erfahrung im Englischunterricht"
+      },
+      "approach": {
+        "value": "Spielerisch",
+        "label": "Mit Musik, Reimen und Kreativität"
+      },
+      "location": {
+        "value": "In Hannover",
+        "label": "Kurse in Vahrenwald-List"
+      }
+    }
+  },
+  "courses": {
+    "eyebrow": "Lernweg",
+    "title": "Ein Kursweg, der mitwächst.",
+    "description": "Die bestehenden Kursgruppen bilden einen verständlichen Weg vom ersten spielerischen Kontakt mit Englisch bis zu weiterführenden Lernzielen im Teenageralter.",
+    "listLabel": "Kursstufen nach Alter",
+    "items": {
+      "gardenSnail": {
+        "name": "Garden Snail",
+        "age": "8–12 Monate",
+        "description": "Erste englische Klänge, Reime und spielerische Impulse für die Kleinsten."
+      },
+      "seeds": {
+        "name": "Seeds",
+        "age": "2–4 Jahre",
+        "description": "Wörter und kurze Wendungen werden über Musik, Bewegung und Wiederholung vertraut."
+      },
+      "sprouts": {
+        "name": "Sprouts",
+        "age": "5–6 Jahre",
+        "description": "Spielerische Routinen stärken Hörverständnis und die Freude am freien Sprechen."
+      },
+      "blossoms": {
+        "name": "Blossoms",
+        "age": "7–8 Jahre",
+        "description": "Der Wortschatz wächst durch Geschichten, kreative Aufgaben und gemeinsames Entdecken."
+      },
+      "dandelions": {
+        "name": "Dandelions",
+        "age": "9–10 Jahre",
+        "description": "Mehr Sicherheit in Alltagssprache, beim Lesen und in altersgerechten Lernprojekten."
+      },
+      "parachutes": {
+        "name": "Parachutes",
+        "age": "11–14 Jahre",
+        "description": "Englisch wird vertieft und kann gezielt auf weiterführende Lernziele vorbereiten."
+      }
+    },
+    "note": {
+      "title": "Noch mit Pat abzugleichen",
+      "description": "Die Altersstufen stammen aus bestehenden Materialien. Der Übergang zwischen 12 Monaten und 2 Jahren sowie die aktuelle Verfügbarkeit werden vor der Veröffentlichung bestätigt."
+    }
   },
   "sections": {
-    "courses": {
-      "eyebrow": "Lernweg",
-      "title": "Kurse für unterschiedliche Altersstufen",
-      "description": "Hier entsteht der visuelle Kursweg von Garden Snail über Seeds und Sprouts bis zu Dandelions und Parachutes."
-    },
     "method": {
       "eyebrow": "Methodik und Didaktik",
       "title": "Englisch lernen mit allen Sinnen",
