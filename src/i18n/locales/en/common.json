@@ -238,12 +238,63 @@
       }
     }
   },
-  "sections": {
-    "about": {
-      "eyebrow": "About Pat",
-      "title": "Personal guidance backed by experience",
-      "description": "Biography, qualifications and teaching philosophy will be added once Pat approves the final content and a suitable image."
+  "about": {
+    "eyebrow": "About Pat",
+    "title": "Personally led. Supported step by step.",
+    "description": "Pat Weber personally leads the SprachOase courses. She has worked in Germany as an English teacher since 2008, connecting playful learning with a long-term course journey.",
+    "portrait": {
+      "badge": "Portrait needed",
+      "name": "Pat Weber",
+      "role": "ESL teacher and personal course lead",
+      "description": "An approved professional portrait of Pat will appear here."
     },
+    "timeline": {
+      "eyebrow": "Publicly documented journey",
+      "title": "Experience that grows with the learning goals.",
+      "listLabel": "Publicly documented milestones for Pat Weber",
+      "items": {
+        "start": {
+          "date": "Since 2008",
+          "title": "Teaching English in Germany",
+          "description": "Pat works in Germany as an ESL teacher."
+        },
+        "cambridge": {
+          "date": "Since 2014",
+          "title": "Cambridge exam preparation",
+          "description": "Cambridge Assessments complement the long-term learning journey."
+        },
+        "today": {
+          "date": "Today",
+          "title": "Personal course leadership in Hanover",
+          "description": "Pat personally leads the courses at SprachOase."
+        }
+      }
+    },
+    "trust": {
+      "eyebrow": "What personal guidance brings",
+      "title": "One consistent person behind the learning journey.",
+      "listLabel": "Benefits of personal course leadership",
+      "items": {
+        "contact": {
+          "title": "Direct contact",
+          "description": "Enquiries and course guidance are handled personally through Pat."
+        },
+        "continuity": {
+          "title": "Continuity",
+          "description": "The course stages create a clear journey from an early start through the teenage years."
+        },
+        "direction": {
+          "title": "A view of the next step",
+          "description": "Playful language development and later exam goals are treated as one connected learning journey."
+        }
+      }
+    },
+    "pending": {
+      "title": "Still needed for the final version",
+      "description": "An approved portrait, Pat's fuller biography, specific education and additional qualifications, and optionally a personal statement."
+    }
+  },
+  "sections": {
     "testimonials": {
       "eyebrow": "Parent voices",
       "title": "Experiences with SprachOase",

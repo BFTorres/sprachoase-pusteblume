@@ -5,11 +5,11 @@ import { CambridgeSection } from '@/components/sections/CambridgeSection'
 import { CourseJourneySection } from '@/components/sections/CourseJourneySection'
 import { HeroSection } from '@/components/sections/HeroSection'
 import { MethodSection } from '@/components/sections/MethodSection'
+import { AboutSection } from '@/components/sections/AboutSection'
 import { PlaceholderSection } from '@/components/sections/PlaceholderSection'
 import { usePreferenceEffects } from '@/hooks/usePreferenceEffects'
 
 const sections = [
-  { id: 'about', translationKey: 'sections.about', tone: 'default' },
   {
     id: 'testimonials',
     translationKey: 'sections.testimonials',
@@ -31,6 +31,7 @@ export default function App() {
         <CourseJourneySection />
         <MethodSection />
         <CambridgeSection />
+        <AboutSection />
         {sections.map((section) => (
           <PlaceholderSection key={section.id} {...section} />
         ))}

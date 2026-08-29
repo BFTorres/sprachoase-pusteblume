@@ -57,6 +57,14 @@ describe('App', () => {
       }),
     ).toBeInTheDocument()
     expect(screen.getByText('100 %')).toBeInTheDocument()
+    expect(
+      screen.getByRole('list', {
+        name: 'Öffentlich belegte Stationen von Pat Weber',
+      }),
+    ).toBeInTheDocument()
+    expect(
+      screen.getByRole('heading', { level: 3, name: 'Pat Weber' }),
+    ).toBeInTheDocument()
   })
 
   it('switches between the two supported themes', async () => {
@@ -103,6 +111,12 @@ describe('App', () => {
       screen.getByRole('heading', {
         level: 2,
         name: 'A clear plan for the right Cambridge exam.',
+      }),
+    ).toBeInTheDocument()
+    expect(
+      screen.getByRole('heading', {
+        level: 2,
+        name: 'Personally led. Supported step by step.',
       }),
     ).toBeInTheDocument()
     expect(document.documentElement).toHaveAttribute('lang', 'en')

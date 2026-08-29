@@ -238,12 +238,63 @@
       }
     }
   },
-  "sections": {
-    "about": {
-      "eyebrow": "Über Pat",
-      "title": "Persönliche Begleitung mit Erfahrung",
-      "description": "Biografie, Qualifikationen und Lehrphilosophie werden ergänzt, sobald Pat die endgültigen Inhalte und ein geeignetes Bild freigibt."
+  "about": {
+    "eyebrow": "Über Pat",
+    "title": "Persönlich geleitet. Schritt für Schritt begleitet.",
+    "description": "Pat Weber leitet die Kurse der SprachOase persönlich. Seit 2008 arbeitet sie in Deutschland als Englischlehrerin und verbindet spielerisches Lernen mit einem langfristigen Kursweg.",
+    "portrait": {
+      "badge": "Porträt benötigt",
+      "name": "Pat Weber",
+      "role": "ESL Teacher und persönliche Kursleitung",
+      "description": "Hier folgt ein freigegebenes professionelles Porträt von Pat."
     },
+    "timeline": {
+      "eyebrow": "Öffentlich belegter Weg",
+      "title": "Erfahrung, die mit den Lernzielen wächst.",
+      "listLabel": "Öffentlich belegte Stationen von Pat Weber",
+      "items": {
+        "start": {
+          "date": "Seit 2008",
+          "title": "Englischunterricht in Deutschland",
+          "description": "Pat arbeitet in Deutschland als ESL Teacher."
+        },
+        "cambridge": {
+          "date": "Seit 2014",
+          "title": "Cambridge-Prüfungsvorbereitung",
+          "description": "Cambridge Assessments ergänzen den langfristigen Lernweg."
+        },
+        "today": {
+          "date": "Heute",
+          "title": "Persönliche Kursleitung in Hannover",
+          "description": "Pat leitet die Kurse in der SprachOase persönlich."
+        }
+      }
+    },
+    "trust": {
+      "eyebrow": "Was die Begleitung auszeichnet",
+      "title": "Eine feste Person hinter dem Lernweg.",
+      "listLabel": "Vorteile der persönlichen Kursleitung",
+      "items": {
+        "contact": {
+          "title": "Direkter Kontakt",
+          "description": "Anfragen und Kursbegleitung laufen persönlich über Pat."
+        },
+        "continuity": {
+          "title": "Kontinuität",
+          "description": "Die Kursstufen bilden einen nachvollziehbaren Weg vom frühen Einstieg bis ins Teenageralter."
+        },
+        "direction": {
+          "title": "Blick auf den nächsten Schritt",
+          "description": "Spielerischer Spracherwerb und spätere Prüfungsziele werden als zusammenhängender Lernweg gedacht."
+        }
+      }
+    },
+    "pending": {
+      "title": "Für die finale Fassung noch benötigt",
+      "description": "Ein freigegebenes Porträt, Pats ausführlichere Biografie, konkrete Ausbildungs- und Zusatzqualifikationen sowie optional ein persönliches Statement."
+    }
+  },
+  "sections": {
     "testimonials": {
       "eyebrow": "Stimmen von Eltern",
       "title": "Erfahrungen mit der SprachOase",
