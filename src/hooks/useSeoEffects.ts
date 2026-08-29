@@ -61,7 +61,11 @@ export function useSeoEffects() {
     document.documentElement.lang = language
 
     upsertMeta('meta[name="description"]', 'name=description', description)
-    upsertMeta('meta[name="robots"]', 'name=robots', 'index,follow')
+    upsertMeta(
+      'meta[name="robots"]',
+      'name=robots',
+      import.meta.env.VITE_ROBOTS_CONTENT ?? 'index,follow',
+    )
     upsertMeta('meta[property="og:type"]', 'property=og:type', 'website')
     upsertMeta(
       'meta[property="og:site_name"]',

@@ -2,7 +2,7 @@ import { Languages } from 'lucide-react'
 import { useTranslation } from 'react-i18next'
 import { Button } from '@/components/ui/button'
 import type { SupportedLanguage } from '@/i18n'
-import { getLanguagePath } from '@/config/seo'
+import { getLanguageRoute } from '@/config/seo'
 
 export function LanguageToggle() {
   const { t, i18n } = useTranslation()
@@ -10,7 +10,7 @@ export function LanguageToggle() {
   const nextLanguage: SupportedLanguage = currentLanguage === 'de' ? 'en' : 'de'
 
   const changeLanguage = () => {
-    const nextPath = getLanguagePath(nextLanguage)
+    const nextPath = getLanguageRoute(nextLanguage)
     const nextUrl = `${nextPath}${window.location.search}${window.location.hash}`
 
     window.history.pushState({ language: nextLanguage }, '', nextUrl)

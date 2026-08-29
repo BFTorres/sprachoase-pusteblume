@@ -21,12 +21,17 @@ export function getLanguagePath(language: SupportedLanguage) {
   return seoConfig.languages[language].path
 }
 
+export function getLanguageRoute(language: SupportedLanguage) {
+  const basePath = import.meta.env.BASE_URL
+  return language === 'en' ? `${basePath}en/` : basePath
+}
+
 export function getLanguageUrl(language: SupportedLanguage) {
   return `${siteConfig.url}${getLanguagePath(language)}`
 }
 
 export function getLanguageFromPath(pathname: string): SupportedLanguage {
-  return pathname === '/en' || pathname.startsWith('/en/') ? 'en' : 'de'
+  return pathname.split('/').filter(Boolean).includes('en') ? 'en' : 'de'
 }
 
 export function createStructuredData() {
