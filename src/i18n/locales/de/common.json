@@ -328,12 +328,55 @@
     "disclaimer": "Die Auszüge wurden gekürzt, die öffentlichen Nachnamen aus Datenschutzgründen abgekürzt. Google weist darauf hin, dass Rezensionen nicht überprüft werden.",
     "action": "Rezensionen bei Google ansehen"
   },
-  "sections": {
-    "faq": {
-      "eyebrow": "Häufige Fragen",
-      "title": "Gut vorbereitet in den ersten Kurs",
-      "description": "Die endgültigen Antworten zu Einstieg, Probestunde, Gruppengröße und Kursablauf werden mit Pat abgestimmt."
+  "faq": {
+    "eyebrow": "Häufige Fragen",
+    "title": "Antworten vor der ersten Probestunde.",
+    "description": "Hier steht, was sich aus den öffentlichen Informationen bereits verlässlich beantworten lässt – und welche dynamischen Kursdetails noch direkt mit Pat abgestimmt werden.",
+    "listLabel": "Häufige Fragen zu den Englischkursen",
+    "verified": {
+      "eyebrow": "Bereits klar",
+      "title": "Ein persönlicher Einstieg ohne Druck.",
+      "listLabel": "Bestätigte Eckpunkte zum Kurseinstieg",
+      "items": {
+        "personal": "Die Kurse werden persönlich von Pat geleitet.",
+        "trial": "Die veröffentlichte Probestunde ist unverbindlich.",
+        "location": "Der Unterricht findet in Hannover-Vahrenwald-List statt."
+      }
     },
+    "items": {
+      "ages": {
+        "question": "Für welche Altersgruppen gibt es Kurse?",
+        "answer": "Der veröffentlichte Kursweg reicht von Garden Snail für 8–12 Monate alte Kinder bis zu Parachutes für 11–14-Jährige. Welche Gruppe aktuell zum Alter und Lernstand passt, wird individuell geklärt. Der Übergang zwischen 12 Monaten und 2 Jahren wird vor Veröffentlichung nochmals mit Pat bestätigt."
+      },
+      "trial": {
+        "question": "Kann mein Kind zuerst eine Probestunde besuchen?",
+        "answer": "Ja. Die bestehende Website beschreibt die Schnupperstunde beziehungsweise Probeeinheit als unverbindlich und direkt mit der Kursleitung zu vereinbaren. Für die Probestunde sollen Eltern und Kind Stoppersocken mitbringen. Der endgültige Anfrageweg wird noch mit Pat bestätigt."
+      },
+      "method": {
+        "question": "Wie lernen die Kinder im Kurs?",
+        "answer": "Englisch wird über die Immersions-Methode in verständlichen Situationen erlebt. Kinder hören, sprechen, singen, reimen, spielen und bewegen sich. Bilder, Gegenstände und kreative Materialien helfen dabei, neue Wörter mit Bedeutung zu verbinden."
+      },
+      "cambridge": {
+        "question": "Gibt es auch Cambridge-Prüfungsvorbereitung?",
+        "answer": "Ja. Die SprachOase bereitet seit 2014 auf Cambridge-Prüfungen vor. Der passende Schritt von A1 bis C1 richtet sich nach Lernstand und Ziel; Format, Lesen, Schreiben, Hören und Sprechen werden gezielt vorbereitet."
+      },
+      "location": {
+        "question": "Wo findet der Unterricht statt?",
+        "answer": "Die SprachOase befindet sich in der Vahrenwalder Straße 78, 30165 Hannover-Vahrenwald-List. Termine und Probestunden sollten vorab direkt vereinbart werden."
+      },
+      "availability": {
+        "question": "Wann finden Kurse statt, wie groß sind die Gruppen und was kosten sie?",
+        "answer": "Aktuelle Kurszeiten, freie Plätze, Gruppengrößen, Dauer und Preise sind in den verfügbaren öffentlichen Informationen nicht verlässlich vollständig dokumentiert. Diese Angaben werden mit Pat abgestimmt und erst danach verbindlich veröffentlicht.",
+        "badge": "Noch mit Pat abzugleichen"
+      }
+    },
+    "note": {
+      "title": "Die passende Gruppe wird persönlich geklärt.",
+      "description": "Alter ist ein wichtiger Anhaltspunkt, aber auch Vorerfahrung, Lernstand und aktuelle Verfügbarkeit spielen bei der Einordnung eine Rolle."
+    },
+    "action": "Zur Probestunden-Anfrage"
+  },
+  "sections": {
     "contact": {
       "eyebrow": "Kontakt",
       "title": "Eine Probestunde anfragen",

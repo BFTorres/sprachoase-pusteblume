@@ -328,12 +328,55 @@
     "disclaimer": "The excerpts were shortened and public surnames abbreviated for privacy. Google notes that reviews are not verified.",
     "action": "View reviews on Google"
   },
-  "sections": {
-    "faq": {
-      "eyebrow": "Frequently asked questions",
-      "title": "Prepared for the first course",
-      "description": "The final answers about starting ages, trial lessons, group sizes and course routines will be confirmed with Pat."
+  "faq": {
+    "eyebrow": "Frequently asked questions",
+    "title": "Answers before the first trial lesson.",
+    "description": "This section explains what can already be answered reliably from public information and which changing course details still need to be confirmed directly with Pat.",
+    "listLabel": "Frequently asked questions about the English courses",
+    "verified": {
+      "eyebrow": "Already clear",
+      "title": "A personal, pressure-free introduction.",
+      "listLabel": "Confirmed points about starting a course",
+      "items": {
+        "personal": "The courses are personally led by Pat.",
+        "trial": "The published trial lesson is non-binding.",
+        "location": "Lessons take place in Hanover-Vahrenwald-List."
+      }
     },
+    "items": {
+      "ages": {
+        "question": "Which age groups are the courses for?",
+        "answer": "The published course journey ranges from Garden Snail for children aged 8–12 months to Parachutes for ages 11–14. The currently suitable group depends on age and learning level. The transition between 12 months and age 2 will be reconfirmed with Pat before publication."
+      },
+      "trial": {
+        "question": "Can my child attend a trial lesson first?",
+        "answer": "Yes. The existing website describes the trial lesson as non-binding and arranged directly with the course lead. Parents and children are asked to bring non-slip socks. The final enquiry channel still needs to be confirmed with Pat."
+      },
+      "method": {
+        "question": "How do children learn during the course?",
+        "answer": "English is experienced through the immersion method in understandable situations. Children listen, speak, sing, rhyme, play and move. Images, objects and creative materials help connect new words with meaning."
+      },
+      "cambridge": {
+        "question": "Is Cambridge exam preparation available?",
+        "answer": "Yes. SprachOase has prepared learners for Cambridge exams since 2014. The appropriate step from A1 to C1 depends on level and goals; format, reading, writing, listening and speaking are prepared in a focused way."
+      },
+      "location": {
+        "question": "Where do the lessons take place?",
+        "answer": "SprachOase is located at Vahrenwalder Straße 78, 30165 Hannover-Vahrenwald-List. Appointments and trial lessons should be arranged directly in advance."
+      },
+      "availability": {
+        "question": "When are courses held, how large are the groups and what do they cost?",
+        "answer": "Current schedules, available places, group sizes, duration and prices are not documented completely and reliably in the available public information. These details will be confirmed with Pat before they are published as binding information.",
+        "badge": "Still to be confirmed with Pat"
+      }
+    },
+    "note": {
+      "title": "The right group is discussed personally.",
+      "description": "Age is an important guide, while previous experience, current level and availability also influence the appropriate placement."
+    },
+    "action": "Go to the trial lesson enquiry"
+  },
+  "sections": {
     "contact": {
       "eyebrow": "Contact",
       "title": "Request a trial lesson",

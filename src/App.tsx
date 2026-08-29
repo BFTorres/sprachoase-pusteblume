@@ -8,10 +8,10 @@ import { MethodSection } from '@/components/sections/MethodSection'
 import { AboutSection } from '@/components/sections/AboutSection'
 import { PlaceholderSection } from '@/components/sections/PlaceholderSection'
 import { TestimonialsSection } from '@/components/sections/TestimonialsSection'
+import { FaqSection } from '@/components/sections/FaqSection'
 import { usePreferenceEffects } from '@/hooks/usePreferenceEffects'
 
 const sections = [
-  { id: 'faq', translationKey: 'sections.faq', tone: 'default' },
   { id: 'contact', translationKey: 'sections.contact', tone: 'blue' },
 ] as const
 
@@ -29,6 +29,7 @@ export default function App() {
         <CambridgeSection />
         <AboutSection />
         <TestimonialsSection />
+        <FaqSection />
         {sections.map((section) => (
           <PlaceholderSection key={section.id} {...section} />
         ))}

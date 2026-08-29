@@ -72,6 +72,16 @@ describe('App', () => {
     expect(
       screen.getByRole('link', { name: 'Rezensionen bei Google ansehen' }),
     ).toHaveAttribute('href', expect.stringContaining('google.com/maps/place'))
+    expect(
+      screen.getByRole('button', {
+        name: 'Für welche Altersgruppen gibt es Kurse?',
+      }),
+    ).toHaveAttribute('data-state', 'open')
+    expect(
+      screen.getByRole('list', {
+        name: 'Bestätigte Eckpunkte zum Kurseinstieg',
+      }),
+    ).toBeInTheDocument()
   })
 
   it('switches between the two supported themes', async () => {
@@ -132,7 +142,28 @@ describe('App', () => {
         name: 'What families say about SprachOase.',
       }),
     ).toBeInTheDocument()
+    expect(
+      screen.getByRole('heading', {
+        level: 2,
+        name: 'Answers before the first trial lesson.',
+      }),
+    ).toBeInTheDocument()
     expect(document.documentElement).toHaveAttribute('lang', 'en')
+  })
+
+  it('opens a FAQ answer', async () => {
+    const user = userEvent.setup()
+    render(<App />)
+
+    await user.click(
+      screen.getByRole('button', {
+        name: 'Kann mein Kind zuerst eine Probestunde besuchen?',
+      }),
+    )
+
+    expect(
+      screen.getByText(/bestehende Website beschreibt die Schnupperstunde/),
+    ).toBeVisible()
   })
 
   it('opens the mobile navigation and closes it after selecting a section', async () => {
