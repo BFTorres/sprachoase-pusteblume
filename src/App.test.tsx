@@ -186,6 +186,38 @@ describe('App', () => {
     ).toBeVisible()
   })
 
+  it('opens the provisional legal notice from the footer', async () => {
+    const user = userEvent.setup()
+    render(<App />)
+
+    await user.click(screen.getByRole('button', { name: 'Impressum' }))
+
+    const dialog = screen.getByRole('dialog', { name: 'Impressum' })
+
+    expect(within(dialog).getByText('Klaus-Rainer Weber')).toBeVisible()
+    expect(
+      within(dialog).getByText(/ladungsfähige Geschäftsanschrift/),
+    ).toBeVisible()
+  })
+
+  it('explains that no optional consent services are active', async () => {
+    const user = userEvent.setup()
+    render(<App />)
+
+    await user.click(
+      screen.getByRole('button', { name: 'Datenschutzeinstellungen' }),
+    )
+
+    const dialog = screen.getByRole('dialog', {
+      name: 'Datenschutzeinstellungen',
+    })
+
+    expect(
+      within(dialog).getByText('Keine optionalen Dienste aktiv'),
+    ).toBeVisible()
+    expect(within(dialog).getByText('sprachoase-theme')).toBeVisible()
+  })
+
   it('reveals the back-to-top control after scrolling', async () => {
     const user = userEvent.setup()
     const scrollTo = vi.fn()

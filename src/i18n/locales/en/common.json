@@ -416,7 +416,113 @@
     }
   },
   "footer": {
+    "description": "Personally led English courses for children and teenagers in Hannover-Vahrenwald-List.",
+    "contactTitle": "Direct contact",
+    "legalTitle": "Information",
     "status": "Local development version with provisional content.",
     "copyright": "SprachOase Pusteblume"
+  },
+  "legal": {
+    "lastUpdated": "Development version last updated: 29 August 2026",
+    "provisional": {
+      "title": "Legal review required before publication",
+      "description": "This development version structures the required information, but is not a substitute for legal advice or approval by the operator. Mandatory details that cannot be verified publicly remain explicitly marked as pending."
+    },
+    "imprint": {
+      "trigger": "Legal notice",
+      "title": "Legal notice",
+      "description": "Provider and contact information",
+      "provider": {
+        "title": "Provider information under Section 5 DDG (Germany)",
+        "owner": "Owner named in the publicly indexed legal notice",
+        "business": "Trading name",
+        "addressPending": "The owner's legally valid business address must be confirmed by Klaus-Rainer Weber and added here before publication."
+      },
+      "contact": {
+        "title": "Contact and course room",
+        "courseRoom": "Publicly listed course room",
+        "phone": "Telephone",
+        "email": "Email"
+      },
+      "pending": {
+        "title": "Mandatory details still to be confirmed",
+        "description": "Before production, the legal form, legally valid address, any applicable register and registration number, VAT or business identification number, competent supervisory authority and consumer dispute-resolution information must be clarified with the operator. No invented placeholder numbers or unsupported declarations are published."
+      }
+    },
+    "privacy": {
+      "trigger": "Privacy",
+      "title": "Privacy information",
+      "description": "Transparency about data flows in this development version",
+      "provisional": "This notice describes the currently implemented local version. Hosting, domain operation and the controller's final legal address must be added before publication.",
+      "controller": {
+        "title": "1. Controller",
+        "addressPending": "Legally valid address: to be confirmed by the operator before publication."
+      },
+      "current": {
+        "title": "2. Current functionality",
+        "description": "This single-page website is designed to minimise data use.",
+        "noAnalytics": "No analytics, advertising or profiling trackers",
+        "noEmbeds": "No embedded maps, videos, webfonts or social-media content",
+        "noForm": "No web form; SMS, email and telephone are opened in the relevant device app only after a deliberate link click"
+      },
+      "storage": {
+        "title": "3. Local preferences",
+        "description": "Language, colour scheme and accessibility options are stored only in the browser so the expressly chosen presentation can be retained. These settings do not create a usage profile.",
+        "retention": "Retention: until the website data is deleted in the browser or the relevant preference is reset."
+      },
+      "links": {
+        "title": "4. External links",
+        "description": "Links to email, SMS, telephone, map or review services do not load those providers' content into this website. The relevant provider's website or app opens only when a link is activated; its privacy terms apply from that point."
+      },
+      "hosting": {
+        "title": "5. Hosting and server logs",
+        "description": "The production host has not yet been selected. Before publication, the provider, processing location, data-processing agreement, technical connection data, legal basis and deletion periods must be documented specifically."
+      },
+      "rights": {
+        "title": "6. Data-subject rights",
+        "description": "Subject to the GDPR, data subjects may in particular request access, rectification, erasure, restriction, portability and object to processing, and may complain to a data-protection supervisory authority. Requests can be emailed to the address shown with the subject “Privacy”."
+      }
+    },
+    "settings": {
+      "trigger": "Privacy settings",
+      "title": "Privacy settings",
+      "description": "Active service status and local website preferences",
+      "status": {
+        "title": "No optional services are active",
+        "description": "This version therefore needs neither a consent banner nor an accept/reject decision."
+      },
+      "necessary": {
+        "title": "Strictly necessary local preferences",
+        "description": "These keys store only your chosen language and presentation on your device:"
+      },
+      "optional": {
+        "title": "Optional services",
+        "none": "Analytics, marketing, interactive maps, embedded videos and other optional third-party services are not integrated and are not loaded."
+      },
+      "future": "If an optional service is added, it must be registered separately with its provider, purpose and privacy information. No resource belonging to that service may load before any required consent."
+    },
+    "accessibility": {
+      "trigger": "Accessibility",
+      "title": "Accessibility information",
+      "description": "Current status and website accessibility features",
+      "commitment": {
+        "title": "Our aim",
+        "description": "SprachOase wants the website to be understandable and usable by as many people as possible. Development is guided by semantic HTML, clear contrast, reliable keyboard operation and an adaptable presentation."
+      },
+      "features": {
+        "title": "Already implemented",
+        "keyboard": "Keyboard-operable navigation, dialogs and accordions with visible focus indicators",
+        "preferences": "Adjustable font size, typeface, line spacing, motion, links, focus and headings",
+        "structure": "Skip link, semantic page regions, heading structure and meaningful labels"
+      },
+      "status": {
+        "title": "Review status",
+        "description": "Automated component and build checks are in place. This development version has not yet undergone a formal WCAG/BITV audit with assistive technologies."
+      },
+      "feedback": {
+        "title": "Report a barrier",
+        "description": "If something is inaccessible or unclear, feedback can be emailed to the address in the footer. Where possible, please include the page, device and type of barrier."
+      }
+    }
   }
 }

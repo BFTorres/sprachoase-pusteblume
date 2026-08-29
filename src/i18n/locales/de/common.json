@@ -416,7 +416,113 @@
     }
   },
   "footer": {
+    "description": "Persönlich geleitete Englischkurse für Kinder und Jugendliche in Hannover-Vahrenwald-List.",
+    "contactTitle": "Direkter Kontakt",
+    "legalTitle": "Informationen",
     "status": "Lokaler Entwicklungsstand mit vorläufigen Inhalten.",
     "copyright": "SprachOase Pusteblume"
+  },
+  "legal": {
+    "lastUpdated": "Stand dieser Entwicklungsfassung: 29.08.2026",
+    "provisional": {
+      "title": "Vor Veröffentlichung rechtlich prüfen",
+      "description": "Diese Entwicklungsfassung strukturiert die benötigten Angaben, ersetzt aber keine Rechtsberatung oder Freigabe durch den Betreiber. Nicht öffentlich verifizierbare Pflichtangaben bleiben ausdrücklich als offen markiert."
+    },
+    "imprint": {
+      "trigger": "Impressum",
+      "title": "Impressum",
+      "description": "Anbieterinformationen und Kontaktangaben",
+      "provider": {
+        "title": "Angaben gemäß § 5 DDG",
+        "owner": "Öffentlich ausgewiesener Inhaber",
+        "business": "Geschäftsbezeichnung",
+        "addressPending": "Die ladungsfähige Geschäftsanschrift des Inhabers muss vor Veröffentlichung von Klaus-Rainer Weber bestätigt und hier ergänzt werden."
+      },
+      "contact": {
+        "title": "Kontakt und Kursraum",
+        "courseRoom": "Öffentlich ausgewiesener Kursraum",
+        "phone": "Telefon",
+        "email": "E-Mail"
+      },
+      "pending": {
+        "title": "Noch zu bestätigende Pflichtangaben",
+        "description": "Vor dem Produktionsstart werden Rechtsform, ladungsfähige Anschrift, gegebenenfalls Register und Registernummer, Umsatzsteuer- oder Wirtschafts-Identifikationsnummer, zuständige Aufsicht sowie Angaben zur Verbraucherstreitbeilegung mit dem Betreiber geklärt. Es werden bewusst keine Platzhalternummern oder unbelegten Erklärungen veröffentlicht."
+      }
+    },
+    "privacy": {
+      "trigger": "Datenschutz",
+      "title": "Datenschutzhinweise",
+      "description": "Transparenz über Datenflüsse in dieser Entwicklungsfassung",
+      "provisional": "Die Datenschutzhinweise beschreiben den aktuell implementierten lokalen Stand. Hosting, Domainbetrieb und endgültige Verantwortlichenanschrift müssen vor Veröffentlichung ergänzt werden.",
+      "controller": {
+        "title": "1. Verantwortliche Stelle",
+        "addressPending": "Ladungsfähige Anschrift: vor Veröffentlichung durch den Betreiber zu bestätigen."
+      },
+      "current": {
+        "title": "2. Aktueller Funktionsumfang",
+        "description": "Diese Single-Page-Website ist datensparsam aufgebaut.",
+        "noAnalytics": "Keine Analyse-, Werbe- oder Profiling-Tracker",
+        "noEmbeds": "Keine eingebetteten Karten, Videos, Webfonts oder Social-Media-Inhalte",
+        "noForm": "Kein Webformular; SMS, E-Mail und Telefon werden erst durch einen bewussten Link-Klick in der jeweiligen Geräte-App geöffnet"
+      },
+      "storage": {
+        "title": "3. Lokale Einstellungen",
+        "description": "Sprache, Farbschema und Barrierefreiheitsoptionen werden ausschließlich im Browser gespeichert, damit die ausdrücklich gewählte Darstellung erhalten bleibt. Diese Einstellungen erstellen kein Nutzungsprofil.",
+        "retention": "Speicherdauer: bis die Website-Daten im Browser gelöscht oder die jeweilige Einstellung zurückgesetzt wird."
+      },
+      "links": {
+        "title": "4. Externe Links",
+        "description": "Links zu E-Mail-, SMS-, Telefon-, Karten- oder Bewertungsdiensten laden keine Inhalte dieser Anbieter in die Website. Erst beim Aktivieren eines Links wird die Website oder App des jeweiligen Anbieters geöffnet; ab dann gelten dessen Datenschutzbedingungen."
+      },
+      "hosting": {
+        "title": "5. Hosting und Server-Protokolle",
+        "description": "Der Produktionshoster steht noch nicht fest. Vor Veröffentlichung müssen Anbieter, Verarbeitungsort, Auftragsverarbeitung, technisch anfallende Verbindungsdaten, Rechtsgrundlage und Löschfristen konkret dokumentiert werden."
+      },
+      "rights": {
+        "title": "6. Rechte betroffener Personen",
+        "description": "Betroffene Personen können nach Maßgabe der DSGVO insbesondere Auskunft, Berichtigung, Löschung, Einschränkung, Datenübertragbarkeit und Widerspruch verlangen sowie sich bei einer Datenschutzaufsichtsbehörde beschweren. Anfragen können mit dem Betreff „Datenschutz“ an die angegebene E-Mail-Adresse gesendet werden."
+      }
+    },
+    "settings": {
+      "trigger": "Datenschutzeinstellungen",
+      "title": "Datenschutzeinstellungen",
+      "description": "Aktiver Dienstestatus und lokale Website-Einstellungen",
+      "status": {
+        "title": "Keine optionalen Dienste aktiv",
+        "description": "Diese Version benötigt deshalb weder ein Einwilligungsbanner noch eine Annahme- oder Ablehnungsentscheidung."
+      },
+      "necessary": {
+        "title": "Technisch notwendige lokale Einstellungen",
+        "description": "Diese Schlüssel speichern ausschließlich die von dir gewählte Sprache und Darstellung auf deinem Gerät:"
+      },
+      "optional": {
+        "title": "Optionale Dienste",
+        "none": "Analyse, Marketing, interaktive Karten, eingebettete Videos und andere optionale Drittanbieter-Dienste sind nicht eingebunden und werden nicht geladen."
+      },
+      "future": "Sobald ein optionaler Dienst hinzukommt, muss er einzeln mit Anbieter, Zweck und Datenschutzinformation registriert werden. Vor einer erforderlichen Einwilligung darf keine Ressource dieses Dienstes laden."
+    },
+    "accessibility": {
+      "trigger": "Barrierefreiheit",
+      "title": "Hinweise zur Barrierefreiheit",
+      "description": "Stand und Bedienhilfen dieser Website",
+      "commitment": {
+        "title": "Unser Anspruch",
+        "description": "Die SprachOase möchte die Website für möglichst viele Menschen verständlich und bedienbar machen. Die Entwicklung orientiert sich an semantischem HTML, klaren Kontrasten, guter Tastaturbedienbarkeit und anpassbarer Darstellung."
+      },
+      "features": {
+        "title": "Bereits umgesetzt",
+        "keyboard": "Tastaturbedienbare Navigation, Dialoge, Akkordeons und sichtbare Fokusmarkierungen",
+        "preferences": "Anpassbare Schriftgröße, Schriftart, Zeilenabstand, Bewegung, Links, Fokus und Überschriften",
+        "structure": "Sprunglink, semantische Seitenbereiche, Überschriftenstruktur und aussagekräftige Beschriftungen"
+      },
+      "status": {
+        "title": "Prüfstatus",
+        "description": "Automatisierte Komponenten- und Build-Prüfungen sind eingerichtet. Ein formelles WCAG-/BITV-Audit mit assistiven Technologien wurde für diese Entwicklungsfassung noch nicht durchgeführt."
+      },
+      "feedback": {
+        "title": "Barriere melden",
+        "description": "Wenn etwas nicht zugänglich oder verständlich ist, kann der Hinweis per E-Mail an die im Footer genannte Adresse gesendet werden. Bitte wenn möglich Seite, Gerät und Art der Barriere nennen."
+      }
+    }
   }
 }
