@@ -127,12 +127,51 @@
       "description": "The age groups come from existing materials. The transition between 12 months and age 2, as well as current availability, will be confirmed before publication."
     }
   },
-  "sections": {
-    "method": {
-      "eyebrow": "Teaching method",
-      "title": "Learning English with all the senses",
-      "description": "Immersion, children's songs, rhymes, movement and creative learning materials will be explained as clear, accessible learning elements."
+  "method": {
+    "eyebrow": "Teaching method",
+    "title": "Experiencing English with all the senses.",
+    "description": "Six elements work together throughout the courses. Children encounter English in understandable situations through voice, movement, materials and their own active participation.",
+    "spotlight": {
+      "eyebrow": "Immersion as the guiding thread",
+      "title": "Listen. Join in. Speak.",
+      "description": "English is used naturally during the course and made understandable through situations, facial expressions, gestures and repetition."
     },
+    "listLabel": "Elements of the teaching method",
+    "items": {
+      "immersion": {
+        "title": "Immersion method",
+        "description": "English is experienced as a living course language. Meaning emerges from context, facial expressions, gestures and repetition."
+      },
+      "songs": {
+        "title": "Children's songs",
+        "description": "Melody and rhythm help children recognise new sounds, words and sentence patterns."
+      },
+      "rhymes": {
+        "title": "Nursery rhymes",
+        "description": "Nursery rhymes combine pronunciation, speech rhythm and repetition in short, memorable forms."
+      },
+      "movement": {
+        "title": "Play and movement",
+        "description": "Movement and shared play connect language with action and keep children actively involved."
+      },
+      "materials": {
+        "title": "Learning materials",
+        "description": "Objects, images and creative activities make words and relationships visible and tangible."
+      },
+      "senses": {
+        "title": "Learning with all the senses",
+        "description": "Multiple sensory impressions give new words meaning and create varied anchors for memory.",
+        "listLabel": "Senses involved",
+        "senses": {
+          "see": "See",
+          "hear": "Hear",
+          "feel": "Feel",
+          "smell": "Smell"
+        }
+      }
+    }
+  },
+  "sections": {
     "cambridge": {
       "eyebrow": "Cambridge",
       "title": "Focused preparation for language exams",

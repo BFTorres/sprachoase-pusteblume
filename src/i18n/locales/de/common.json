@@ -127,12 +127,51 @@
       "description": "Die Altersstufen stammen aus bestehenden Materialien. Der Übergang zwischen 12 Monaten und 2 Jahren sowie die aktuelle Verfügbarkeit werden vor der Veröffentlichung bestätigt."
     }
   },
-  "sections": {
-    "method": {
-      "eyebrow": "Methodik und Didaktik",
-      "title": "Englisch lernen mit allen Sinnen",
-      "description": "Immersion, Kinderlieder, Reime, Bewegung und kreative Lernmaterialien werden später als verständliche, zugängliche Lernbausteine erklärt."
+  "method": {
+    "eyebrow": "Methodik und Didaktik",
+    "title": "Englisch mit allen Sinnen erleben.",
+    "description": "In den Kursen greifen sechs Bausteine ineinander. So begegnen Kinder der Sprache in verständlichen Situationen – mit Stimme, Körper, Materialien und viel eigener Aktivität.",
+    "spotlight": {
+      "eyebrow": "Immersion als roter Faden",
+      "title": "Hören. Mitmachen. Sprechen.",
+      "description": "Englisch wird im Kurs natürlich eingesetzt und über Situation, Mimik, Gestik und Wiederholung verständlich."
     },
+    "listLabel": "Bausteine der Methodik",
+    "items": {
+      "immersion": {
+        "title": "Immersions-Methode",
+        "description": "Englisch wird als lebendige Kurssprache erlebt. Bedeutung entsteht aus Kontext, Mimik, Gestik und Wiederholung."
+      },
+      "songs": {
+        "title": "Kinderlieder",
+        "description": "Melodie und Rhythmus helfen dabei, neue Klänge, Wörter und Satzmuster wiederzuerkennen."
+      },
+      "rhymes": {
+        "title": "Englische Reime",
+        "description": "Nursery Rhymes verbinden Aussprache, Sprachmelodie und Wiederholung in kurzen, einprägsamen Formen."
+      },
+      "movement": {
+        "title": "Spiel und Bewegung",
+        "description": "Bewegung und gemeinsames Spiel verknüpfen Sprache mit Handlung und halten Kinder aktiv beteiligt."
+      },
+      "materials": {
+        "title": "Lernmaterialien",
+        "description": "Gegenstände, Bilder und kreative Aufgaben machen Wörter und Zusammenhänge sichtbar und begreifbar."
+      },
+      "senses": {
+        "title": "Lernen mit allen Sinnen",
+        "description": "Mehrere Sinneseindrücke geben neuen Wörtern Bedeutung und schaffen vielfältige Erinnerungsanker.",
+        "listLabel": "Einbezogene Sinne",
+        "senses": {
+          "see": "Sehen",
+          "hear": "Hören",
+          "feel": "Fühlen",
+          "smell": "Riechen"
+        }
+      }
+    }
+  },
+  "sections": {
     "cambridge": {
       "eyebrow": "Cambridge",
       "title": "Gezielte Vorbereitung auf Sprachprüfungen",

@@ -39,6 +39,18 @@ describe('App', () => {
     expect(
       screen.getByRole('heading', { level: 3, name: 'Parachutes' }),
     ).toBeInTheDocument()
+    expect(
+      screen.getByRole('list', { name: 'Bausteine der Methodik' }),
+    ).toBeInTheDocument()
+    expect(
+      screen.getByRole('heading', { level: 3, name: 'Immersions-Methode' }),
+    ).toBeInTheDocument()
+    expect(
+      screen.getByRole('heading', {
+        level: 3,
+        name: 'Lernen mit allen Sinnen',
+      }),
+    ).toBeInTheDocument()
   })
 
   it('switches between the two supported themes', async () => {
@@ -73,6 +85,12 @@ describe('App', () => {
       screen.getByRole('heading', {
         level: 2,
         name: 'A course journey that grows with them.',
+      }),
+    ).toBeInTheDocument()
+    expect(
+      screen.getByRole('heading', {
+        level: 2,
+        name: 'Experiencing English with all the senses.',
       }),
     ).toBeInTheDocument()
     expect(document.documentElement).toHaveAttribute('lang', 'en')
