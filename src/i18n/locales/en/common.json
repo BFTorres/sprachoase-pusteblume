@@ -171,12 +171,74 @@
       }
     }
   },
-  "sections": {
-    "cambridge": {
-      "eyebrow": "Cambridge",
-      "title": "Focused preparation for language exams",
-      "description": "This area will explain learning levels, preparation and the exam process. All success and performance claims remain provisional until confirmed."
+  "cambridge": {
+    "eyebrow": "Cambridge English Qualifications",
+    "title": "A clear plan for the right Cambridge exam.",
+    "description": "Preparation combines long-term language development with a clear understanding of the exam format, the four language skills and each learner's appropriate next step.",
+    "result": {
+      "badge": "Confirmed track record",
+      "value": "100%",
+      "title": "Cambridge exams passed",
+      "description": "Across the exams prepared through SprachOase since 2014."
     },
+    "path": {
+      "eyebrow": "Exam pathway A1–C1",
+      "title": "Each level builds on the one before.",
+      "description": "Cambridge English Qualifications are aligned to the Common European Framework of Reference. The right exam depends on the learner's current level and goals.",
+      "listLabel": "Cambridge exam pathway from A1 to C1",
+      "levels": {
+        "a1": {
+          "level": "A1",
+          "exam": "A1 Movers",
+          "description": "A child-friendly introduction to everyday written and spoken English."
+        },
+        "a2": {
+          "level": "A2",
+          "exam": "A2 Flyers or Key for Schools",
+          "description": "Basic communication in simple and familiar everyday situations."
+        },
+        "b1": {
+          "level": "B1",
+          "exam": "B1 Preliminary for Schools",
+          "description": "Practical language skills for more independent everyday use."
+        },
+        "b2": {
+          "level": "B2",
+          "exam": "B2 First for Schools",
+          "description": "Communicating confidently and effectively in an English-speaking environment."
+        },
+        "c1": {
+          "level": "C1",
+          "exam": "C1 Advanced",
+          "description": "High-level English for demanding academic and professional goals."
+        }
+      }
+    },
+    "process": {
+      "eyebrow": "Focused preparation",
+      "title": "Developing language ability and exam confidence together.",
+      "listLabel": "Cambridge exam preparation steps",
+      "steps": {
+        "level": {
+          "title": "Clarify the current level",
+          "description": "The learner's current ability and appropriate next exam goal are identified."
+        },
+        "format": {
+          "title": "Understand the format",
+          "description": "Task types, structure and expectations become familiar well ahead of the exam."
+        },
+        "skills": {
+          "title": "Train four skills",
+          "description": "Reading, writing, listening and speaking are practised in a focused and balanced way."
+        },
+        "confidence": {
+          "title": "Build confidence",
+          "description": "Repetition and exam-style activities build routine and self-confidence."
+        }
+      }
+    }
+  },
+  "sections": {
     "about": {
       "eyebrow": "About Pat",
       "title": "Personal guidance backed by experience",

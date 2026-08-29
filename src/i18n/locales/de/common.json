@@ -171,12 +171,74 @@
       }
     }
   },
-  "sections": {
-    "cambridge": {
-      "eyebrow": "Cambridge",
-      "title": "Gezielte Vorbereitung auf Sprachprüfungen",
-      "description": "Dieser Bereich erklärt künftig Lernstufen, Vorbereitung und Ablauf. Alle Erfolgs- und Leistungsangaben bleiben bis zur Bestätigung vorläufig."
+  "cambridge": {
+    "eyebrow": "Cambridge English Qualifications",
+    "title": "Mit Plan zur passenden Cambridge-Prüfung.",
+    "description": "Die Vorbereitung verbindet langfristigen Spracherwerb mit einem klaren Blick auf Prüfungsformat, vier Sprachfertigkeiten und den individuell passenden nächsten Schritt.",
+    "result": {
+      "badge": "Bestätigte Erfolgsbilanz",
+      "value": "100 %",
+      "title": "bestandene Cambridge-Prüfungen",
+      "description": "Bei den durch die SprachOase vorbereiteten Prüfungen seit 2014."
     },
+    "path": {
+      "eyebrow": "Prüfungsweg A1–C1",
+      "title": "Ein Niveau baut auf dem nächsten auf.",
+      "description": "Cambridge English Qualifications orientieren sich am Gemeinsamen Europäischen Referenzrahmen. Welche Prüfung passt, wird nach Lernstand und Ziel entschieden.",
+      "listLabel": "Cambridge-Prüfungsweg von A1 bis C1",
+      "levels": {
+        "a1": {
+          "level": "A1",
+          "exam": "A1 Movers",
+          "description": "Ein kindgerechter Einstieg in alltägliches geschriebenes und gesprochenes Englisch."
+        },
+        "a2": {
+          "level": "A2",
+          "exam": "A2 Flyers oder Key for Schools",
+          "description": "Grundlegende Kommunikation in einfachen, vertrauten Alltagssituationen."
+        },
+        "b1": {
+          "level": "B1",
+          "exam": "B1 Preliminary for Schools",
+          "description": "Praktische Sprachkenntnisse für den selbstständigeren Gebrauch im Alltag."
+        },
+        "b2": {
+          "level": "B2",
+          "exam": "B2 First for Schools",
+          "description": "Sicher und wirksam in einem englischsprachigen Umfeld kommunizieren."
+        },
+        "c1": {
+          "level": "C1",
+          "exam": "C1 Advanced",
+          "description": "Ein hohes Sprachniveau für anspruchsvolle akademische und berufliche Ziele."
+        }
+      }
+    },
+    "process": {
+      "eyebrow": "Gezielte Vorbereitung",
+      "title": "Sprachkompetenz und Prüfungssicherheit zusammen entwickeln.",
+      "listLabel": "Schritte der Cambridge-Prüfungsvorbereitung",
+      "steps": {
+        "level": {
+          "title": "Lernstand klären",
+          "description": "Das aktuelle Niveau und das passende nächste Prüfungsziel werden eingeordnet."
+        },
+        "format": {
+          "title": "Format kennenlernen",
+          "description": "Aufgabentypen, Ablauf und Erwartungen werden frühzeitig vertraut gemacht."
+        },
+        "skills": {
+          "title": "Vier Fertigkeiten trainieren",
+          "description": "Lesen, Schreiben, Hören und Sprechen werden gezielt und ausgewogen geübt."
+        },
+        "confidence": {
+          "title": "Sicherheit aufbauen",
+          "description": "Wiederholung und prüfungsnahe Aufgaben stärken Routine und Selbstvertrauen."
+        }
+      }
+    }
+  },
+  "sections": {
     "about": {
       "eyebrow": "Über Pat",
       "title": "Persönliche Begleitung mit Erfahrung",

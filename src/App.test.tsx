@@ -51,6 +51,12 @@ describe('App', () => {
         name: 'Lernen mit allen Sinnen',
       }),
     ).toBeInTheDocument()
+    expect(
+      screen.getByRole('list', {
+        name: 'Cambridge-Prüfungsweg von A1 bis C1',
+      }),
+    ).toBeInTheDocument()
+    expect(screen.getByText('100 %')).toBeInTheDocument()
   })
 
   it('switches between the two supported themes', async () => {
@@ -91,6 +97,12 @@ describe('App', () => {
       screen.getByRole('heading', {
         level: 2,
         name: 'Experiencing English with all the senses.',
+      }),
+    ).toBeInTheDocument()
+    expect(
+      screen.getByRole('heading', {
+        level: 2,
+        name: 'A clear plan for the right Cambridge exam.',
       }),
     ).toBeInTheDocument()
     expect(document.documentElement).toHaveAttribute('lang', 'en')
