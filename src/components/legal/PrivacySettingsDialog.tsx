@@ -6,15 +6,25 @@ import {
   localPreferenceKeys,
   optionalConsentServices,
 } from '@/config/consent'
+import { cn } from '@/lib/utils'
 
-export function PrivacySettingsDialog() {
+type PrivacySettingsDialogProps = {
+  trigger?: string
+  triggerClassName?: string
+}
+
+export function PrivacySettingsDialog({
+  trigger,
+  triggerClassName,
+}: PrivacySettingsDialogProps = {}) {
   const { t } = useTranslation()
 
   return (
     <LegalDialog
-      trigger={t('legal.settings.trigger')}
+      trigger={trigger ?? t('legal.settings.trigger')}
       title={t('legal.settings.title')}
       description={t('legal.settings.description')}
+      triggerClassName={cn(triggerClassName)}
     >
       <div className="border-foreground bg-primary text-primary-foreground shadow-brutal flex gap-4 rounded-xl border-2 p-5">
         <ShieldCheck aria-hidden="true" className="size-7 shrink-0" />

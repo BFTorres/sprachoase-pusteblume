@@ -16,6 +16,12 @@
   "scrollToTop": {
     "label": "Zurück zum Seitenanfang"
   },
+  "privacyNotice": {
+    "title": "Datenschutz auf einen Blick",
+    "description": "Diese Demo nutzt keine Analyse-, Werbe- oder Tracking-Dienste und setzt keine nicht notwendigen Cookies. Nur deine gewählte Sprache, Darstellung, Barrierefreiheit und das Ausblenden dieses Hinweises werden lokal in diesem Browser gespeichert.",
+    "settings": "Details ansehen",
+    "acknowledge": "Verstanden"
+  },
   "nav": {
     "label": "Hauptnavigation",
     "mobileLabel": "Mobile Hauptnavigation",
@@ -428,7 +434,7 @@
     "copyright": "SprachOase Pusteblume"
   },
   "legal": {
-    "lastUpdated": "Stand dieser Entwicklungsfassung: 29.08.2026",
+    "lastUpdated": "Stand dieser Entwicklungsfassung: 30.08.2026",
     "provisional": {
       "title": "Vor Veröffentlichung rechtlich prüfen",
       "description": "Diese Entwicklungsfassung strukturiert die benötigten Angaben, ersetzt aber keine Rechtsberatung oder Freigabe durch den Betreiber. Nicht öffentlich verifizierbare Pflichtangaben bleiben ausdrücklich als offen markiert."
@@ -467,6 +473,7 @@
         "title": "2. Aktueller Funktionsumfang",
         "description": "Diese Single-Page-Website ist datensparsam aufgebaut.",
         "noAnalytics": "Keine Analyse-, Werbe- oder Profiling-Tracker",
+        "noNonEssentialStorage": "Keine nicht notwendigen Cookies oder vergleichbaren Speicherzugriffe",
         "noEmbeds": "Keine eingebetteten Karten, Videos, Webfonts oder Social-Media-Inhalte",
         "noForm": "Kein Webformular; SMS, E-Mail und Telefon werden erst durch einen bewussten Link-Klick in der jeweiligen Geräte-App geöffnet"
       },
@@ -481,7 +488,7 @@
       },
       "hosting": {
         "title": "5. Hosting und Server-Protokolle",
-        "description": "Der Produktionshoster steht noch nicht fest. Vor Veröffentlichung müssen Anbieter, Verarbeitungsort, Auftragsverarbeitung, technisch anfallende Verbindungsdaten, Rechtsgrundlage und Löschfristen konkret dokumentiert werden."
+        "description": "Die aktuelle Demo wird über GitHub Pages bereitgestellt. Dabei können technisch erforderliche Verbindungs- und Protokolldaten durch GitHub verarbeitet werden. Für den Produktionsstart müssen Anbieter, Verarbeitungsort, Auftragsverarbeitung, Rechtsgrundlage und Löschfristen abschließend geprüft und konkret dokumentiert werden."
       },
       "rights": {
         "title": "6. Rechte betroffener Personen",
@@ -494,7 +501,7 @@
       "description": "Aktiver Dienstestatus und lokale Website-Einstellungen",
       "status": {
         "title": "Keine optionalen Dienste aktiv",
-        "description": "Diese Version benötigt deshalb weder ein Einwilligungsbanner noch eine Annahme- oder Ablehnungsentscheidung."
+        "description": "Die Einblendung beim ersten Besuch informiert transparent über den aktuellen Stand. Da keine optionalen Dienste aktiv sind, verlangt sie keine Einwilligungs- oder Ablehnungsentscheidung."
       },
       "necessary": {
         "title": "Technisch notwendige lokale Einstellungen",

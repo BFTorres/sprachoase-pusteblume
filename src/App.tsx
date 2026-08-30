@@ -10,6 +10,7 @@ import { TestimonialsSection } from '@/components/sections/TestimonialsSection'
 import { FaqSection } from '@/components/sections/FaqSection'
 import { ContactSection } from '@/components/sections/ContactSection'
 import { ScrollToTopButton } from '@/components/layout/ScrollToTopButton'
+import { PrivacyNoticeBanner } from '@/components/legal/PrivacyNoticeBanner'
 import { usePreferenceEffects } from '@/hooks/usePreferenceEffects'
 import { useSeoEffects } from '@/hooks/useSeoEffects'
 
@@ -32,6 +33,7 @@ export default function App() {
         <ContactSection />
       </main>
       <Footer />
+      <PrivacyNoticeBanner />
       <ScrollToTopButton />
     </div>
   )

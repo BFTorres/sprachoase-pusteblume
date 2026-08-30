@@ -16,6 +16,12 @@
   "scrollToTop": {
     "label": "Back to the top of the page"
   },
+  "privacyNotice": {
+    "title": "Privacy at a glance",
+    "description": "This demo uses no analytics, advertising or tracking services and sets no non-essential cookies. Only your chosen language, presentation, accessibility options and dismissal of this notice are stored locally in this browser.",
+    "settings": "View details",
+    "acknowledge": "Understood"
+  },
   "nav": {
     "label": "Main navigation",
     "mobileLabel": "Mobile main navigation",
@@ -428,7 +434,7 @@
     "copyright": "SprachOase Pusteblume"
   },
   "legal": {
-    "lastUpdated": "Development version last updated: 29 August 2026",
+    "lastUpdated": "Development version last updated: 30 August 2026",
     "provisional": {
       "title": "Legal review required before publication",
       "description": "This development version structures the required information, but is not a substitute for legal advice or approval by the operator. Mandatory details that cannot be verified publicly remain explicitly marked as pending."
@@ -467,6 +473,7 @@
         "title": "2. Current functionality",
         "description": "This single-page website is designed to minimise data use.",
         "noAnalytics": "No analytics, advertising or profiling trackers",
+        "noNonEssentialStorage": "No non-essential cookies or comparable storage access",
         "noEmbeds": "No embedded maps, videos, webfonts or social-media content",
         "noForm": "No web form; SMS, email and telephone are opened in the relevant device app only after a deliberate link click"
       },
@@ -481,7 +488,7 @@
       },
       "hosting": {
         "title": "5. Hosting and server logs",
-        "description": "The production host has not yet been selected. Before publication, the provider, processing location, data-processing agreement, technical connection data, legal basis and deletion periods must be documented specifically."
+        "description": "The current demo is delivered through GitHub Pages. GitHub may process technically necessary connection and log data in doing so. Before production launch, the provider, processing location, data-processing arrangements, legal basis and deletion periods must be reviewed and documented specifically."
       },
       "rights": {
         "title": "6. Data-subject rights",
@@ -494,7 +501,7 @@
       "description": "Active service status and local website preferences",
       "status": {
         "title": "No optional services are active",
-        "description": "This version therefore needs neither a consent banner nor an accept/reject decision."
+        "description": "The first-visit notice transparently explains the current setup. Because no optional services are active, it asks for neither an acceptance nor a rejection decision."
       },
       "necessary": {
         "title": "Strictly necessary local preferences",

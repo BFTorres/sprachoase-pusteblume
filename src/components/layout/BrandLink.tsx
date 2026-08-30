@@ -1,4 +1,5 @@
 import { useTranslation } from 'react-i18next'
+import { BrandMark } from '@/components/brand/BrandMark'
 import { cn } from '@/lib/utils'
 
 type BrandLinkProps = {
@@ -18,12 +19,7 @@ export function BrandLink({ compact = false, className }: BrandLinkProps) {
         className,
       )}
     >
-      <span
-        className="border-foreground bg-accent text-accent-foreground shadow-brutal grid size-11 shrink-0 place-items-center rounded-xl border-2 font-black"
-        aria-hidden="true"
-      >
-        P
-      </span>
+      <BrandMark className="text-foreground size-11" />
       {!compact && (
         <span className="hidden min-w-0 sm:block">
           <span className="block truncate font-black tracking-tight">

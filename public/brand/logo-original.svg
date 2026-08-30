@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 280" role="img" aria-labelledby="title">
+  <title id="title">SprachOase Pusteblume original logo mark</title>
+  <defs>
+    <circle id="outer" cx="140" cy="25" r="12.25" />
+    <circle id="middle" cx="140" cy="60" r="12.25" />
+    <circle id="inner" cx="140" cy="96" r="12.25" />
+  </defs>
+  <g fill="#121b1a">
+    <use href="#outer" /><use href="#outer" transform="rotate(22.5 140 140)" /><use href="#outer" transform="rotate(45 140 140)" /><use href="#outer" transform="rotate(67.5 140 140)" /><use href="#outer" transform="rotate(90 140 140)" /><use href="#outer" transform="rotate(112.5 140 140)" /><use href="#outer" transform="rotate(135 140 140)" /><use href="#outer" transform="rotate(157.5 140 140)" /><use href="#outer" transform="rotate(180 140 140)" /><use href="#outer" transform="rotate(202.5 140 140)" /><use href="#outer" transform="rotate(225 140 140)" /><use href="#outer" transform="rotate(247.5 140 140)" /><use href="#outer" transform="rotate(270 140 140)" /><use href="#outer" transform="rotate(292.5 140 140)" /><use href="#outer" transform="rotate(315 140 140)" /><use href="#outer" transform="rotate(337.5 140 140)" />
+    <use href="#middle" /><use href="#middle" transform="rotate(22.5 140 140)" /><use href="#middle" transform="rotate(45 140 140)" /><use href="#middle" transform="rotate(67.5 140 140)" /><use href="#middle" transform="rotate(90 140 140)" /><use href="#middle" transform="rotate(112.5 140 140)" /><use href="#middle" transform="rotate(135 140 140)" /><use href="#middle" transform="rotate(157.5 140 140)" /><use href="#middle" transform="rotate(180 140 140)" /><use href="#middle" transform="rotate(202.5 140 140)" /><use href="#middle" transform="rotate(225 140 140)" /><use href="#middle" transform="rotate(247.5 140 140)" /><use href="#middle" transform="rotate(270 140 140)" /><use href="#middle" transform="rotate(292.5 140 140)" /><use href="#middle" transform="rotate(315 140 140)" /><use href="#middle" transform="rotate(337.5 140 140)" />
+    <use href="#inner" /><use href="#inner" transform="rotate(45 140 140)" /><use href="#inner" transform="rotate(90 140 140)" /><use href="#inner" transform="rotate(135 140 140)" /><use href="#inner" transform="rotate(180 140 140)" /><use href="#inner" transform="rotate(225 140 140)" /><use href="#inner" transform="rotate(270 140 140)" /><use href="#inner" transform="rotate(315 140 140)" />
+  </g>
+  <circle cx="140" cy="140" r="20" fill="#f9ca0d" stroke="#5f541f" stroke-width="3" />
+</svg>

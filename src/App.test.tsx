@@ -8,6 +8,7 @@ import {
   useAccessibilityStore,
 } from '@/stores/accessibility-store'
 import { useThemeStore } from '@/stores/theme-store'
+import { privacyNoticeStorageKey, privacyNoticeVersion } from '@/config/consent'
 
 describe('App', () => {
   beforeEach(async () => {
@@ -235,6 +236,31 @@ describe('App', () => {
       within(dialog).getByText('Keine optionalen Dienste aktiv'),
     ).toBeVisible()
     expect(within(dialog).getByText('sprachoase-theme')).toBeVisible()
+  })
+
+  it('shows a truthful first-visit privacy notice and remembers dismissal', async () => {
+    const user = userEvent.setup()
+    render(<App />)
+
+    const notice = await screen.findByRole('dialog', {
+      name: 'Datenschutz auf einen Blick',
+    })
+
+    expect(
+      within(notice).getByText(/keine Analyse-, Werbe- oder Tracking-Dienste/),
+    ).toBeVisible()
+    expect(
+      within(notice).queryByRole('button', { name: /alle akzeptieren/i }),
+    ).not.toBeInTheDocument()
+
+    await user.click(within(notice).getByRole('button', { name: 'Verstanden' }))
+
+    expect(
+      screen.queryByRole('dialog', { name: 'Datenschutz auf einen Blick' }),
+    ).not.toBeInTheDocument()
+    expect(localStorage.getItem(privacyNoticeStorageKey)).toBe(
+      privacyNoticeVersion,
+    )
   })
 
   it('reveals the back-to-top control after scrolling', async () => {

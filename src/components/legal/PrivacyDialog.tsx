@@ -36,6 +36,7 @@ export function PrivacyDialog() {
         <p>{t('legal.privacy.current.description')}</p>
         <ul className="list-disc space-y-1 pl-5">
           <li>{t('legal.privacy.current.noAnalytics')}</li>
+          <li>{t('legal.privacy.current.noNonEssentialStorage')}</li>
           <li>{t('legal.privacy.current.noEmbeds')}</li>
           <li>{t('legal.privacy.current.noForm')}</li>
         </ul>

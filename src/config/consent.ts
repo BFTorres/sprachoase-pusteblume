@@ -17,8 +17,20 @@ export const optionalConsentServices: readonly ConsentServiceDefinition[] = []
 
 export const hasOptionalConsentServices = optionalConsentServices.length > 0
 
+export const privacyNoticeStorageKey = 'sprachoase-privacy-notice'
+export const privacyNoticeVersion = '1'
+
+export function hasAcknowledgedPrivacyNotice(storage: Storage) {
+  return storage.getItem(privacyNoticeStorageKey) === privacyNoticeVersion
+}
+
+export function acknowledgePrivacyNotice(storage: Storage) {
+  storage.setItem(privacyNoticeStorageKey, privacyNoticeVersion)
+}
+
 export const localPreferenceKeys = [
   'sprachoase-language',
   'sprachoase-theme',
   'sprachoase-accessibility',
+  privacyNoticeStorageKey,
 ] as const

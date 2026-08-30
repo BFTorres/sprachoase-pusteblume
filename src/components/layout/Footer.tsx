@@ -2,6 +2,7 @@ import { useTranslation } from 'react-i18next'
 import { Mail, MapPin, Phone } from 'lucide-react'
 import { Container } from '@/components/layout/Container'
 import { AccessibilityStatementDialog } from '@/components/legal/AccessibilityStatementDialog'
+import { BrandMark } from '@/components/brand/BrandMark'
 import { ImprintDialog } from '@/components/legal/ImprintDialog'
 import { PrivacyDialog } from '@/components/legal/PrivacyDialog'
 import { PrivacySettingsDialog } from '@/components/legal/PrivacySettingsDialog'
@@ -16,12 +17,7 @@ export function Footer() {
         <div className="grid gap-10 lg:grid-cols-[1.2fr_1fr_1fr]">
           <div className="max-w-md">
             <div className="flex items-center gap-3">
-              <span
-                className="border-background bg-accent text-accent-foreground grid size-12 place-items-center rounded-xl border-2 font-black"
-                aria-hidden="true"
-              >
-                P
-              </span>
+              <BrandMark className="text-background size-12" />
               <div>
                 <p className="font-black">{siteConfig.name}</p>
                 <p className="text-sm text-white/70">{t('brand.tagline')}</p>
