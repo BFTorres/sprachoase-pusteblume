@@ -4,14 +4,14 @@ import { initReactI18next } from 'react-i18next'
 import de from '@/i18n/locales/de/common.json'
 import en from '@/i18n/locales/en/common.json'
 
-const pathLanguage =
+export const supportedLanguages = ['de', 'en'] as const
+export type SupportedLanguage = (typeof supportedLanguages)[number]
+
+const pathLanguage: SupportedLanguage =
   typeof window !== 'undefined' &&
   window.location.pathname.split('/').filter(Boolean).includes('en')
     ? 'en'
-    : undefined
-
-export const supportedLanguages = ['de', 'en'] as const
-export type SupportedLanguage = (typeof supportedLanguages)[number]
+    : 'de'
 
 void i18n
   .use(LanguageDetector)
@@ -23,7 +23,7 @@ void i18n
     },
     supportedLngs: supportedLanguages,
     fallbackLng: 'de',
-    ...(pathLanguage ? { lng: pathLanguage } : {}),
+    lng: pathLanguage,
     load: 'languageOnly',
     interpolation: {
       escapeValue: false,

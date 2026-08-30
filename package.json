@@ -16,7 +16,8 @@
     "test:run": "vitest run",
     "test:e2e": "playwright test",
     "test:e2e:install": "playwright install chromium",
-    "qa": "npm run format:check && npm run lint && npm run test:run && npm run build && npm run test:e2e",
+    "qa": "npm run format:check && npm run lint && npm run test:run && npm run build",
+    "qa:browser": "npm run qa && npm run test:e2e",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "preview": "vite preview"

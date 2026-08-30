@@ -37,7 +37,7 @@ export function TestimonialsSection() {
           >
             <div className="flex items-start justify-between gap-5">
               <div>
-                <p className="text-sm font-black tracking-[0.12em] uppercase opacity-80">
+                <p className="text-sm font-black tracking-[0.12em] uppercase">
                   {t('testimonials.rating.source')}
                 </p>
                 <p className="mt-3 text-6xl leading-none font-black tracking-tight">
@@ -55,7 +55,7 @@ export function TestimonialsSection() {
             <p className="mt-4 text-lg font-black">
               {t('testimonials.rating.count')}
             </p>
-            <p className="mt-2 text-sm leading-relaxed opacity-80">
+            <p className="mt-2 text-sm leading-relaxed">
               {t('testimonials.rating.date')}
             </p>
           </aside>

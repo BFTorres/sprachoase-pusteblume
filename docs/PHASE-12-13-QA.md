@@ -2,16 +2,26 @@
 
 ## Automated release gate
 
-Run once after installing dependencies and Playwright Chromium:
+Run the standard release gate after installing dependencies:
 
 ```powershell
-npm run test:e2e:install
 npm run qa
 ```
 
 The `qa` command checks formatting, linting, unit tests, the production build,
-localized prerender validation, browser interactions, responsive overflow and
-automatically detectable WCAG 2.1 A/AA issues.
+and localized prerender validation. These checks also gate the GitHub Pages demo
+deployment.
+
+Browser automation is intentionally separate from compilation and deployment.
+Install Chromium once and run the extended gate when browser QA is required:
+
+```powershell
+npm run test:e2e:install
+npm run qa:browser
+```
+
+The extended gate additionally checks browser interactions, responsive overflow
+and automatically detectable WCAG 2.1 A/AA issues.
 
 ## Manual review before publication
 

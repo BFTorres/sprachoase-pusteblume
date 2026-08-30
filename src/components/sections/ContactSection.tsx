@@ -27,7 +27,7 @@ export function ContactSection() {
       <Container>
         <div className="grid gap-8 lg:grid-cols-[1.15fr_0.85fr] lg:items-end">
           <div className="max-w-4xl">
-            <p className="mb-3 text-sm font-black tracking-[0.12em] uppercase opacity-75">
+            <p className="mb-3 text-sm font-black tracking-[0.12em] uppercase">
               {t('contact.eyebrow')}
             </p>
             <h2
@@ -36,7 +36,7 @@ export function ContactSection() {
             >
               {t('contact.title')}
             </h2>
-            <p className="mt-6 max-w-3xl text-lg leading-relaxed opacity-85 sm:text-xl">
+            <p className="mt-6 max-w-3xl text-lg leading-relaxed sm:text-xl">
               {t('contact.description')}
             </p>
           </div>

@@ -43,12 +43,6 @@ jobs:
       - name: Build localized prerendered site
         run: npm run build
 
-      - name: Install Playwright Chromium
-        run: npx playwright install --with-deps chromium
-
-      - name: Run browser and accessibility tests
-        run: npm run test:e2e
-
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
 

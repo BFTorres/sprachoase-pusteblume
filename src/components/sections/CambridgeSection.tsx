@@ -18,7 +18,7 @@ export function CambridgeSection() {
       <Container>
         <div className="grid gap-8 lg:grid-cols-[1fr_0.72fr] lg:items-stretch">
           <div className="flex flex-col justify-center">
-            <p className="mb-3 text-sm font-black tracking-[0.12em] uppercase opacity-75">
+            <p className="mb-3 text-sm font-black tracking-[0.12em] uppercase">
               {t('cambridge.eyebrow')}
             </p>
             <h2
@@ -27,7 +27,7 @@ export function CambridgeSection() {
             >
               {t('cambridge.title')}
             </h2>
-            <p className="mt-6 max-w-3xl text-lg leading-relaxed opacity-85 sm:text-xl">
+            <p className="mt-6 max-w-3xl text-lg leading-relaxed sm:text-xl">
               {t('cambridge.description')}
             </p>
           </div>
@@ -54,14 +54,14 @@ export function CambridgeSection() {
         <div className="mt-16 sm:mt-20">
           <div className="flex flex-wrap items-end justify-between gap-5">
             <div>
-              <p className="text-sm font-black tracking-[0.12em] uppercase opacity-70">
+              <p className="text-sm font-black tracking-[0.12em] uppercase">
                 {t('cambridge.path.eyebrow')}
               </p>
               <h3 className="mt-3 text-3xl leading-tight font-black tracking-tight text-balance sm:text-4xl">
                 {t('cambridge.path.title')}
               </h3>
             </div>
-            <p className="max-w-lg leading-relaxed opacity-80">
+            <p className="max-w-lg leading-relaxed">
               {t('cambridge.path.description')}
             </p>
           </div>

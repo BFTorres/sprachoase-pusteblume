@@ -135,7 +135,7 @@ export function MethodSection() {
                   <h3 className="mt-7 text-2xl leading-tight font-black tracking-tight">
                     {t(`method.items.${item.key}.title`)}
                   </h3>
-                  <p className="mt-3 max-w-xl leading-relaxed opacity-80">
+                  <p className="mt-3 max-w-xl leading-relaxed">
                     {t(`method.items.${item.key}.description`)}
                   </p>
 
