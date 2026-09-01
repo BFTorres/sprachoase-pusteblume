@@ -42,6 +42,16 @@ describe('App', () => {
         name: 'Pat Weber mit einem Dudelsackspieler auf der Westminster Bridge in London',
       }),
     ).toHaveAttribute('loading', 'lazy')
+    expect(
+      document.querySelector('[data-mascot-moment="wave"]'),
+    ).toHaveAttribute('data-motion', 'welcome')
+    expect(
+      document.querySelector('[data-mascot-moment="listen"]'),
+    ).toHaveAttribute('data-motion', 'listen')
+    expect(
+      document.querySelector('[data-mascot-moment="think"]'),
+    ).toHaveAttribute('data-motion', 'think')
+    expect(document.querySelectorAll('[data-mascot-moment]')).toHaveLength(3)
     expect(screen.getByRole('main')).toHaveAttribute('id', 'content')
     expect(
       screen.getByRole('navigation', { name: 'Hauptnavigation' }),
@@ -310,6 +320,9 @@ describe('App', () => {
     )
 
     expect(scrollTo).toHaveBeenCalledWith({ top: 0, behavior: 'auto' })
+    document.querySelectorAll('[data-mascot-moment]').forEach((moment) => {
+      expect(moment).toHaveAttribute('data-active', 'false')
+    })
   })
 
   it('opens the mobile navigation and closes it after selecting a section', async () => {

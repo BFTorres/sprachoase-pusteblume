@@ -8,6 +8,7 @@ import {
   Sparkles,
 } from 'lucide-react'
 import { useTranslation } from 'react-i18next'
+import { MascotMoment } from '@/components/brand/MascotMoment'
 import { Container } from '@/components/layout/Container'
 import { cn } from '@/lib/utils'
 
@@ -96,15 +97,23 @@ export function MethodSection() {
           </div>
 
           <div className="border-foreground bg-foreground text-background shadow-brutal-xl rounded-[1.75rem] border-2 p-6 sm:p-8">
-            <p className="text-accent text-xs font-black tracking-[0.12em] uppercase">
-              {t('method.spotlight.eyebrow')}
-            </p>
-            <p className="mt-4 text-3xl leading-tight font-black text-balance sm:text-4xl">
-              {t('method.spotlight.title')}
-            </p>
-            <p className="mt-4 max-w-xl leading-relaxed opacity-80">
-              {t('method.spotlight.description')}
-            </p>
+            <div className="grid items-center gap-6 sm:grid-cols-[minmax(0,1fr)_7.5rem]">
+              <div>
+                <p className="text-accent text-xs font-black tracking-[0.12em] uppercase">
+                  {t('method.spotlight.eyebrow')}
+                </p>
+                <p className="mt-4 text-3xl leading-tight font-black text-balance sm:text-4xl">
+                  {t('method.spotlight.title')}
+                </p>
+                <p className="mt-4 max-w-xl leading-relaxed opacity-80">
+                  {t('method.spotlight.description')}
+                </p>
+              </div>
+
+              <div className="bg-accent text-accent-foreground mx-auto w-28 rounded-[1.5rem] p-2 sm:w-30">
+                <MascotMoment pose="listen" motion="listen" />
+              </div>
+            </div>
           </div>
         </div>
 

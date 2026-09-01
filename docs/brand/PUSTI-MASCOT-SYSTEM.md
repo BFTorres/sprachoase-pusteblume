@@ -44,14 +44,18 @@ silhouette, anatomy and brand palette.
 - **Home-screen app icon:** a close-up Pusti face and short stem are used for
   iOS and normal launchers; Android receives a padded maskable export. The
   browser favicon remains the compact flower logo.
-- **Reusable code and assets:** the mascot component and pose exports remain
-  available for future interaction states, but Pusti is not inserted into
-  website positions reserved for approved photography.
+- **Hero welcome:** the wave pose appears as a separate brand companion below
+  the calls to action. It does not overlap or replace the approved photograph.
+- **Method spotlight:** the listen pose supports the section's listening and
+  speaking message without being repeated across the method cards.
+- **FAQ prompt:** the think pose appears once beside the section introduction,
+  outside the accordion content.
+- **Reusable code and assets:** `MascotMoment` starts each animation only when
+  its reserved layout area enters the viewport. Motion plays once while the
+  mascot remains available as a static illustration afterward.
 
 ### Recommended when the related interaction exists
 
-- **FAQ prompt:** use the think pose once beside the section introduction,
-  never on every accordion item.
 - **Trial-lesson success state:** use celebrate after an enquiry is genuinely
   submitted, not before the user acts.
 - **Listening exercise:** use listen when audio or pronunciation activities
@@ -74,13 +78,14 @@ silhouette, anatomy and brand palette.
 
 ## Motion system
 
-`PustiMascot` accepts an `animated` prop. The current motion is authored in CSS
-and SVG, so it stays sharp at every size and adds no video dependency:
+`PustiMascot` accepts an `animated` prop, while `MascotMoment` adds
+viewport-triggered, play-once orchestration. The current motion is authored in
+CSS and SVG, so it stays sharp at every size and adds no video dependency:
 
-- a subtle idle float;
+- a short entrance when the reserved area enters the viewport;
 - a short three-cycle wave on the welcome pose;
 - an occasional blink; and
-- a small sparkle pulse for celebratory accents.
+- a two-cycle sound or thought accent for the related poses.
 
 This is an original implementation rather than a copy of Duolingo animation.
 Both the operating-system `prefers-reduced-motion` setting and the website's

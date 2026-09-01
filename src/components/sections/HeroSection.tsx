@@ -1,5 +1,6 @@
 import { ArrowDown, MessageCircle } from 'lucide-react'
 import { useTranslation } from 'react-i18next'
+import { MascotMoment } from '@/components/brand/MascotMoment'
 import { Container } from '@/components/layout/Container'
 import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
@@ -44,6 +45,14 @@ export function HeroSection() {
                   {t('hero.secondaryAction')}
                 </a>
               </Button>
+            </div>
+
+            <div className="mt-6 flex min-h-24 items-end justify-end pr-2 sm:min-h-28 sm:pr-8 lg:min-h-32 lg:pr-4">
+              <MascotMoment
+                pose="wave"
+                motion="welcome"
+                className="w-24 sm:w-28 lg:w-32"
+              />
             </div>
           </div>
 

@@ -153,20 +153,22 @@ function PoseDetails({ pose }: { pose: PustiPose }) {
           <Hand cx={51} cy={252} />
           <ArmPath d="M 280 194 Q 296 184 294 165" />
           <Hand cx={293} cy={155} />
-          <path
-            d="M 304 147 Q 319 158 308 173"
-            fill="none"
-            stroke={colors.blue}
-            strokeWidth="6"
-            strokeLinecap="round"
-          />
-          <path
-            d="M 314 138 Q 337 157 320 182"
-            fill="none"
-            stroke={colors.yellow}
-            strokeWidth="6"
-            strokeLinecap="round"
-          />
+          <g className="pusti-sound-lines">
+            <path
+              d="M 304 147 Q 319 158 308 173"
+              fill="none"
+              stroke={colors.blue}
+              strokeWidth="6"
+              strokeLinecap="round"
+            />
+            <path
+              d="M 314 138 Q 337 157 320 182"
+              fill="none"
+              stroke={colors.yellow}
+              strokeWidth="6"
+              strokeLinecap="round"
+            />
+          </g>
         </>
       )
     default:
@@ -261,10 +263,10 @@ function Face({ pose }: { pose: PustiPose }) {
 function FrontDetails({ pose }: { pose: PustiPose }) {
   if (pose === 'think') {
     return (
-      <>
+      <g className="pusti-thought">
         <Hand cx={242} cy={197} />
         <circle cx="222" cy="186" r="4" fill={colors.navy} />
-      </>
+      </g>
     )
   }
 

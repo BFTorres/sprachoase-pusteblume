@@ -1,5 +1,6 @@
 import { ArrowDown, Check, Info } from 'lucide-react'
 import { useTranslation } from 'react-i18next'
+import { MascotMoment } from '@/components/brand/MascotMoment'
 import { Container } from '@/components/layout/Container'
 import {
   Accordion,
@@ -46,7 +47,15 @@ export function FaqSection() {
               {t('faq.description')}
             </p>
 
-            <aside className="border-foreground bg-primary text-primary-foreground shadow-brutal-xl mt-10 rounded-[2rem] border-2 p-6 sm:p-8">
+            <div className="mt-7 flex min-h-28 items-end justify-center sm:justify-end lg:min-h-32">
+              <MascotMoment
+                pose="think"
+                motion="think"
+                className="w-28 sm:w-32"
+              />
+            </div>
+
+            <aside className="border-foreground bg-primary text-primary-foreground shadow-brutal-xl mt-7 rounded-[2rem] border-2 p-6 sm:p-8">
               <p className="text-sm font-black tracking-[0.12em] uppercase opacity-80">
                 {t('faq.verified.eyebrow')}
               </p>
