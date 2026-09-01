@@ -42,9 +42,15 @@ describe('App', () => {
         name: 'Pat Weber mit einem Dudelsackspieler auf der Westminster Bridge in London',
       }),
     ).toHaveAttribute('loading', 'lazy')
-    expect(
-      document.querySelector('[data-mascot-moment="wave"]'),
-    ).toHaveAttribute('data-motion', 'welcome')
+    const heroMascotPlacement = document.querySelector<HTMLDivElement>(
+      '[data-hero-mascot-placement="photo-peek"]',
+    )
+    const heroMascot = document.querySelector<HTMLDivElement>(
+      '[data-mascot-moment="wave"]',
+    )
+
+    expect(heroMascot).toHaveAttribute('data-motion', 'welcome')
+    expect(heroMascotPlacement).toContainElement(heroMascot)
     expect(
       document.querySelector('[data-mascot-moment="listen"]'),
     ).toHaveAttribute('data-motion', 'listen')
@@ -277,7 +283,7 @@ describe('App', () => {
     ).toBeVisible()
   })
 
-  it('opens the provisional legal notice from the footer', async () => {
+  it('opens the updated legal notice from the footer', async () => {
     const user = userEvent.setup()
     render(<App />)
 
@@ -287,8 +293,39 @@ describe('App', () => {
 
     expect(within(dialog).getByText('Klaus-Rainer Weber')).toBeVisible()
     expect(
-      within(dialog).getByText(/ladungsfähige Geschäftsanschrift/),
+      within(dialog).getByText('Vahrenwalder Straße 78, 30165 Hannover'),
     ).toBeVisible()
+    expect(
+      within(dialog).getByText(/bestehenden Impressum übernommen/),
+    ).toBeVisible()
+    expect(
+      within(dialog).queryByText(/ladungsfähige Geschäftsanschrift/),
+    ).not.toBeInTheDocument()
+  })
+
+  it('documents the implemented hosting, contact and media data flows', async () => {
+    const user = userEvent.setup()
+    render(<App />)
+
+    await user.click(screen.getByRole('button', { name: 'Datenschutz' }))
+
+    const dialog = screen.getByRole('dialog', { name: 'Datenschutzhinweise' })
+
+    expect(within(dialog).getByText(/IP-Adresse unabhängig/)).toBeVisible()
+    expect(
+      within(dialog).getByText(/Kontaktaufnahme verarbeitet die SprachOase/),
+    ).toBeVisible()
+    expect(
+      within(dialog).getByText(/Fotos und gekürzte Rezensionstexte/),
+    ).toBeVisible()
+    expect(
+      within(dialog).getByRole('link', {
+        name: 'Datenschutzerklärung von GitHub öffnen',
+      }),
+    ).toHaveAttribute(
+      'href',
+      'https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement',
+    )
   })
 
   it('explains that no optional consent services are active', async () => {

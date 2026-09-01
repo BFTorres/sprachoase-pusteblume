@@ -18,7 +18,7 @@
   },
   "privacyNotice": {
     "title": "Kısaca gizlilik",
-    "description": "Bu demo analiz, reklam veya takip hizmeti kullanmaz ve zorunlu olmayan çerezler yerleştirmez. Yalnızca seçtiğiniz dil, görünüm, erişilebilirlik seçenekleri ve bu bildirimi kapattığınız bilgisi bu tarayıcıda yerel olarak saklanır.",
+    "description": "Bu demo analiz, reklam veya takip hizmeti kullanmaz ve zorunlu olmayan çerezler yerleştirmez. Seçilen görünüm ayarları yerel olarak saklanır; GitHub Pages web sitesini sunmak için bağlantı verilerini işler.",
     "settings": "Ayrıntıları görüntüle",
     "acknowledge": "Anladım"
   },
@@ -444,40 +444,41 @@
     "copyright": "SprachOase Pusteblume"
   },
   "legal": {
-    "lastUpdated": "Bu geliştirme sürümünün tarihi: 1 Eylül 2026",
-    "provisional": {
-      "title": "Yayımdan önce hukuki inceleme gerekli",
-      "description": "Bu geliştirme sürümü gerekli bilgileri yapılandırır; ancak hukuki danışmanlığın veya işletmeci onayının yerini tutmaz. Kamuya açık biçimde doğrulanamayan zorunlu bilgiler açıkça beklemede olarak işaretlenmiştir."
-    },
+    "lastUpdated": "Güncelleme tarihi: 1 Eylül 2026",
     "imprint": {
       "trigger": "Yasal bildirim",
       "title": "Yasal bildirim",
       "description": "Hizmet sağlayıcı ve iletişim bilgileri",
+      "verification": {
+        "title": "Mevcut yasal bildirimden aktarıldı",
+        "description": "İşletme sahibi, adres, telefon ve e-posta bilgileri SprachOase Pusteblume’nin kamuya açık yasal bildirimiyle karşılaştırıldı. Canlı yayımdan önce işletmecinin nihai onayı gereklidir."
+      },
       "provider": {
         "title": "Alman DDG § 5 uyarınca sağlayıcı bilgileri",
-        "owner": "Kamuya açık yasal bildirimde belirtilen işletme sahibi",
+        "owner": "İşletme sahibi",
         "business": "İşletme adı",
-        "addressPending": "İşletme sahibinin tebligata elverişli adresi, Klaus-Rainer Weber tarafından teyit edilmeli ve yayımdan önce buraya eklenmelidir."
+        "address": "Adres"
       },
       "contact": {
-        "title": "İletişim ve kurs yeri",
-        "courseRoom": "Kamuya açık olarak belirtilen kurs yeri",
+        "title": "İletişim",
         "phone": "Telefon",
         "email": "E-posta"
       },
-      "pending": {
-        "title": "Henüz teyit edilmesi gereken zorunlu bilgiler",
-        "description": "Canlı yayımdan önce hukuki yapı, tebligata elverişli adres, varsa sicil ve sicil numarası, KDV veya işletme kimlik numarası, yetkili denetim makamı ve tüketici uyuşmazlık çözümü bilgileri işletmeciyle açıklığa kavuşturulmalıdır. Uydurma numaralar veya doğrulanmamış açıklamalar yayımlanmaz."
+      "release": {
+        "title": "İşletmeci tarafından teyit edilmesi gerekenler",
+        "description": "Sicil, vergi veya denetim bilgileri yalnızca gerçekten mevcut ve hukuken gerekli olduklarında eklenir. Tüketici uyuşmazlık çözüm süreçlerine katılım hakkında bir açıklama da işletmecinin açık kararı olmadan yayımlanmaz."
       }
     },
     "privacy": {
       "trigger": "Gizlilik",
       "title": "Gizlilik bilgileri",
-      "description": "Bu geliştirme sürümündeki veri akışları hakkında şeffaflık",
-      "provisional": "Bu bildirim şu anda uygulanmış yerel sürümü açıklar. Barındırma, alan adı işletimi ve veri sorumlusunun nihai tebligat adresi yayımdan önce eklenmelidir.",
+      "description": "Şu anda uygulanmış veri akışları hakkında şeffaflık",
+      "scope": {
+        "title": "Veri tasarruflu uygulama",
+        "description": "Bu bildirim; yerel ayarlar, iletişim bağlantıları, sunulan fotoğraflar ve değerlendirme alıntıları dâhil olmak üzere mevcut GitHub Pages demosunu kapsar. Nihai canlı yayımdan önce barındırma düzenlemeleri, görsel izinleri ve işletmeci bilgileri hukuken onaylanmalıdır."
+      },
       "controller": {
-        "title": "1. Veri sorumlusu",
-        "addressPending": "Tebligata elverişli adres: yayımdan önce işletmeci tarafından teyit edilecektir."
+        "title": "1. Veri sorumlusu"
       },
       "current": {
         "title": "2. Güncel işlev kapsamı",
@@ -490,19 +491,32 @@
       "storage": {
         "title": "3. Yerel ayarlar",
         "description": "Dil, renk teması ve erişilebilirlik seçenekleri, açıkça seçilen görünümün korunması için yalnızca tarayıcıda saklanır. Bu ayarlar bir kullanım profili oluşturmaz.",
+        "legalBasis": "Depolama yalnızca kullanıcının açıkça talep ettiği web sitesi işlevlerini sunmak için kullanılır. Alman TDDDG § 25’in uygulandığı ölçüde bu işlem, TDDDG § 25(2)(2) uyarınca kesinlikle gerekli depolamadır; sunucu tarafında profil oluşturulmaz.",
         "retention": "Saklama süresi: web sitesi verileri tarayıcıdan silinene veya ilgili ayar sıfırlanana kadar."
       },
-      "links": {
-        "title": "4. Harici bağlantılar",
-        "description": "WhatsApp, e-posta, telefon, harita veya değerlendirme hizmetlerine bağlantılar bu sağlayıcıların içeriklerini web sitesine yüklemez. İlgili sağlayıcının web sitesi veya uygulaması yalnızca bağlantı etkinleştirildiğinde açılır; bu andan itibaren sağlayıcının gizlilik koşulları geçerlidir. E-posta şablonları bir çocuk hakkında bilgiler içerebilir. Yalnızca kurs önerisi için gerekli veriler iletilmelidir."
-      },
       "hosting": {
-        "title": "5. Barındırma ve sunucu kayıtları",
-        "description": "Mevcut demo GitHub Pages üzerinden sunulur. Bu sırada GitHub teknik olarak gerekli bağlantı ve kayıt verilerini işleyebilir. Canlı yayımdan önce sağlayıcı, işleme yeri, veri işleme düzenlemeleri, hukuki dayanak ve silme süreleri ayrıntılı olarak incelenmeli ve belgelenmelidir."
+        "title": "4. Barındırma ve sunucu kayıtları",
+        "description": "Demo GitHub Pages üzerinden sunulur. GitHub’ın açıklamasına göre bir Pages sitesi ziyaret edildiğinde ziyaretçinin IP adresi, oturum açılıp açılmadığından bağımsız olarak güvenlik amacıyla kaydedilir ve saklanır. Teknik olarak gerekli başka bağlantı verileri de işlenebilir. Web sitesinin sunulması ve güvenliği, GDPR Madde 6(1)(f) uyarınca güvenli ve istikrarlı bir çevrim içi hizmet sağlama meşru menfaatine dayanır. GitHub’ın uluslararası veri aktarımları, sağlayıcının gizlilik bildiriminde açıklanan güvencelere tabidir.",
+        "providerPrivacy": "GitHub gizlilik bildirimini aç"
+      },
+      "contact": {
+        "title": "5. E-posta, telefon veya WhatsApp ile iletişim",
+        "description": "Bir kişi iletişime geçtiğinde SprachOase, yanıt vermek ve uygun bir kurs önermek amacıyla gönüllü olarak iletilen iletişim bilgilerini ve kurs talebi bilgilerini işler. Hukuki dayanak, GDPR Madde 6(1)(b) uyarınca sözleşme öncesi işlemler veya GDPR Madde 6(1)(f) uyarınca talepleri işleme meşru menfaatidir. Hazırlanmış e-posta bir çocuk hakkında bilgiler içerebilir; lütfen yalnızca gerekli bilgileri paylaşın, sağlık verisi veya başka özel nitelikli bilgi göndermeyin.",
+        "whatsapp": "WhatsApp web sitesine gömülü değildir. Yalnızca bağlantı bilinçli olarak etkinleştirildikten sonra açılır. Ardından bir mesaj gönderilirse WhatsApp veya Meta, kendi bağlantı, cihaz ve iletişim verilerini geçerli koşulları uyarınca işler. Alternatif olarak e-posta ve telefon kullanılabilir.",
+        "retention": "Talepler, işlemleri tamamlandığında ve sözleşmesel, ispat amaçlı veya yasal saklama yükümlülükleri silmeye engel olmadığında silinir."
+      },
+      "links": {
+        "title": "6. Harici bağlantılar",
+        "description": "WhatsApp, e-posta, telefon, Google Maps veya Google değerlendirmelerine bağlantılar bu sağlayıcıların içeriklerini web sitesine yüklemez. Sağlayıcının web sitesi veya uygulaması yalnızca bağlantı etkinleştirildiğinde açılır; bu andan itibaren sağlayıcının gizlilik koşulları geçerlidir."
+      },
+      "media": {
+        "title": "7. Fotoğraflar ve değerlendirme alıntıları",
+        "description": "Fotoğraflar ve kısaltılmış değerlendirme alıntıları yerel web sitesi dosyaları veya editoryal içerik olarak sunulur; görüntülenmeleri Google ile bağlantı kurmaz. Değerlendirmelerde kamuya açık soyadları kısaltılmıştır. Kimliği belirlenebilen kişilerin—özellikle çocukların—fotoğrafları yalnızca ilgili kişilerin veya yasal temsilcilerinin belgelenmiş ve geçerli izniyle yayımlanabilir. Onay geleceğe yönelik olarak geri çekilebilir."
       },
       "rights": {
-        "title": "6. İlgili kişilerin hakları",
-        "description": "İlgili kişiler, GDPR uyarınca özellikle erişim, düzeltme, silme, işlemeyi kısıtlama, veri taşınabilirliği ve itiraz haklarını kullanabilir ve bir veri koruma denetim makamına şikâyette bulunabilir. Talepler, konu satırında ‘Gizlilik’ belirtilerek gösterilen e-posta adresine gönderilebilir."
+        "title": "8. İlgili kişilerin hakları",
+        "description": "İlgili kişiler, GDPR uyarınca özellikle erişim, düzeltme, silme, işlemeyi kısıtlama, veri taşınabilirliği ve itiraz haklarını kullanabilir ve verdikleri onayı geri çekebilir. Talepler, konu satırında ‘Gizlilik’ belirtilerek gösterilen e-posta adresine gönderilebilir.",
+        "authority": "Aşağı Saksonya Veri Koruma Sorumlusunun şikâyet hizmetini aç"
       }
     },
     "settings": {

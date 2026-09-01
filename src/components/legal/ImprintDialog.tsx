@@ -15,8 +15,10 @@ export function ImprintDialog() {
       <div className="border-foreground bg-accent text-accent-foreground flex gap-3 rounded-xl border-2 p-4">
         <Info aria-hidden="true" className="mt-0.5 size-5 shrink-0" />
         <div>
-          <p className="font-black">{t('legal.provisional.title')}</p>
-          <p className="mt-1 text-sm">{t('legal.provisional.description')}</p>
+          <p className="font-black">{t('legal.imprint.verification.title')}</p>
+          <p className="mt-1 text-sm">
+            {t('legal.imprint.verification.description')}
+          </p>
         </div>
       </div>
 
@@ -33,16 +35,15 @@ export function ImprintDialog() {
           </strong>{' '}
           {siteConfig.name}
         </p>
-        <p>{t('legal.imprint.provider.addressPending')}</p>
+        <p>
+          <strong className="text-foreground">
+            {t('legal.imprint.provider.address')}:
+          </strong>{' '}
+          {siteConfig.legalAddress}
+        </p>
       </LegalSection>
 
       <LegalSection title={t('legal.imprint.contact.title')}>
-        <p>
-          <strong className="text-foreground">
-            {t('legal.imprint.contact.courseRoom')}:
-          </strong>{' '}
-          {siteConfig.courseRoom}
-        </p>
         <p>
           {t('legal.imprint.contact.phone')}:{' '}
           <a className="font-bold underline" href={siteConfig.phoneHref}>
@@ -60,8 +61,8 @@ export function ImprintDialog() {
         </p>
       </LegalSection>
 
-      <LegalSection title={t('legal.imprint.pending.title')}>
-        <p>{t('legal.imprint.pending.description')}</p>
+      <LegalSection title={t('legal.imprint.release.title')}>
+        <p>{t('legal.imprint.release.description')}</p>
       </LegalSection>
 
       <p className="text-muted-foreground text-xs">{t('legal.lastUpdated')}</p>

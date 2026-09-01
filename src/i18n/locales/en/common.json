@@ -18,7 +18,7 @@
   },
   "privacyNotice": {
     "title": "Privacy at a glance",
-    "description": "This demo uses no analytics, advertising or tracking services and sets no non-essential cookies. Only your chosen language, presentation, accessibility options and dismissal of this notice are stored locally in this browser.",
+    "description": "This demo uses no analytics, advertising or tracking services and sets no non-essential cookies. Chosen presentation options are stored locally; GitHub Pages processes connection data to deliver the website.",
     "settings": "View details",
     "acknowledge": "Understood"
   },
@@ -444,40 +444,41 @@
     "copyright": "SprachOase Pusteblume"
   },
   "legal": {
-    "lastUpdated": "Development version last updated: 1 September 2026",
-    "provisional": {
-      "title": "Legal review required before publication",
-      "description": "This development version structures the required information, but is not a substitute for legal advice or approval by the operator. Mandatory details that cannot be verified publicly remain explicitly marked as pending."
-    },
+    "lastUpdated": "Last updated: 1 September 2026",
     "imprint": {
       "trigger": "Legal notice",
       "title": "Legal notice",
       "description": "Provider and contact information",
+      "verification": {
+        "title": "Transferred from the existing legal notice",
+        "description": "The proprietor, address, telephone number and email were checked against SprachOase Pusteblume’s publicly accessible legal notice. The operator must give final approval before production launch."
+      },
       "provider": {
         "title": "Provider information under Section 5 DDG (Germany)",
-        "owner": "Owner named in the publicly indexed legal notice",
+        "owner": "Proprietor",
         "business": "Trading name",
-        "addressPending": "The owner's legally valid business address must be confirmed by Klaus-Rainer Weber and added here before publication."
+        "address": "Address"
       },
       "contact": {
-        "title": "Contact and course room",
-        "courseRoom": "Publicly listed course room",
+        "title": "Contact",
         "phone": "Telephone",
         "email": "Email"
       },
-      "pending": {
-        "title": "Mandatory details still to be confirmed",
-        "description": "Before production, the legal form, legally valid address, any applicable register and registration number, VAT or business identification number, competent supervisory authority and consumer dispute-resolution information must be clarified with the operator. No invented placeholder numbers or unsupported declarations are published."
+      "release": {
+        "title": "Still to be confirmed by the operator",
+        "description": "Register, tax or supervisory details will be added only where they actually exist and are legally required. A declaration on participation in consumer dispute-resolution procedures must likewise not be published until the operator has made an explicit decision."
       }
     },
     "privacy": {
       "trigger": "Privacy",
       "title": "Privacy information",
-      "description": "Transparency about data flows in this development version",
-      "provisional": "This notice describes the currently implemented local version. Hosting, domain operation and the controller's final legal address must be added before publication.",
+      "description": "Transparency about the data flows currently implemented",
+      "scope": {
+        "title": "Data-minimising implementation",
+        "description": "This notice covers the current GitHub Pages demo, including local preferences, contact links, supplied photographs and review excerpts. Hosting arrangements, image releases and operator details require legal approval before the final production launch."
+      },
       "controller": {
-        "title": "1. Controller",
-        "addressPending": "Legally valid address: to be confirmed by the operator before publication."
+        "title": "1. Controller"
       },
       "current": {
         "title": "2. Current functionality",
@@ -490,19 +491,32 @@
       "storage": {
         "title": "3. Local preferences",
         "description": "Language, colour scheme and accessibility options are stored only in the browser so the expressly chosen presentation can be retained. These settings do not create a usage profile.",
+        "legalBasis": "Storage is used solely to provide website functions expressly requested by the user. Where Section 25 TDDDG applies, it is strictly necessary storage under Section 25(2)(2) TDDDG; no server-side profile is created.",
         "retention": "Retention: until the website data is deleted in the browser or the relevant preference is reset."
       },
-      "links": {
-        "title": "4. External links",
-        "description": "Links to WhatsApp, email, telephone, map or review services do not load those providers' content into this website. The relevant provider's website or app opens only when a link is activated; its privacy terms apply from that point. Email templates may contain information about a child. Only data needed to suggest a course should be transmitted."
-      },
       "hosting": {
-        "title": "5. Hosting and server logs",
-        "description": "The current demo is delivered through GitHub Pages. GitHub may process technically necessary connection and log data in doing so. Before production launch, the provider, processing location, data-processing arrangements, legal basis and deletion periods must be reviewed and documented specifically."
+        "title": "4. Hosting and server logs",
+        "description": "The demo is delivered through GitHub Pages. GitHub states that a visitor’s IP address is logged and stored for security purposes whenever a Pages site is visited, regardless of sign-in status. Further technically necessary connection data may be processed. Website delivery and security rely on the legitimate interest in a secure and stable online service under Article 6(1)(f) GDPR. International transfers by GitHub are governed by the safeguards described in the provider’s privacy statement.",
+        "providerPrivacy": "Open GitHub’s privacy statement"
+      },
+      "contact": {
+        "title": "5. Contact by email, telephone or WhatsApp",
+        "description": "When a person makes contact, SprachOase processes the voluntarily supplied contact details and course-enquiry information in order to respond and suggest a suitable course. The legal basis is pre-contractual steps under Article 6(1)(b) GDPR or the legitimate interest in handling enquiries under Article 6(1)(f) GDPR. The prepared email may contain information about a child; please provide only necessary details and no health data or other particularly sensitive information.",
+        "whatsapp": "WhatsApp is not embedded in the website. It is opened only after the link is deliberately activated. If a message is then sent, WhatsApp or Meta processes its own connection, device and communication data under its applicable terms. Email and telephone are available as alternatives.",
+        "retention": "Enquiries are deleted once handling is complete unless contractual, evidential or statutory retention requirements prevent deletion."
+      },
+      "links": {
+        "title": "6. External links",
+        "description": "Links to WhatsApp, email, telephone, Google Maps or Google reviews do not load those providers’ content into this website. The provider’s website or app opens only when a link is activated; its privacy terms apply from that point."
+      },
+      "media": {
+        "title": "7. Photographs and review excerpts",
+        "description": "Photographs and shortened review excerpts are delivered as local website files or editorial content, so displaying them does not connect to Google. Public surnames in reviews are abbreviated. Photographs of identifiable people—especially minors—may be published only with documented, valid permission from the people concerned or their legal guardians. Consent may be withdrawn for the future."
       },
       "rights": {
-        "title": "6. Data-subject rights",
-        "description": "Subject to the GDPR, data subjects may in particular request access, rectification, erasure, restriction, portability and object to processing, and may complain to a data-protection supervisory authority. Requests can be emailed to the address shown with the subject “Privacy”."
+        "title": "8. Data-subject rights",
+        "description": "Subject to the GDPR, data subjects may in particular request access, rectification, erasure, restriction, portability, object to processing and withdraw consent. Requests can be emailed to the address shown with the subject “Privacy”.",
+        "authority": "Open the complaint service of the Data Protection Commissioner of Lower Saxony"
       }
     },
     "settings": {

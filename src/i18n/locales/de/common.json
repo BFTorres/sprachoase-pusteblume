@@ -18,7 +18,7 @@
   },
   "privacyNotice": {
     "title": "Datenschutz auf einen Blick",
-    "description": "Diese Demo nutzt keine Analyse-, Werbe- oder Tracking-Dienste und setzt keine nicht notwendigen Cookies. Nur deine gewählte Sprache, Darstellung, Barrierefreiheit und das Ausblenden dieses Hinweises werden lokal in diesem Browser gespeichert.",
+    "description": "Diese Demo nutzt keine Analyse-, Werbe- oder Tracking-Dienste und setzt keine nicht notwendigen Cookies. Gewählte Darstellungsoptionen werden lokal gespeichert; GitHub Pages verarbeitet für die technische Bereitstellung Verbindungsdaten.",
     "settings": "Details ansehen",
     "acknowledge": "Verstanden"
   },
@@ -444,40 +444,41 @@
     "copyright": "SprachOase Pusteblume"
   },
   "legal": {
-    "lastUpdated": "Stand dieser Entwicklungsfassung: 01.09.2026",
-    "provisional": {
-      "title": "Vor Veröffentlichung rechtlich prüfen",
-      "description": "Diese Entwicklungsfassung strukturiert die benötigten Angaben, ersetzt aber keine Rechtsberatung oder Freigabe durch den Betreiber. Nicht öffentlich verifizierbare Pflichtangaben bleiben ausdrücklich als offen markiert."
-    },
+    "lastUpdated": "Stand: 01.09.2026",
     "imprint": {
       "trigger": "Impressum",
       "title": "Impressum",
       "description": "Anbieterinformationen und Kontaktangaben",
+      "verification": {
+        "title": "Aus dem bestehenden Impressum übernommen",
+        "description": "Inhaber, Anschrift, Telefon und E-Mail wurden mit dem öffentlich erreichbaren Impressum der SprachOase Pusteblume abgeglichen. Der Betreiber muss die Angaben vor dem Produktionsstart abschließend freigeben."
+      },
       "provider": {
         "title": "Angaben gemäß § 5 DDG",
-        "owner": "Öffentlich ausgewiesener Inhaber",
+        "owner": "Inhaber",
         "business": "Geschäftsbezeichnung",
-        "addressPending": "Die ladungsfähige Geschäftsanschrift des Inhabers muss vor Veröffentlichung von Klaus-Rainer Weber bestätigt und hier ergänzt werden."
+        "address": "Anschrift"
       },
       "contact": {
-        "title": "Kontakt und Kursraum",
-        "courseRoom": "Öffentlich ausgewiesener Kursraum",
+        "title": "Kontakt",
         "phone": "Telefon",
         "email": "E-Mail"
       },
-      "pending": {
-        "title": "Noch zu bestätigende Pflichtangaben",
-        "description": "Vor dem Produktionsstart werden Rechtsform, ladungsfähige Anschrift, gegebenenfalls Register und Registernummer, Umsatzsteuer- oder Wirtschafts-Identifikationsnummer, zuständige Aufsicht sowie Angaben zur Verbraucherstreitbeilegung mit dem Betreiber geklärt. Es werden bewusst keine Platzhalternummern oder unbelegten Erklärungen veröffentlicht."
+      "release": {
+        "title": "Noch durch den Betreiber zu bestätigen",
+        "description": "Register-, Steuer- oder Aufsichtsangaben werden nur ergänzt, soweit sie tatsächlich bestehen und rechtlich erforderlich sind. Auch eine Erklärung zur Teilnahme an Verbraucherstreitbeilegungsverfahren darf erst nach einer ausdrücklichen Entscheidung des Betreibers veröffentlicht werden."
       }
     },
     "privacy": {
       "trigger": "Datenschutz",
       "title": "Datenschutzhinweise",
-      "description": "Transparenz über Datenflüsse in dieser Entwicklungsfassung",
-      "provisional": "Die Datenschutzhinweise beschreiben den aktuell implementierten lokalen Stand. Hosting, Domainbetrieb und endgültige Verantwortlichenanschrift müssen vor Veröffentlichung ergänzt werden.",
+      "description": "Transparenz über die aktuell implementierten Datenflüsse",
+      "scope": {
+        "title": "Datensparsame Umsetzung",
+        "description": "Diese Hinweise bilden die aktuelle Demo auf GitHub Pages einschließlich lokaler Einstellungen, Kontaktlinks, bereitgestellter Fotos und Rezensionstexte ab. Vor dem endgültigen Produktionsstart sind Hostingvertrag, Bildfreigaben und Betreiberangaben rechtlich freizugeben."
+      },
       "controller": {
-        "title": "1. Verantwortliche Stelle",
-        "addressPending": "Ladungsfähige Anschrift: vor Veröffentlichung durch den Betreiber zu bestätigen."
+        "title": "1. Verantwortliche Stelle"
       },
       "current": {
         "title": "2. Aktueller Funktionsumfang",
@@ -490,19 +491,32 @@
       "storage": {
         "title": "3. Lokale Einstellungen",
         "description": "Sprache, Farbschema und Barrierefreiheitsoptionen werden ausschließlich im Browser gespeichert, damit die ausdrücklich gewählte Darstellung erhalten bleibt. Diese Einstellungen erstellen kein Nutzungsprofil.",
+        "legalBasis": "Die Speicherung dient ausschließlich der Bereitstellung der ausdrücklich gewählten Website-Funktionen. Soweit § 25 TDDDG anwendbar ist, erfolgt sie als unbedingt erforderliche Speicherung nach § 25 Abs. 2 Nr. 2 TDDDG; eine serverseitige Profilbildung findet nicht statt.",
         "retention": "Speicherdauer: bis die Website-Daten im Browser gelöscht oder die jeweilige Einstellung zurückgesetzt wird."
       },
-      "links": {
-        "title": "4. Externe Links",
-        "description": "Links zu WhatsApp, E-Mail, Telefon, Karten- oder Bewertungsdiensten laden keine Inhalte dieser Anbieter in die Website. Erst beim Aktivieren eines Links wird die Website oder App des jeweiligen Anbieters geöffnet; ab dann gelten dessen Datenschutzbedingungen. E-Mail-Vorlagen können Angaben zu einem Kind enthalten. Es sollten nur für die Kurseinordnung erforderliche Daten übermittelt werden."
-      },
       "hosting": {
-        "title": "5. Hosting und Server-Protokolle",
-        "description": "Die aktuelle Demo wird über GitHub Pages bereitgestellt. Dabei können technisch erforderliche Verbindungs- und Protokolldaten durch GitHub verarbeitet werden. Für den Produktionsstart müssen Anbieter, Verarbeitungsort, Auftragsverarbeitung, Rechtsgrundlage und Löschfristen abschließend geprüft und konkret dokumentiert werden."
+        "title": "4. Hosting und Server-Protokolle",
+        "description": "Die Demo wird über GitHub Pages bereitgestellt. Nach Angaben von GitHub wird beim Seitenaufruf die IP-Adresse unabhängig von einer Anmeldung zu Sicherheitszwecken protokolliert und gespeichert. Weitere technisch erforderliche Verbindungsdaten können verarbeitet werden. Die Bereitstellung und Absicherung der Website stützt sich auf das berechtigte Interesse an einem sicheren und stabilen Onlineangebot gemäß Art. 6 Abs. 1 lit. f DSGVO. Internationale Übermittlungen durch GitHub richten sich nach den Schutzmechanismen in der Datenschutzerklärung des Anbieters.",
+        "providerPrivacy": "Datenschutzerklärung von GitHub öffnen"
+      },
+      "contact": {
+        "title": "5. Kontaktaufnahme per E-Mail, Telefon oder WhatsApp",
+        "description": "Bei einer Kontaktaufnahme verarbeitet die SprachOase die freiwillig übermittelten Kontaktdaten und Angaben zur Kursanfrage, um zu antworten und einen passenden Kurs vorzuschlagen. Rechtsgrundlage sind vorvertragliche Maßnahmen nach Art. 6 Abs. 1 lit. b DSGVO oder das berechtigte Interesse an der Bearbeitung der Anfrage nach Art. 6 Abs. 1 lit. f DSGVO. Die vorbereitete E-Mail kann Angaben zum Kind enthalten; bitte nur erforderliche Daten und keine Gesundheitsdaten oder anderen besonders sensiblen Angaben übermitteln.",
+        "whatsapp": "WhatsApp ist nicht in die Website eingebettet. Erst nach dem bewussten Öffnen des Links wird WhatsApp aufgerufen. Bei einer anschließenden Nachricht verarbeitet WhatsApp beziehungsweise Meta eigene Verbindungs-, Geräte- und Kommunikationsdaten nach den dort geltenden Bedingungen. E-Mail und Telefon stehen als Alternativen zur Verfügung.",
+        "retention": "Anfragen werden gelöscht, sobald ihre Bearbeitung abgeschlossen ist und keine Vertrags-, Nachweis- oder gesetzlichen Aufbewahrungspflichten entgegenstehen."
+      },
+      "links": {
+        "title": "6. Externe Links",
+        "description": "Links zu WhatsApp, E-Mail, Telefon, Google Maps oder Google-Rezensionen laden keine Inhalte dieser Anbieter in die Website. Erst beim Aktivieren eines Links wird die Website oder App des jeweiligen Anbieters geöffnet; ab dann gelten dessen Datenschutzbedingungen."
+      },
+      "media": {
+        "title": "7. Fotos und Rezensionstexte",
+        "description": "Fotos und gekürzte Rezensionstexte werden als lokale Website-Dateien beziehungsweise redaktionelle Inhalte ausgeliefert; beim Anzeigen entsteht keine Verbindung zu Google. Öffentliche Nachnamen in Rezensionen sind abgekürzt. Personenfotos – insbesondere von Minderjährigen – dürfen nur mit dokumentierter, wirksamer Freigabe der betroffenen Personen beziehungsweise Sorgeberechtigten veröffentlicht werden. Eine erteilte Einwilligung kann für die Zukunft widerrufen werden."
       },
       "rights": {
-        "title": "6. Rechte betroffener Personen",
-        "description": "Betroffene Personen können nach Maßgabe der DSGVO insbesondere Auskunft, Berichtigung, Löschung, Einschränkung, Datenübertragbarkeit und Widerspruch verlangen sowie sich bei einer Datenschutzaufsichtsbehörde beschweren. Anfragen können mit dem Betreff „Datenschutz“ an die angegebene E-Mail-Adresse gesendet werden."
+        "title": "8. Rechte betroffener Personen",
+        "description": "Betroffene Personen können nach Maßgabe der DSGVO insbesondere Auskunft, Berichtigung, Löschung, Einschränkung, Datenübertragbarkeit und Widerspruch verlangen sowie eine erteilte Einwilligung widerrufen. Anfragen können mit dem Betreff „Datenschutz“ an die angegebene E-Mail-Adresse gesendet werden.",
+        "authority": "Beschwerdestelle des Landesbeauftragten für den Datenschutz Niedersachsen öffnen"
       }
     },
     "settings": {
