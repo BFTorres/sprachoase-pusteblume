@@ -79,9 +79,10 @@
     "primaryAction": "Explore courses",
     "secondaryAction": "Request a trial lesson",
     "visual": {
-      "badge": "Visual asset needed",
-      "title": "Pat, the classroom or a dandelion world",
-      "description": "For the final version, this placeholder will be replaced by an approved photograph or an original illustration."
+      "badge": "Language trip to London",
+      "imageAlt": "SprachOase teenagers in front of red telephone boxes in London",
+      "title": "Experiencing English where it is spoken.",
+      "description": "Shared experiences in London connect language, culture and real-life situations."
     },
     "factsLabel": "SprachOase at a glance",
     "facts": {
@@ -257,10 +258,11 @@
     "title": "Personally led. Supported step by step.",
     "description": "Pat Weber personally leads the SprachOase courses. She has worked in Germany as an English teacher since 2008, connecting playful learning with a long-term course journey.",
     "portrait": {
-      "badge": "Portrait needed",
+      "badge": "Personal course leadership",
+      "imageAlt": "Pat Weber with a bagpiper on Westminster Bridge in London",
       "name": "Pat Weber",
       "role": "ESL teacher and personal course lead",
-      "description": "An approved professional portrait of Pat will appear here."
+      "description": "Pat during a visit to London."
     },
     "timeline": {
       "eyebrow": "Publicly documented journey",
@@ -305,7 +307,7 @@
     },
     "pending": {
       "title": "Still needed for the final version",
-      "description": "An approved portrait, Pat's fuller biography, specific education and additional qualifications, and optionally a personal statement."
+      "description": "Pat's fuller biography, specific education and additional qualifications, and optionally a personal statement."
     }
   },
   "testimonials": {

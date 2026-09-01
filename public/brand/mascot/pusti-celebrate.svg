@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-24 -10 368 368" role="img" aria-labelledby="title desc">
+  <title id="title">Pusti mascot — celebrate</title>
+  <desc id="desc">Original SprachOase Pusteblume mascot in a celebrate pose.</desc>
+  <g class="pusti-body">
+    <path d="M 130 267 C 129 280 126 286 113 289 C 98 291 88 298 91 307 C 94 316 112 316 126 312 C 139 309 144 302 139 292 C 136 285 133 276 130 267 Z" fill="#102a4c"/>
+    <path d="M 190 267 C 191 280 194 286 207 289 C 222 291 232 298 229 307 C 226 316 208 316 194 312 C 181 309 176 302 181 292 C 184 285 187 276 190 267 Z" fill="#102a4c"/>
+    
+        <path d="M 75 178 Q 39 153 4 132" fill="none" stroke="#102a4c" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/><circle cx="-8" cy="123" r="14" fill="#102a4c"/>
+        <path d="M 281 178 Q 317 153 332 132" fill="none" stroke="#102a4c" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/><circle cx="330" cy="123" r="14" fill="#102a4c"/>
+        <g class="pusti-sparkles" fill="none" stroke="#ffc51c" stroke-width="7" stroke-linecap="round">
+          <path d="M 33 92 L 21 79 M 56 82 L 52 64 M 287 82 L 291 64 M 310 92 L 322 79"/>
+        </g>
+    <path d="M 160 41 C 145 24 118 24 98 35 C 84 44 78 59 78 76 C 54 74 34 87 26 106 C 18 125 23 144 36 158 C 22 173 19 194 27 212 C 36 232 53 241 73 241 C 70 260 82 276 100 282 C 117 288 135 283 146 274 C 155 285 171 289 187 286 C 202 283 211 278 219 270 C 230 280 247 282 261 273 C 276 264 281 249 278 235 C 296 230 307 214 307 195 C 307 178 301 167 291 158 C 302 144 306 126 299 109 C 290 89 274 78 251 77 C 251 58 241 43 226 34 C 204 22 178 25 160 41 Z" fill="#fffaf0" stroke="#102a4c" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M 109 153 Q 124 136 139 153 M 181 153 Q 196 136 211 153" fill="none" stroke="#102a4c" stroke-width="7" stroke-linecap="round"/><circle cx="95" cy="184" r="12" fill="#ffc51c"/><circle cx="225" cy="184" r="12" fill="#ffc51c"/><path d="M 139 188 Q 160 215 181 188 Z" fill="#102a4c" stroke="#102a4c" stroke-width="5" stroke-linejoin="round"/><path d="M 149 205 Q 160 211 171 205" fill="none" stroke="#2563eb" stroke-width="5" stroke-linecap="round"/>
+    
+  </g>
+</svg>

@@ -1,10 +1,11 @@
-import { Camera, Check, UserRound } from 'lucide-react'
+import { Check } from 'lucide-react'
 import { useTranslation } from 'react-i18next'
 import { Container } from '@/components/layout/Container'
 import { Badge } from '@/components/ui/badge'
 
 const timelineKeys = ['start', 'cambridge', 'today'] as const
 const trustKeys = ['contact', 'continuity', 'direction'] as const
+const imagePath = `${import.meta.env.BASE_URL}images/pat-about`
 
 export function AboutSection() {
   const { t } = useTranslation()
@@ -18,20 +19,32 @@ export function AboutSection() {
       <Container>
         <div className="grid gap-10 lg:grid-cols-[0.78fr_1.22fr] lg:items-start">
           <aside className="border-foreground bg-accent text-accent-foreground shadow-brutal-xl rounded-[2rem] border-2 p-6 sm:p-8 lg:sticky lg:top-32">
-            <div className="flex items-start justify-between gap-5">
-              <Badge>{t('about.portrait.badge')}</Badge>
-              <Camera className="size-8" aria-hidden="true" />
-            </div>
+            <Badge>{t('about.portrait.badge')}</Badge>
 
-            <div className="border-foreground bg-background text-foreground shadow-brutal mx-auto mt-10 grid aspect-[4/5] max-w-sm place-items-center rounded-[1.5rem] border-2 p-8 text-center">
-              <div>
-                <span
-                  className="border-foreground bg-muted mx-auto grid size-24 place-items-center rounded-full border-2"
-                  aria-hidden="true"
-                >
-                  <UserRound className="size-12" />
-                </span>
-                <h3 className="mt-7 text-3xl font-black tracking-tight">
+            <figure className="border-foreground bg-background text-foreground shadow-brutal mx-auto mt-6 max-w-sm overflow-hidden rounded-[1.5rem] border-2">
+              <picture>
+                <source
+                  type="image/avif"
+                  srcSet={`${imagePath}-480.avif 480w, ${imagePath}-960.avif 960w`}
+                  sizes="(min-width: 1024px) 30vw, 100vw"
+                />
+                <source
+                  type="image/webp"
+                  srcSet={`${imagePath}-480.webp 480w, ${imagePath}-960.webp 960w`}
+                  sizes="(min-width: 1024px) 30vw, 100vw"
+                />
+                <img
+                  src={`${imagePath}.jpg`}
+                  width="960"
+                  height="1280"
+                  alt={t('about.portrait.imageAlt')}
+                  loading="lazy"
+                  decoding="async"
+                  className="aspect-[3/4] h-auto w-full object-cover"
+                />
+              </picture>
+              <figcaption className="border-foreground border-t-2 p-5 text-center sm:p-6">
+                <h3 className="text-3xl font-black tracking-tight">
                   {t('about.portrait.name')}
                 </h3>
                 <p className="text-primary mt-2 font-black">
@@ -40,8 +53,8 @@ export function AboutSection() {
                 <p className="text-muted-foreground mt-5 text-sm leading-relaxed">
                   {t('about.portrait.description')}
                 </p>
-              </div>
-            </div>
+              </figcaption>
+            </figure>
           </aside>
 
           <div>

@@ -79,9 +79,10 @@
     "primaryAction": "Kurse ansehen",
     "secondaryAction": "Probestunde anfragen",
     "visual": {
-      "badge": "Bildmaterial benötigt",
-      "title": "Pat, Kursraum oder Pusteblumenwelt",
-      "description": "Für die finale Version ersetzen wir diesen Platzhalter durch ein freigegebenes Foto oder eine eigene Illustration."
+      "badge": "Sprachreise nach London",
+      "imageAlt": "Jugendliche der SprachOase vor roten Telefonzellen in London",
+      "title": "Englisch dort erleben, wo es gesprochen wird.",
+      "description": "Gemeinsame Eindrücke in London verbinden Sprache, Kultur und echte Alltagssituationen."
     },
     "factsLabel": "Kurzfakten zur SprachOase",
     "facts": {
@@ -257,10 +258,11 @@
     "title": "Persönlich geleitet. Schritt für Schritt begleitet.",
     "description": "Pat Weber leitet die Kurse der SprachOase persönlich. Seit 2008 arbeitet sie in Deutschland als Englischlehrerin und verbindet spielerisches Lernen mit einem langfristigen Kursweg.",
     "portrait": {
-      "badge": "Porträt benötigt",
+      "badge": "Persönliche Kursleitung",
+      "imageAlt": "Pat Weber mit einem Dudelsackspieler auf der Westminster Bridge in London",
       "name": "Pat Weber",
       "role": "ESL Teacher und persönliche Kursleitung",
-      "description": "Hier folgt ein freigegebenes professionelles Porträt von Pat."
+      "description": "Pat bei einem Besuch in London."
     },
     "timeline": {
       "eyebrow": "Öffentlich belegter Weg",
@@ -305,7 +307,7 @@
     },
     "pending": {
       "title": "Für die finale Fassung noch benötigt",
-      "description": "Ein freigegebenes Porträt, Pats ausführlichere Biografie, konkrete Ausbildungs- und Zusatzqualifikationen sowie optional ein persönliches Statement."
+      "description": "Pats ausführlichere Biografie, konkrete Ausbildungs- und Zusatzqualifikationen sowie optional ein persönliches Statement."
     }
   },
   "testimonials": {

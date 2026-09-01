@@ -1,10 +1,11 @@
-import { ArrowDown, ImagePlus, MessageCircle } from 'lucide-react'
+import { ArrowDown, MessageCircle } from 'lucide-react'
 import { useTranslation } from 'react-i18next'
 import { Container } from '@/components/layout/Container'
 import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
 
 const factKeys = ['experience', 'approach', 'location'] as const
+const imagePath = `${import.meta.env.BASE_URL}images/pat-hero`
 
 export function HeroSection() {
   const { t } = useTranslation()
@@ -46,23 +47,46 @@ export function HeroSection() {
             </div>
           </div>
 
-          <div className="border-foreground bg-accent text-accent-foreground shadow-brutal-xl grid min-h-80 place-items-center rounded-[2rem] border-2 p-8 text-center">
-            <div className="flex max-w-sm flex-col items-center">
-              <Badge className="mb-6">{t('hero.visual.badge')}</Badge>
-              <span
-                className="border-foreground bg-background text-foreground shadow-brutal mx-auto grid size-20 place-items-center rounded-full border-2 text-4xl font-black"
-                aria-hidden="true"
+          <figure className="border-foreground bg-accent text-accent-foreground shadow-brutal-xl overflow-hidden rounded-[2rem] border-2">
+            <div className="relative">
+              <Badge
+                variant="outline"
+                className="shadow-brutal absolute top-5 left-5 z-10"
               >
-                <ImagePlus className="size-9" />
-              </span>
-              <p className="mt-5 text-xl leading-tight font-black text-balance">
+                {t('hero.visual.badge')}
+              </Badge>
+              <picture>
+                <source
+                  type="image/avif"
+                  srcSet={`${imagePath}-800.avif 800w, ${imagePath}-1600.avif 1600w`}
+                  sizes="(min-width: 1024px) 42vw, 100vw"
+                />
+                <source
+                  type="image/webp"
+                  srcSet={`${imagePath}-800.webp 800w, ${imagePath}-1600.webp 1600w`}
+                  sizes="(min-width: 1024px) 42vw, 100vw"
+                />
+                <img
+                  src={`${imagePath}.jpg`}
+                  width="1600"
+                  height="1200"
+                  alt={t('hero.visual.imageAlt')}
+                  loading="eager"
+                  fetchPriority="high"
+                  decoding="async"
+                  className="aspect-[4/3] h-full w-full object-cover"
+                />
+              </picture>
+            </div>
+            <figcaption className="border-foreground border-t-2 p-5 sm:p-6">
+              <p className="text-xl leading-tight font-black text-balance">
                 {t('hero.visual.title')}
               </p>
               <p className="mt-3 text-sm leading-relaxed font-semibold opacity-80">
                 {t('hero.visual.description')}
               </p>
-            </div>
-          </div>
+            </figcaption>
+          </figure>
         </div>
 
         <ul

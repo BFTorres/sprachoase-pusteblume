@@ -32,6 +32,16 @@ describe('App', () => {
         name: 'Englisch, das mit Kindern wächst.',
       }),
     ).toBeInTheDocument()
+    expect(
+      screen.getByRole('img', {
+        name: 'Jugendliche der SprachOase vor roten Telefonzellen in London',
+      }),
+    ).toHaveAttribute('fetchpriority', 'high')
+    expect(
+      screen.getByRole('img', {
+        name: 'Pat Weber mit einem Dudelsackspieler auf der Westminster Bridge in London',
+      }),
+    ).toHaveAttribute('loading', 'lazy')
     expect(screen.getByRole('main')).toHaveAttribute('id', 'content')
     expect(
       screen.getByRole('navigation', { name: 'Hauptnavigation' }),

@@ -195,6 +195,72 @@
   animation: accordion-up 180ms ease-out;
 }
 
+@keyframes pusti-float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+@keyframes pusti-blink {
+  0%,
+  46%,
+  50%,
+  100% {
+    transform: scaleY(1);
+  }
+  48% {
+    transform: scaleY(0.08);
+  }
+}
+
+@keyframes pusti-wave {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(11deg);
+  }
+}
+
+@keyframes pusti-sparkle {
+  0%,
+  100% {
+    opacity: 0.65;
+    transform: scale(0.92);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+}
+
+.pusti-mascot--animated .pusti-body {
+  animation: pusti-float 4.8s ease-in-out infinite;
+}
+
+.pusti-mascot--animated .pusti-eyes {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: pusti-blink 6.5s linear infinite;
+}
+
+.pusti-mascot--animated .pusti-wave-arm {
+  transform-box: fill-box;
+  transform-origin: 15% 85%;
+  animation: pusti-wave 900ms ease-in-out 350ms 3 both;
+}
+
+.pusti-mascot--animated .pusti-sparkles {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: pusti-sparkle 1.6s ease-in-out infinite;
+}
+
 :root[data-reduced-motion='true'] *,
 :root[data-reduced-motion='true'] *::before,
 :root[data-reduced-motion='true'] *::after {
@@ -202,4 +268,10 @@
   animation-duration: 0.01ms !important;
   animation-iteration-count: 1 !important;
   transition-duration: 0.01ms !important;
+}
+
+:root[data-reduced-motion='true'] .pusti-mascot--animated *,
+:root[data-reduced-motion='true'] .pusti-mascot--animated {
+  animation: none !important;
+  transform: none !important;
 }

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-24 -10 368 368" role="img" aria-labelledby="title desc">
+  <title id="title">Pusti mascot — surprised</title>
+  <desc id="desc">Original SprachOase Pusteblume mascot in a surprised pose.</desc>
+  <g class="pusti-body">
+    <path d="M 130 267 C 129 280 126 286 113 289 C 98 291 88 298 91 307 C 94 316 112 316 126 312 C 139 309 144 302 139 292 C 136 285 133 276 130 267 Z" fill="#102a4c"/>
+    <path d="M 190 267 C 191 280 194 286 207 289 C 222 291 232 298 229 307 C 226 316 208 316 194 312 C 181 309 176 302 181 292 C 184 285 187 276 190 267 Z" fill="#102a4c"/>
+    
+        <path d="M 76 196 Q 52 195 35 179" fill="none" stroke="#102a4c" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/><circle cx="27" cy="173" r="14" fill="#102a4c"/>
+        <path d="M 280 196 Q 304 195 321 179" fill="none" stroke="#102a4c" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/><circle cx="329" cy="173" r="14" fill="#102a4c"/>
+    <path d="M 160 41 C 145 24 118 24 98 35 C 84 44 78 59 78 76 C 54 74 34 87 26 106 C 18 125 23 144 36 158 C 22 173 19 194 27 212 C 36 232 53 241 73 241 C 70 260 82 276 100 282 C 117 288 135 283 146 274 C 155 285 171 289 187 286 C 202 283 211 278 219 270 C 230 280 247 282 261 273 C 276 264 281 249 278 235 C 296 230 307 214 307 195 C 307 178 301 167 291 158 C 302 144 306 126 299 109 C 290 89 274 78 251 77 C 251 58 241 43 226 34 C 204 22 178 25 160 41 Z" fill="#fffaf0" stroke="#102a4c" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M 109 117 Q 124 108 138 117 M 182 117 Q 196 108 211 117" fill="none" stroke="#102a4c" stroke-width="5" stroke-linecap="round"/><g class="pusti-eyes"><ellipse cx="124" cy="150" rx="15" ry="25" fill="#102a4c"/><ellipse cx="196" cy="150" rx="15" ry="25" fill="#102a4c"/><ellipse cx="119" cy="139" rx="4.5" ry="7" fill="#ffffff"/><ellipse cx="191" cy="139" rx="4.5" ry="7" fill="#ffffff"/></g><circle cx="95" cy="184" r="12" fill="#ffc51c"/><circle cx="225" cy="184" r="12" fill="#ffc51c"/><ellipse cx="160" cy="198" rx="9" ry="12" fill="none" stroke="#102a4c" stroke-width="6"/>
+    
+  </g>
+</svg>
