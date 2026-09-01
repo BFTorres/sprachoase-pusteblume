@@ -1,0 +1,550 @@
+{
+  "brand": {
+    "name": "SprachOase Pusteblume",
+    "tagline": "Hannover'da çocuklar için İngilizce kursları",
+    "homeLabel": "SprachOase Pusteblume – sayfanın başına dön"
+  },
+  "seo": {
+    "title": "SprachOase Pusteblume | Hannover'da çocuklar için İngilizce kursları",
+    "description": "Hannover-Vahrenwald'da çocuklar ve gençler için kişisel olarak yürütülen İngilizce kursları: oyunla başlangıç, Cambridge hazırlığı ve deneme dersleri.",
+    "imageAlt": "SprachOase Pusteblume – çocuklarla birlikte büyüyen İngilizce"
+  },
+  "common": {
+    "close": "Kapat",
+    "reset": "Sıfırla"
+  },
+  "scrollToTop": {
+    "label": "Sayfanın başına dön"
+  },
+  "privacyNotice": {
+    "title": "Kısaca gizlilik",
+    "description": "Bu demo analiz, reklam veya takip hizmeti kullanmaz ve zorunlu olmayan çerezler yerleştirmez. Yalnızca seçtiğiniz dil, görünüm, erişilebilirlik seçenekleri ve bu bildirimi kapattığınız bilgisi bu tarayıcıda yerel olarak saklanır.",
+    "settings": "Ayrıntıları görüntüle",
+    "acknowledge": "Anladım"
+  },
+  "nav": {
+    "label": "Ana menü",
+    "mobileLabel": "Mobil ana menü",
+    "openMenu": "Menüyü aç",
+    "menuTitle": "Menü",
+    "menuDescription": "Gezinme ve kişisel görünüm ayarları",
+    "preferences": "Görünüm",
+    "courses": "Kurslar",
+    "method": "Yöntem",
+    "cambridge": "Cambridge",
+    "about": "Pat hakkında",
+    "faq": "SSS",
+    "contact": "İletişim"
+  },
+  "language": {
+    "label": "Dil seçin",
+    "options": {
+      "de": "DE",
+      "en": "EN",
+      "tr": "TR"
+    }
+  },
+  "theme": {
+    "light": "Açık renk temasını etkinleştir",
+    "dark": "Koyu renk temasını etkinleştir"
+  },
+  "a11y": {
+    "skipToContent": "İçeriğe geç",
+    "open": "Erişilebilirlik ayarlarını aç",
+    "title": "Erişilebilirlik",
+    "description": "Görünümü kişisel ihtiyaçlarınıza göre ayarlayın.",
+    "fontSize": "Yazı boyutu",
+    "fontFamily": "Yazı tipi",
+    "lineHeight": "Satır aralığı",
+    "fontSizes": {
+      "small": "Küçük",
+      "default": "Standart",
+      "large": "Büyük",
+      "extraLarge": "Çok büyük"
+    },
+    "fontFamilies": {
+      "system": "Sistem yazı tipi",
+      "readable": "Kolay okunabilir yazı tipi"
+    },
+    "lineHeights": {
+      "normal": "Normal",
+      "relaxed": "Rahat",
+      "loose": "Geniş"
+    },
+    "reducedMotion": "Hareketleri azalt",
+    "highVisibilityLinks": "Bağlantıları daha belirgin göster",
+    "strongFocusOutline": "Odak işaretlerini güçlendir",
+    "highlightHeadings": "Başlıkları vurgula"
+  },
+  "hero": {
+    "eyebrow": "Hannover'da İngilizce öğrenimi",
+    "title": "Çocuklarla birlikte büyüyen İngilizce.",
+    "description": "Küçük çocukluktan gençlik yıllarına kadar yaşa uygun İngilizce kursları – oyunla, kişisel ilgiyle ve açık bir öğrenme yoluyla.",
+    "primaryAction": "Kursları keşfedin",
+    "secondaryAction": "Deneme dersi isteyin",
+    "visual": {
+      "badge": "Londra dil gezisi",
+      "imageAlt": "SprachOase öğrencileri Londra'daki kırmızı telefon kulübelerinin önünde",
+      "title": "İngilizceyi konuşulduğu yerde deneyimlemek.",
+      "description": "Londra'daki ortak deneyimler dili, kültürü ve gerçek yaşam durumlarını bir araya getirir."
+    },
+    "factsLabel": "Kısaca SprachOase",
+    "facts": {
+      "experience": {
+        "value": "2008'den beri",
+        "label": "İngilizce öğretimi deneyimi"
+      },
+      "approach": {
+        "value": "Oyunla",
+        "label": "Müzik, tekerlemeler ve yaratıcılıkla"
+      },
+      "location": {
+        "value": "Hannover'da",
+        "label": "Vahrenwald-List'te kurslar"
+      }
+    }
+  },
+  "courses": {
+    "eyebrow": "Öğrenme yolu",
+    "title": "Çocuklarla birlikte büyüyen bir kurs yolu.",
+    "description": "Mevcut kurs grupları, çocukların İngilizceyle ilk oyunlu karşılaşmasından gençlik yıllarındaki ileri öğrenme hedeflerine kadar açık bir yol oluşturur.",
+    "listLabel": "Yaşa göre kurs aşamaları",
+    "items": {
+      "gardenSnail": {
+        "name": "Garden Snail",
+        "age": "8–12 ay",
+        "description": "En küçük öğrenciler için ilk İngilizce sesler, tekerlemeler ve oyunlu uyaranlar."
+      },
+      "seeds": {
+        "name": "Seeds",
+        "age": "2–4 yaş",
+        "description": "Kelimeler ve kısa ifadeler müzik, hareket ve tekrar yoluyla tanıdık hâle gelir."
+      },
+      "sprouts": {
+        "name": "Sprouts",
+        "age": "5–6 yaş",
+        "description": "Oyunlu rutinler dinlediğini anlama becerisini ve konuşma güvenini güçlendirir."
+      },
+      "blossoms": {
+        "name": "Blossoms",
+        "age": "7–8 yaş",
+        "description": "Kelime bilgisi hikâyeler, yaratıcı etkinlikler ve birlikte keşfetme yoluyla gelişir."
+      },
+      "dandelions": {
+        "name": "Dandelions",
+        "age": "9–10 yaş",
+        "description": "Günlük İngilizce, okuma ve yaşa uygun öğrenme projelerinde daha fazla güven."
+      },
+      "parachutes": {
+        "name": "Parachutes",
+        "age": "11–14 yaş",
+        "description": "İngilizce becerileri daha ileri öğrenme hedefleri gözetilerek derinleştirilir."
+      }
+    },
+    "note": {
+      "title": "Pat ile henüz teyit edilecek",
+      "description": "Yaş grupları mevcut materyallerden alınmıştır. 12 ay ile 2 yaş arasındaki geçiş ve güncel kontenjanlar yayımdan önce teyit edilecektir."
+    }
+  },
+  "method": {
+    "eyebrow": "Öğretim yöntemi",
+    "title": "İngilizceyi tüm duyularla deneyimlemek.",
+    "description": "Altı unsur kurslar boyunca birlikte işler. Çocuklar İngilizceyle ses, hareket, materyaller ve kendi aktif katılımları üzerinden anlaşılır durumlarda karşılaşır.",
+    "spotlight": {
+      "eyebrow": "Yol gösterici ilke olarak immersiyon",
+      "title": "Dinle. Katıl. Konuş.",
+      "description": "İngilizce kurs sırasında doğal biçimde kullanılır; durumlar, mimikler, jestler ve tekrarlarla anlaşılır hâle getirilir."
+    },
+    "listLabel": "Öğretim yönteminin unsurları",
+    "items": {
+      "immersion": {
+        "title": "İmmersiyon yöntemi",
+        "description": "İngilizce yaşayan bir kurs dili olarak deneyimlenir. Anlam; bağlam, mimikler, jestler ve tekrar yoluyla oluşur."
+      },
+      "songs": {
+        "title": "Çocuk şarkıları",
+        "description": "Melodi ve ritim, çocukların yeni sesleri, kelimeleri ve cümle yapılarını tanımasına yardımcı olur."
+      },
+      "rhymes": {
+        "title": "İngilizce tekerlemeler",
+        "description": "Nursery Rhymes; telaffuzu, konuşma ritmini ve tekrarı kısa ve akılda kalıcı biçimlerde birleştirir."
+      },
+      "movement": {
+        "title": "Oyun ve hareket",
+        "description": "Hareket ve birlikte oyun, dili eylemle bağlar ve çocukların aktif katılımını sürdürür."
+      },
+      "materials": {
+        "title": "Öğrenme materyalleri",
+        "description": "Nesneler, görseller ve yaratıcı etkinlikler kelimeleri ve ilişkileri görünür ve anlaşılır kılar."
+      },
+      "senses": {
+        "title": "Tüm duyularla öğrenme",
+        "description": "Birden fazla duyusal izlenim yeni kelimelere anlam verir ve çeşitli hatırlama bağları oluşturur.",
+        "listLabel": "Kullanılan duyular",
+        "senses": {
+          "see": "Görme",
+          "hear": "İşitme",
+          "feel": "Hissetme",
+          "smell": "Koklama"
+        }
+      }
+    }
+  },
+  "cambridge": {
+    "eyebrow": "Cambridge English Qualifications",
+    "title": "Uygun Cambridge sınavına giden açık bir plan.",
+    "description": "Hazırlık, uzun vadeli dil gelişimini sınav formatı, dört dil becerisi ve her öğrenci için uygun bir sonraki adımla birleştirir.",
+    "result": {
+      "badge": "Teyit edilmiş başarı geçmişi",
+      "value": "%100",
+      "title": "başarıyla tamamlanan Cambridge sınavları",
+      "description": "SprachOase tarafından 2014'ten beri hazırlığı yapılan sınavlarda."
+    },
+    "path": {
+      "eyebrow": "A1–C1 sınav yolu",
+      "title": "Her seviye bir öncekinin üzerine kurulur.",
+      "description": "Cambridge English Qualifications, Avrupa Ortak Dil Referans Çerçevesi ile uyumludur. Doğru sınav, öğrencinin mevcut seviyesine ve hedeflerine göre belirlenir.",
+      "listLabel": "A1'den C1'e Cambridge sınav yolu",
+      "levels": {
+        "a1": {
+          "level": "A1",
+          "exam": "A1 Movers",
+          "description": "Günlük yazılı ve sözlü İngilizceye çocuk dostu bir başlangıç."
+        },
+        "a2": {
+          "level": "A2",
+          "exam": "A2 Flyers veya Key for Schools",
+          "description": "Basit ve tanıdık günlük durumlarda temel iletişim."
+        },
+        "b1": {
+          "level": "B1",
+          "exam": "B1 Preliminary for Schools",
+          "description": "Günlük yaşamda daha bağımsız kullanım için pratik dil becerileri."
+        },
+        "b2": {
+          "level": "B2",
+          "exam": "B2 First for Schools",
+          "description": "İngilizce konuşulan bir ortamda güvenli ve etkili iletişim."
+        },
+        "c1": {
+          "level": "C1",
+          "exam": "C1 Advanced",
+          "description": "Zorlu akademik ve mesleki hedefler için ileri düzey İngilizce."
+        }
+      }
+    },
+    "process": {
+      "eyebrow": "Hedefli hazırlık",
+      "title": "Dil becerisini ve sınav güvenini birlikte geliştirmek.",
+      "listLabel": "Cambridge sınavına hazırlık adımları",
+      "steps": {
+        "level": {
+          "title": "Mevcut seviyeyi belirleme",
+          "description": "Öğrencinin güncel becerisi ve uygun bir sonraki sınav hedefi belirlenir."
+        },
+        "format": {
+          "title": "Formatı tanıma",
+          "description": "Soru türleri, yapı ve beklentiler sınavdan çok önce tanıdık hâle gelir."
+        },
+        "skills": {
+          "title": "Dört beceriyi geliştirme",
+          "description": "Okuma, yazma, dinleme ve konuşma dengeli ve hedefli biçimde çalışılır."
+        },
+        "confidence": {
+          "title": "Güven oluşturma",
+          "description": "Tekrar ve sınava benzer etkinlikler rutin ve öz güven kazandırır."
+        }
+      }
+    }
+  },
+  "about": {
+    "eyebrow": "Pat hakkında",
+    "title": "Kişisel olarak yürütülür. Her adımda desteklenir.",
+    "description": "Pat Weber, SprachOase kurslarını bizzat yürütür. 2008'den beri Almanya'da İngilizce öğretmeni olarak çalışmakta ve oyunla öğrenmeyi uzun vadeli bir kurs yoluyla birleştirmektedir.",
+    "portrait": {
+      "badge": "Kişisel kurs yönetimi",
+      "imageAlt": "Pat Weber Londra'daki Westminster Köprüsü'nde bir gayda sanatçısıyla",
+      "name": "Pat Weber",
+      "role": "ESL öğretmeni ve kişisel kurs yöneticisi",
+      "description": "Pat'in Londra ziyareti sırasında."
+    },
+    "timeline": {
+      "eyebrow": "Kamuya açık olarak belgelenen yol",
+      "title": "Öğrenme hedefleriyle birlikte büyüyen deneyim.",
+      "listLabel": "Pat Weber'in kamuya açık olarak belgelenen aşamaları",
+      "items": {
+        "start": {
+          "date": "2008'den beri",
+          "title": "Almanya'da İngilizce öğretimi",
+          "description": "Pat, Almanya'da ESL öğretmeni olarak çalışmaktadır."
+        },
+        "cambridge": {
+          "date": "2014'ten beri",
+          "title": "Cambridge sınavlarına hazırlık",
+          "description": "Cambridge sınavları uzun vadeli öğrenme yolunu tamamlar."
+        },
+        "today": {
+          "date": "Bugün",
+          "title": "Hannover'da kişisel kurs yönetimi",
+          "description": "Pat, SprachOase kurslarını bizzat yürütür."
+        }
+      }
+    },
+    "trust": {
+      "eyebrow": "Kişisel rehberliğin farkı",
+      "title": "Öğrenme yolunun arkasında sürekli aynı kişi.",
+      "listLabel": "Kişisel kurs yönetiminin avantajları",
+      "items": {
+        "contact": {
+          "title": "Doğrudan iletişim",
+          "description": "Başvurular ve kurs rehberliği doğrudan Pat tarafından yürütülür."
+        },
+        "continuity": {
+          "title": "Süreklilik",
+          "description": "Kurs aşamaları erken başlangıçtan gençlik yıllarına kadar açık bir yol oluşturur."
+        },
+        "direction": {
+          "title": "Bir sonraki adıma bakış",
+          "description": "Oyunla dil gelişimi ve sonraki sınav hedefleri birbiriyle bağlantılı tek bir öğrenme yolu olarak ele alınır."
+        }
+      }
+    },
+    "pending": {
+      "title": "Nihai sürüm için hâlâ gerekli",
+      "description": "Pat'in daha ayrıntılı öz geçmişi, belirli eğitimleri ve ek nitelikleri ile isteğe bağlı kişisel açıklaması."
+    }
+  },
+  "testimonials": {
+    "eyebrow": "Ailelerin görüşleri",
+    "title": "Aileler SprachOase hakkında ne söylüyor?",
+    "description": "Şu anda herkese açık Google yorumlarından seçilen üç kısa alıntı, ailelerin ve eski öğrencilerin Pat ile uzun vadeli öğrenme yolunu nasıl deneyimlediğini gösteriyor.",
+    "listLabel": "Seçilmiş Google yorumları",
+    "reviewBadge": "Alıntı {{number}}",
+    "rating": {
+      "label": "Güncel Google Maps değerlendirmesi",
+      "source": "Google Maps",
+      "value": "5,0",
+      "stars": "5 üzerinden 5 yıldız",
+      "count": "7 yorum",
+      "date": "Kamuya açık durum: 29 Ağustos 2026"
+    },
+    "items": {
+      "roman": {
+        "quote": "Pat, ‘tüm duyularla öğrenme’ yaklaşımını izliyor. Çocuklar derste çok hareket ediyor ve oyunla öğreniyor.",
+        "author": "Roman S.",
+        "source": "Almanca Google yorumundan çevrilmiştir"
+      },
+      "osman": {
+        "quote": "13 yıl boyunca her çarşamba sevgili Pat ile İngilizce öğrendim. ❤️ Ve her çarşamba beni mutlu etti!",
+        "author": "Osman S.",
+        "source": "Almanca Google yorumundan çevrilmiştir"
+      },
+      "oya": {
+        "quote": "Her şey için teşekkür ederim sevgili Pat! İki çocuğum da uzun yıllardır Pat'in derslerine katılıyor.",
+        "author": "Oya K.",
+        "source": "Almanca Google yorumundan çevrilmiştir"
+      }
+    },
+    "disclaimer": "Alıntılar kısaltılmış ve kamuya açık soyadları gizlilik amacıyla baş harfe indirgenmiştir. Google, yorumların doğrulanmadığını belirtir.",
+    "action": "Google yorumlarını görüntüle"
+  },
+  "faq": {
+    "eyebrow": "Sıkça sorulan sorular",
+    "title": "İlk deneme dersinden önce yanıtlar.",
+    "description": "Bu bölüm, kamuya açık bilgilerden güvenilir biçimde yanıtlanabilen konuları ve değişken kurs ayrıntılarından hangilerinin Pat ile doğrudan görüşülmesi gerektiğini açıklar.",
+    "listLabel": "İngilizce kursları hakkında sıkça sorulan sorular",
+    "verified": {
+      "eyebrow": "Şimdiden belli",
+      "title": "Kişisel ve baskısız bir başlangıç.",
+      "listLabel": "Kursa başlangıçla ilgili teyit edilmiş noktalar",
+      "items": {
+        "personal": "Kurslar bizzat Pat tarafından yürütülür.",
+        "trial": "Yayımlanan deneme dersi bağlayıcı değildir.",
+        "location": "Dersler Hannover-Vahrenwald-List'te yapılır."
+      }
+    },
+    "items": {
+      "ages": {
+        "question": "Kurslar hangi yaş grupları içindir?",
+        "answer": "Yayımlanan kurs yolu, 8–12 aylık çocuklar için Garden Snail'den 11–14 yaş için Parachutes'a kadar uzanır. Uygun grup yaşa ve öğrenme düzeyine göre belirlenir. 12 ay ile 2 yaş arasındaki geçiş yayımdan önce Pat ile yeniden teyit edilecektir."
+      },
+      "trial": {
+        "question": "Çocuğum önce bir deneme dersine katılabilir mi?",
+        "answer": "Evet. Mevcut web sitesi deneme dersini bağlayıcı olmayan ve doğrudan kurs yöneticisiyle kararlaştırılan bir ders olarak tanımlar. Ebeveynlerin ve çocukların kaymaz çorap getirmesi istenir. Nihai başvuru kanalı Pat ile teyit edilecektir."
+      },
+      "method": {
+        "question": "Çocuklar kursta nasıl öğreniyor?",
+        "answer": "İngilizce, immersiyon yöntemiyle anlaşılır durumlarda deneyimlenir. Çocuklar dinler, konuşur, şarkı söyler, tekerleme yapar, oynar ve hareket eder. Görseller, nesneler ve yaratıcı materyaller yeni kelimelerin anlamla bağlanmasına yardımcı olur."
+      },
+      "cambridge": {
+        "question": "Cambridge sınavlarına hazırlık da var mı?",
+        "answer": "Evet. SprachOase 2014'ten beri öğrencileri Cambridge sınavlarına hazırlamaktadır. A1'den C1'e uygun adım seviye ve hedeflere göre belirlenir; format, okuma, yazma, dinleme ve konuşma hedefli biçimde hazırlanır."
+      },
+      "location": {
+        "question": "Dersler nerede yapılıyor?",
+        "answer": "SprachOase, Vahrenwalder Straße 78, 30165 Hannover-Vahrenwald-List adresindedir. Randevular ve deneme dersleri önceden doğrudan kararlaştırılmalıdır."
+      },
+      "availability": {
+        "question": "Kurslar ne zaman yapılıyor, gruplar ne kadar büyük ve ücretleri nedir?",
+        "answer": "Güncel ders saatleri, boş kontenjanlar, grup büyüklükleri, süre ve ücretler mevcut kamuya açık bilgilerde eksiksiz ve güvenilir biçimde belgelenmemiştir. Bu ayrıntılar Pat ile teyit edilecek ve ancak daha sonra bağlayıcı olarak yayımlanacaktır.",
+        "badge": "Pat ile henüz teyit edilecek"
+      }
+    },
+    "note": {
+      "title": "Uygun grup kişisel görüşmeyle belirlenir.",
+      "description": "Yaş önemli bir ölçüttür; önceki deneyim, güncel seviye ve kontenjan da uygun yerleştirmeyi etkiler."
+    },
+    "action": "Deneme dersi başvurusuna git"
+  },
+  "contact": {
+    "eyebrow": "İletişim",
+    "title": "İlk adım kısa bir mesajdır.",
+    "description": "Deneme dersleri doğrudan Pat ile kararlaştırılır. İlk değerlendirme için çocuğun yaşı ve olası önceki deneyimi hakkında birkaç bilgi yeterlidir.",
+    "note": {
+      "title": "Web formu olmadan doğrudan iletişim",
+      "description": "Bu web sitesi başvuruyu iletmez veya saklamaz. WhatsApp ve e-posta programı yalnızca bilinçli bir tıklamadan sonra açılır."
+    },
+    "whatsapp": {
+      "badge": "Tercih edilen başvuru yolu",
+      "title": "WhatsApp üzerinden deneme dersi isteyin",
+      "description": "Çocuğun yaşı, olası önceki İngilizce deneyimi ve geri arama bilgisi içeren kısa bir mesaj ilk iletişim için yeterlidir.",
+      "action": "Pat ile WhatsApp sohbeti aç",
+      "privacy": "WhatsApp bu web sitesine gömülü değildir. Yalnızca bağlantıyı açtığınızda web sitesinden ayrılırsınız; bu andan itibaren WhatsApp'ın gizlilik koşulları geçerlidir."
+    },
+    "email": {
+      "badge": "Alternatif",
+      "title": "Veya e-posta gönderin",
+      "description": "Hazırlanan e-posta, uygun bir kurs önermek için gerekli temel bilgileri sorar. Göndermeden önce metni düzenleyebilirsiniz.",
+      "action": "Hazır e-postayı aç",
+      "subject": "Başvuru",
+      "body": "Merhaba!\n\nSizden haber almayı sabırsızlıkla bekliyoruz. Bu bilgileri bize e-posta ile gönderirseniz çocuğunuz için uygun bir kursu daha hızlı bulabiliriz.\n\nÇocuğun adı:\nDoğum tarihi (ay/yıl):\nÇocuğun cinsiyeti:\nTercih edilen gün (Pazartesi, Çarşamba, Perşembe veya Cuma):\nNot:\n\nNot: Tüm kurslar saat 15.00'ten sonra başlar.\n\nTeşekkürler ve sevgiler\nPat",
+      "privacy": "Şablon yalnızca e-posta programınıza aktarılır; web sitesi hiçbir şey göndermez veya saklamaz. Lütfen yalnızca gerekli bilgileri girin ve ek hassas bilgiler paylaşmayın."
+    },
+    "details": {
+      "hours": {
+        "label": "Telefon saatleri",
+        "value": "Pazartesi–Çarşamba, 09.00–11.00",
+        "action": "Pat'i ara"
+      },
+      "location": {
+        "label": "Kurs yeri",
+        "value": "Vahrenwalder Straße 78, 30165 Hannover-Vahrenwald-List"
+      },
+      "language": {
+        "label": "İşletme dili",
+        "value": "Almanca"
+      }
+    }
+  },
+  "footer": {
+    "description": "Hannover-Vahrenwald-List'te çocuklar ve gençler için kişisel olarak yürütülen İngilizce kursları.",
+    "contactTitle": "Doğrudan iletişim",
+    "legalTitle": "Bilgiler",
+    "status": "Geçici içeriklere sahip yerel geliştirme sürümü.",
+    "copyright": "SprachOase Pusteblume"
+  },
+  "legal": {
+    "lastUpdated": "Bu geliştirme sürümünün tarihi: 1 Eylül 2026",
+    "provisional": {
+      "title": "Yayımdan önce hukuki inceleme gerekli",
+      "description": "Bu geliştirme sürümü gerekli bilgileri yapılandırır; ancak hukuki danışmanlığın veya işletmeci onayının yerini tutmaz. Kamuya açık biçimde doğrulanamayan zorunlu bilgiler açıkça beklemede olarak işaretlenmiştir."
+    },
+    "imprint": {
+      "trigger": "Yasal bildirim",
+      "title": "Yasal bildirim",
+      "description": "Hizmet sağlayıcı ve iletişim bilgileri",
+      "provider": {
+        "title": "Alman DDG § 5 uyarınca sağlayıcı bilgileri",
+        "owner": "Kamuya açık yasal bildirimde belirtilen işletme sahibi",
+        "business": "İşletme adı",
+        "addressPending": "İşletme sahibinin tebligata elverişli adresi, Klaus-Rainer Weber tarafından teyit edilmeli ve yayımdan önce buraya eklenmelidir."
+      },
+      "contact": {
+        "title": "İletişim ve kurs yeri",
+        "courseRoom": "Kamuya açık olarak belirtilen kurs yeri",
+        "phone": "Telefon",
+        "email": "E-posta"
+      },
+      "pending": {
+        "title": "Henüz teyit edilmesi gereken zorunlu bilgiler",
+        "description": "Canlı yayımdan önce hukuki yapı, tebligata elverişli adres, varsa sicil ve sicil numarası, KDV veya işletme kimlik numarası, yetkili denetim makamı ve tüketici uyuşmazlık çözümü bilgileri işletmeciyle açıklığa kavuşturulmalıdır. Uydurma numaralar veya doğrulanmamış açıklamalar yayımlanmaz."
+      }
+    },
+    "privacy": {
+      "trigger": "Gizlilik",
+      "title": "Gizlilik bilgileri",
+      "description": "Bu geliştirme sürümündeki veri akışları hakkında şeffaflık",
+      "provisional": "Bu bildirim şu anda uygulanmış yerel sürümü açıklar. Barındırma, alan adı işletimi ve veri sorumlusunun nihai tebligat adresi yayımdan önce eklenmelidir.",
+      "controller": {
+        "title": "1. Veri sorumlusu",
+        "addressPending": "Tebligata elverişli adres: yayımdan önce işletmeci tarafından teyit edilecektir."
+      },
+      "current": {
+        "title": "2. Güncel işlev kapsamı",
+        "description": "Bu tek sayfalı web sitesi veri kullanımını en aza indirecek şekilde tasarlanmıştır.",
+        "noAnalytics": "Analiz, reklam veya profil oluşturma takipçisi yoktur",
+        "noNonEssentialStorage": "Zorunlu olmayan çerez veya benzer depolama erişimi yoktur",
+        "noEmbeds": "Gömülü harita, video, web yazı tipi veya sosyal medya içeriği yoktur",
+        "noForm": "Web formu yoktur; WhatsApp, e-posta ve telefon yalnızca bilinçli bir bağlantı tıklamasından sonra açılır"
+      },
+      "storage": {
+        "title": "3. Yerel ayarlar",
+        "description": "Dil, renk teması ve erişilebilirlik seçenekleri, açıkça seçilen görünümün korunması için yalnızca tarayıcıda saklanır. Bu ayarlar bir kullanım profili oluşturmaz.",
+        "retention": "Saklama süresi: web sitesi verileri tarayıcıdan silinene veya ilgili ayar sıfırlanana kadar."
+      },
+      "links": {
+        "title": "4. Harici bağlantılar",
+        "description": "WhatsApp, e-posta, telefon, harita veya değerlendirme hizmetlerine bağlantılar bu sağlayıcıların içeriklerini web sitesine yüklemez. İlgili sağlayıcının web sitesi veya uygulaması yalnızca bağlantı etkinleştirildiğinde açılır; bu andan itibaren sağlayıcının gizlilik koşulları geçerlidir. E-posta şablonları bir çocuk hakkında bilgiler içerebilir. Yalnızca kurs önerisi için gerekli veriler iletilmelidir."
+      },
+      "hosting": {
+        "title": "5. Barındırma ve sunucu kayıtları",
+        "description": "Mevcut demo GitHub Pages üzerinden sunulur. Bu sırada GitHub teknik olarak gerekli bağlantı ve kayıt verilerini işleyebilir. Canlı yayımdan önce sağlayıcı, işleme yeri, veri işleme düzenlemeleri, hukuki dayanak ve silme süreleri ayrıntılı olarak incelenmeli ve belgelenmelidir."
+      },
+      "rights": {
+        "title": "6. İlgili kişilerin hakları",
+        "description": "İlgili kişiler, GDPR uyarınca özellikle erişim, düzeltme, silme, işlemeyi kısıtlama, veri taşınabilirliği ve itiraz haklarını kullanabilir ve bir veri koruma denetim makamına şikâyette bulunabilir. Talepler, konu satırında ‘Gizlilik’ belirtilerek gösterilen e-posta adresine gönderilebilir."
+      }
+    },
+    "settings": {
+      "trigger": "Gizlilik ayarları",
+      "title": "Gizlilik ayarları",
+      "description": "Etkin hizmet durumu ve yerel web sitesi ayarları",
+      "status": {
+        "title": "Etkin isteğe bağlı hizmet yoktur",
+        "description": "İlk ziyaret bildirimi mevcut durumu şeffaf biçimde açıklar. İsteğe bağlı hizmet etkin olmadığı için kabul veya ret kararı istemez."
+      },
+      "necessary": {
+        "title": "Teknik olarak gerekli yerel ayarlar",
+        "description": "Bu anahtarlar yalnızca cihazınızda seçtiğiniz dili ve görünümü saklar:"
+      },
+      "optional": {
+        "title": "İsteğe bağlı hizmetler",
+        "none": "Analiz, pazarlama, etkileşimli haritalar, gömülü videolar ve diğer isteğe bağlı üçüncü taraf hizmetleri entegre edilmemiştir ve yüklenmez."
+      },
+      "future": "İsteğe bağlı bir hizmet eklenirse sağlayıcısı, amacı ve gizlilik bilgisiyle ayrı olarak kaydedilmelidir. Gerekli olabilecek onay alınmadan bu hizmete ait hiçbir kaynak yüklenmemelidir."
+    },
+    "accessibility": {
+      "trigger": "Erişilebilirlik",
+      "title": "Erişilebilirlik bilgileri",
+      "description": "Web sitesinin mevcut durumu ve erişilebilirlik özellikleri",
+      "commitment": {
+        "title": "Hedefimiz",
+        "description": "SprachOase, web sitesinin mümkün olduğunca çok kişi tarafından anlaşılır ve kullanılabilir olmasını amaçlar. Geliştirme; anlamsal HTML, açık kontrastlar, güvenilir klavye kullanımı ve uyarlanabilir görünüm ilkelerine dayanır."
+      },
+      "features": {
+        "title": "Şimdiden uygulananlar",
+        "keyboard": "Klavye ile kullanılabilen gezinme, iletişim kutuları ve akordeonlar ile görünür odak işaretleri",
+        "preferences": "Ayarlanabilir yazı boyutu, yazı tipi, satır aralığı, hareket, bağlantılar, odak ve başlıklar",
+        "structure": "İçeriğe geçiş bağlantısı, anlamsal sayfa bölgeleri, başlık yapısı ve anlamlı etiketler"
+      },
+      "status": {
+        "title": "İnceleme durumu",
+        "description": "Otomatik bileşen ve derleme kontrolleri mevcuttur. Bu geliştirme sürümü henüz yardımcı teknolojilerle resmî bir WCAG/BITV denetiminden geçmemiştir."
+      },
+      "feedback": {
+        "title": "Bir erişilebilirlik sorununu bildirin",
+        "description": "Bir şey erişilemez veya anlaşılmazsa geri bildirim, alt bilgide gösterilen adrese e-posta ile gönderilebilir. Mümkünse sayfayı, cihazı ve sorunun türünü belirtin."
+      }
+    }
+  }
+}

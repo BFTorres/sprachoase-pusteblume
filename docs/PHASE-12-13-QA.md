@@ -25,7 +25,8 @@ and automatically detectable WCAG 2.1 A/AA issues.
 
 ## Manual review before publication
 
-- Confirm the final German and English copy with Pat.
+- Confirm the final German, English and Turkish copy with Pat or a qualified
+  native-language reviewer.
 - Confirm all legal details, privacy text and consent behavior with the operator
   and, where appropriate, qualified legal counsel.
 - Replace provisional portraits and other visual placeholders with approved,

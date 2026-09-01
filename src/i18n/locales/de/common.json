@@ -37,8 +37,12 @@
     "contact": "Kontakt"
   },
   "language": {
-    "switchTo": "Sprache zu Englisch wechseln",
-    "short": "EN"
+    "label": "Sprache auswählen",
+    "options": {
+      "de": "DE",
+      "en": "EN",
+      "tr": "TR"
+    }
   },
   "theme": {
     "light": "Helles Farbschema aktivieren",
@@ -398,19 +402,23 @@
     "description": "Probestunden werden direkt mit Pat vereinbart. Für eine erste Einordnung reichen wenige Angaben zu Alter und möglicher Vorerfahrung des Kindes.",
     "note": {
       "title": "Direkter Kontakt ohne Webformular",
-      "description": "Diese Version überträgt oder speichert keine Anfrage auf der Website. SMS und E-Mail öffnen die vorhandene App auf dem eigenen Gerät."
+      "description": "Diese Website überträgt oder speichert keine Anfrage. WhatsApp und das E-Mail-Programm werden erst nach einem bewussten Klick geöffnet."
     },
-    "sms": {
+    "whatsapp": {
       "badge": "Bevorzugter Anfrageweg",
-      "title": "Probestunde per SMS anfragen",
+      "title": "Probestunde per WhatsApp anfragen",
       "description": "Eine kurze Nachricht mit Alter, möglicher Englisch-Vorerfahrung und Rückrufmöglichkeit genügt für den ersten Kontakt.",
-      "action": "SMS an Pat schreiben"
+      "action": "WhatsApp-Chat mit Pat öffnen",
+      "privacy": "WhatsApp wird nicht in diese Website eingebunden. Erst beim Öffnen des Links verlassen Sie die Website; ab dann gelten die Datenschutzbedingungen von WhatsApp."
     },
     "email": {
       "badge": "Alternative",
       "title": "Oder eine E-Mail senden",
-      "description": "Für ausführlichere Fragen kann die Anfrage direkt an Pat geschickt werden.",
-      "action": "E-Mail an Pat schreiben"
+      "description": "Die vorbereitete E-Mail fragt die wichtigsten Angaben für die Kurseinordnung ab. Sie können den Text vor dem Senden bearbeiten.",
+      "action": "Vorbereitete E-Mail öffnen",
+      "subject": "Anfrage",
+      "body": "Guten Tag!\n\nWir freuen uns auf Sie. Wenn Sie uns diese Daten mailen, können wir umso schneller einen passenden Kurs für Ihr Kind finden.\n\nName des Kindes:\nGeburtsdatum (Monat/Jahr):\nGeschlecht des Kindes:\nGewünschter Wochentag (Montag, Mittwoch, Donnerstag oder Freitag):\nNotiz:\n\nPS: Alle Kurse starten nach 15 Uhr.\n\nVielen Dank und liebe Grüße\nPat",
+      "privacy": "Die Vorlage wird nur an Ihr E-Mail-Programm übergeben; die Website versendet und speichert nichts. Bitte tragen Sie nur erforderliche Angaben ein und keine sensiblen Zusatzinformationen."
     },
     "details": {
       "hours": {
@@ -436,7 +444,7 @@
     "copyright": "SprachOase Pusteblume"
   },
   "legal": {
-    "lastUpdated": "Stand dieser Entwicklungsfassung: 30.08.2026",
+    "lastUpdated": "Stand dieser Entwicklungsfassung: 01.09.2026",
     "provisional": {
       "title": "Vor Veröffentlichung rechtlich prüfen",
       "description": "Diese Entwicklungsfassung strukturiert die benötigten Angaben, ersetzt aber keine Rechtsberatung oder Freigabe durch den Betreiber. Nicht öffentlich verifizierbare Pflichtangaben bleiben ausdrücklich als offen markiert."
@@ -477,7 +485,7 @@
         "noAnalytics": "Keine Analyse-, Werbe- oder Profiling-Tracker",
         "noNonEssentialStorage": "Keine nicht notwendigen Cookies oder vergleichbaren Speicherzugriffe",
         "noEmbeds": "Keine eingebetteten Karten, Videos, Webfonts oder Social-Media-Inhalte",
-        "noForm": "Kein Webformular; SMS, E-Mail und Telefon werden erst durch einen bewussten Link-Klick in der jeweiligen Geräte-App geöffnet"
+        "noForm": "Kein Webformular; WhatsApp, E-Mail und Telefon werden erst durch einen bewussten Link-Klick geöffnet"
       },
       "storage": {
         "title": "3. Lokale Einstellungen",
@@ -486,7 +494,7 @@
       },
       "links": {
         "title": "4. Externe Links",
-        "description": "Links zu E-Mail-, SMS-, Telefon-, Karten- oder Bewertungsdiensten laden keine Inhalte dieser Anbieter in die Website. Erst beim Aktivieren eines Links wird die Website oder App des jeweiligen Anbieters geöffnet; ab dann gelten dessen Datenschutzbedingungen."
+        "description": "Links zu WhatsApp, E-Mail, Telefon, Karten- oder Bewertungsdiensten laden keine Inhalte dieser Anbieter in die Website. Erst beim Aktivieren eines Links wird die Website oder App des jeweiligen Anbieters geöffnet; ab dann gelten dessen Datenschutzbedingungen. E-Mail-Vorlagen können Angaben zu einem Kind enthalten. Es sollten nur für die Kurseinordnung erforderliche Daten übermittelt werden."
       },
       "hosting": {
         "title": "5. Hosting und Server-Protokolle",

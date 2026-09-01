@@ -109,11 +109,23 @@ describe('App', () => {
       }),
     ).toBeInTheDocument()
     expect(
-      screen.getByRole('link', { name: 'SMS an Pat schreiben' }),
-    ).toHaveAttribute('href', 'sms:+4917628729985')
+      screen.getByRole('link', { name: 'WhatsApp-Chat mit Pat öffnen' }),
+    ).toHaveAttribute('href', 'https://wa.me/4917628729985')
     expect(
-      screen.getByRole('link', { name: 'E-Mail an Pat schreiben' }),
-    ).toHaveAttribute('href', 'mailto:pat@sprachoase-pusteblume.de')
+      screen.getByRole('link', { name: 'WhatsApp-Chat mit Pat öffnen' }),
+    ).toHaveAttribute('rel', 'noopener noreferrer')
+
+    const emailHref = screen
+      .getByRole('link', { name: 'Vorbereitete E-Mail öffnen' })
+      .getAttribute('href')
+    const emailUrl = new URL(emailHref!)
+
+    expect(emailUrl.pathname).toBe('pat@sprachoase-pusteblume.de')
+    expect(emailUrl.searchParams.get('subject')).toBe('Anfrage')
+    expect(emailUrl.searchParams.get('body')).toContain('Name des Kindes:')
+    expect(emailUrl.searchParams.get('body')).toContain(
+      'Alle Kurse starten nach 15 Uhr.',
+    )
     expect(document.title).toBe(
       'SprachOase Pusteblume | Englischkurse für Kinder in Hannover',
     )
@@ -149,8 +161,9 @@ describe('App', () => {
     render(<App />)
 
     await user.click(
-      screen.getByRole('button', { name: 'Sprache zu Englisch wechseln' }),
+      screen.getByRole('combobox', { name: 'Sprache auswählen' }),
     )
+    await user.click(screen.getByRole('option', { name: 'EN' }))
 
     expect(
       screen.getByRole('heading', {
@@ -209,6 +222,44 @@ describe('App', () => {
       'href',
       'https://sprachoase-pusteblume.de/en/',
     )
+  })
+
+  it('switches the complete page language to Turkish', async () => {
+    const user = userEvent.setup()
+    render(<App />)
+
+    await user.click(
+      screen.getByRole('combobox', { name: 'Sprache auswählen' }),
+    )
+    await user.click(screen.getByRole('option', { name: 'TR' }))
+
+    expect(
+      screen.getByRole('heading', {
+        level: 1,
+        name: 'Çocuklarla birlikte büyüyen İngilizce.',
+      }),
+    ).toBeInTheDocument()
+    expect(
+      screen.getByRole('heading', {
+        level: 2,
+        name: 'Çocuklarla birlikte büyüyen bir kurs yolu.',
+      }),
+    ).toBeInTheDocument()
+    expect(
+      screen.getByRole('link', { name: 'Pat ile WhatsApp sohbeti aç' }),
+    ).toHaveAttribute('href', 'https://wa.me/4917628729985')
+    expect(document.documentElement).toHaveAttribute('lang', 'tr')
+    expect(window.location.pathname).toBe('/tr/')
+    expect(document.title).toBe(
+      "SprachOase Pusteblume | Hannover'da çocuklar için İngilizce kursları",
+    )
+    expect(document.querySelector('link[rel="canonical"]')).toHaveAttribute(
+      'href',
+      'https://sprachoase-pusteblume.de/tr/',
+    )
+    expect(
+      document.querySelector('link[rel="alternate"][hreflang="tr"]'),
+    ).toHaveAttribute('href', 'https://sprachoase-pusteblume.de/tr/')
   })
 
   it('opens a FAQ answer', async () => {

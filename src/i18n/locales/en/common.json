@@ -37,8 +37,12 @@
     "contact": "Contact"
   },
   "language": {
-    "switchTo": "Switch language to German",
-    "short": "DE"
+    "label": "Select language",
+    "options": {
+      "de": "DE",
+      "en": "EN",
+      "tr": "TR"
+    }
   },
   "theme": {
     "light": "Activate light colour scheme",
@@ -398,19 +402,23 @@
     "description": "Trial lessons are arranged directly with Pat. A few details about the child's age and any previous experience are enough for an initial assessment.",
     "note": {
       "title": "Direct contact without a web form",
-      "description": "This version does not transmit or store an enquiry on the website. SMS and email links open the existing app on the visitor's own device."
+      "description": "This website does not transmit or store an enquiry. WhatsApp and the email program open only after a deliberate click."
     },
-    "sms": {
+    "whatsapp": {
       "badge": "Preferred enquiry route",
-      "title": "Request a trial lesson by SMS",
+      "title": "Request a trial lesson through WhatsApp",
       "description": "A short message with the child's age, any previous English experience and a way to call back is enough for the first contact.",
-      "action": "Write an SMS to Pat"
+      "action": "Open a WhatsApp chat with Pat",
+      "privacy": "WhatsApp is not embedded in this website. You leave the website only after opening the link; WhatsApp's privacy terms apply from that point."
     },
     "email": {
       "badge": "Alternative",
       "title": "Or send an email",
-      "description": "More detailed questions can be sent directly to Pat by email.",
-      "action": "Write an email to Pat"
+      "description": "The prepared email asks for the key details needed to suggest a suitable course. You can edit the message before sending it.",
+      "action": "Open prepared email",
+      "subject": "Enquiry",
+      "body": "Hello!\n\nWe look forward to hearing from you. If you email us these details, we can find a suitable course for your child more quickly.\n\nChild's name:\nDate of birth (month/year):\nChild's gender:\nPreferred weekday (Monday, Wednesday, Thursday or Friday):\nNote:\n\nPS: All courses start after 3 pm.\n\nThank you and kind regards\nPat",
+      "privacy": "The template is passed only to your email program; the website sends and stores nothing. Please enter only necessary details and no additional sensitive information."
     },
     "details": {
       "hours": {
@@ -436,7 +444,7 @@
     "copyright": "SprachOase Pusteblume"
   },
   "legal": {
-    "lastUpdated": "Development version last updated: 30 August 2026",
+    "lastUpdated": "Development version last updated: 1 September 2026",
     "provisional": {
       "title": "Legal review required before publication",
       "description": "This development version structures the required information, but is not a substitute for legal advice or approval by the operator. Mandatory details that cannot be verified publicly remain explicitly marked as pending."
@@ -477,7 +485,7 @@
         "noAnalytics": "No analytics, advertising or profiling trackers",
         "noNonEssentialStorage": "No non-essential cookies or comparable storage access",
         "noEmbeds": "No embedded maps, videos, webfonts or social-media content",
-        "noForm": "No web form; SMS, email and telephone are opened in the relevant device app only after a deliberate link click"
+        "noForm": "No web form; WhatsApp, email and telephone are opened only after a deliberate link click"
       },
       "storage": {
         "title": "3. Local preferences",
@@ -486,7 +494,7 @@
       },
       "links": {
         "title": "4. External links",
-        "description": "Links to email, SMS, telephone, map or review services do not load those providers' content into this website. The relevant provider's website or app opens only when a link is activated; its privacy terms apply from that point."
+        "description": "Links to WhatsApp, email, telephone, map or review services do not load those providers' content into this website. The relevant provider's website or app opens only when a link is activated; its privacy terms apply from that point. Email templates may contain information about a child. Only data needed to suggest a course should be transmitted."
       },
       "hosting": {
         "title": "5. Hosting and server logs",

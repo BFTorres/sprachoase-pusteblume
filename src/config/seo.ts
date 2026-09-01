@@ -7,12 +7,17 @@ export const seoConfig = {
     de: {
       path: '/',
       locale: 'de_DE',
-      alternateLocale: 'en_GB',
+      alternateLocales: ['en_GB', 'tr_TR'],
     },
     en: {
       path: '/en/',
       locale: 'en_GB',
-      alternateLocale: 'de_DE',
+      alternateLocales: ['de_DE', 'tr_TR'],
+    },
+    tr: {
+      path: '/tr/',
+      locale: 'tr_TR',
+      alternateLocales: ['de_DE', 'en_GB'],
     },
   },
 } as const
@@ -23,7 +28,7 @@ export function getLanguagePath(language: SupportedLanguage) {
 
 export function getLanguageRoute(language: SupportedLanguage) {
   const basePath = import.meta.env.BASE_URL
-  return language === 'en' ? `${basePath}en/` : basePath
+  return language === 'de' ? basePath : `${basePath}${language}/`
 }
 
 export function getLanguageUrl(language: SupportedLanguage) {
@@ -31,7 +36,13 @@ export function getLanguageUrl(language: SupportedLanguage) {
 }
 
 export function getLanguageFromPath(pathname: string): SupportedLanguage {
-  return pathname.split('/').filter(Boolean).includes('en') ? 'en' : 'de'
+  const segments = pathname.split('/').filter(Boolean)
+
+  if (segments.includes('tr')) {
+    return 'tr'
+  }
+
+  return segments.includes('en') ? 'en' : 'de'
 }
 
 export function createStructuredData() {
@@ -43,7 +54,7 @@ export function createStructuredData() {
         '@id': `${siteConfig.url}/#website`,
         url: `${siteConfig.url}/`,
         name: siteConfig.name,
-        inLanguage: ['de', 'en'],
+        inLanguage: ['de', 'en', 'tr'],
         publisher: {
           '@id': `${siteConfig.url}/#organization`,
         },
@@ -76,7 +87,7 @@ export function createStructuredData() {
           contactType: 'course enquiries',
           telephone: '+49 176 28729985',
           email: siteConfig.email,
-          availableLanguage: ['German', 'English'],
+          availableLanguage: ['German', 'English', 'Turkish'],
         },
         sameAs: [siteConfig.googleProfileUrl],
       },

@@ -4,6 +4,7 @@ import { expect, test } from '@playwright/test'
 const localizedHeadings = {
   de: 'Englisch, das mit Kindern wächst.',
   en: 'English that grows with children.',
+  tr: 'Çocuklarla birlikte büyüyen İngilizce.',
 } as const
 
 test('serves localized prerendered content without JavaScript', async ({
@@ -26,6 +27,12 @@ test('serves localized prerendered content without JavaScript', async ({
   await expect(page.locator('html')).toHaveAttribute('lang', 'en')
   await expect(page.getByRole('heading', { level: 1 })).toHaveText(
     localizedHeadings.en,
+  )
+
+  await page.goto('tr/')
+  await expect(page.locator('html')).toHaveAttribute('lang', 'tr')
+  await expect(page.getByRole('heading', { level: 1 })).toHaveText(
+    localizedHeadings.tr,
   )
 
   await context.close()
@@ -57,6 +64,15 @@ test('hydrates both language routes without hydration errors', async ({
     'https://sprachoase-pusteblume.de/en/',
   )
 
+  await page.goto('tr/')
+  await expect(page.getByRole('heading', { level: 1 })).toHaveText(
+    localizedHeadings.tr,
+  )
+  await expect(page.locator('link[rel="canonical"]')).toHaveAttribute(
+    'href',
+    'https://sprachoase-pusteblume.de/tr/',
+  )
+
   expect(consoleErrors.filter((error) => /hydration/i.test(error))).toEqual([])
 })
 
@@ -64,10 +80,8 @@ test('switches from the German route to the English route', async ({
   page,
 }) => {
   await page.goto('./')
-  await page
-    .getByRole('button', { name: 'Sprache zu Englisch wechseln' })
-    .first()
-    .click()
+  await page.getByRole('combobox', { name: 'Sprache auswählen' }).click()
+  await page.getByRole('option', { name: 'EN' }).click()
 
   await expect(page).toHaveURL(/\/en\/$/)
   await expect(page.locator('html')).toHaveAttribute('lang', 'en')
@@ -121,7 +135,7 @@ test('has no horizontal overflow at mobile and desktop widths', async ({
   }
 })
 
-for (const route of ['./', 'en/']) {
+for (const route of ['./', 'en/', 'tr/']) {
   test(`has no automatically detectable accessibility violations on ${route}`, async ({
     page,
   }) => {

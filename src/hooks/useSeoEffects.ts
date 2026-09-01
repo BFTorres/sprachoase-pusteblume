@@ -1,6 +1,6 @@
 import { useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
-import type { SupportedLanguage } from '@/i18n'
+import { normalizeLanguage, type SupportedLanguage } from '@/i18n'
 import {
   createStructuredData,
   getLanguageFromPath,
@@ -35,11 +35,22 @@ function upsertLink(selector: string, attributes: Record<string, string>) {
   })
 }
 
+function replaceAlternateLocales(locales: readonly string[]) {
+  document.head
+    .querySelectorAll('meta[property="og:locale:alternate"]')
+    .forEach((element) => element.remove())
+
+  locales.forEach((locale) => {
+    const element = document.createElement('meta')
+    element.setAttribute('property', 'og:locale:alternate')
+    element.setAttribute('content', locale)
+    document.head.append(element)
+  })
+}
+
 export function useSeoEffects() {
   const { t, i18n } = useTranslation()
-  const language: SupportedLanguage = i18n.resolvedLanguage?.startsWith('en')
-    ? 'en'
-    : 'de'
+  const language: SupportedLanguage = normalizeLanguage(i18n.resolvedLanguage)
 
   useEffect(() => {
     const handlePopState = () => {
@@ -84,11 +95,7 @@ export function useSeoEffects() {
       'property=og:locale',
       languageSeo.locale,
     )
-    upsertMeta(
-      'meta[property="og:locale:alternate"]',
-      'property=og:locale:alternate',
-      languageSeo.alternateLocale,
-    )
+    replaceAlternateLocales(languageSeo.alternateLocales)
     upsertMeta(
       'meta[property="og:image"]',
       'property=og:image',
@@ -129,6 +136,11 @@ export function useSeoEffects() {
       rel: 'alternate',
       hreflang: 'en',
       href: getLanguageUrl('en'),
+    })
+    upsertLink('link[rel="alternate"][hreflang="tr"]', {
+      rel: 'alternate',
+      hreflang: 'tr',
+      href: getLanguageUrl('tr'),
     })
     upsertLink('link[rel="alternate"][hreflang="x-default"]', {
       rel: 'alternate',

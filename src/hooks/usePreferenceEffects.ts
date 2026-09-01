@@ -1,5 +1,6 @@
 import { useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
+import { normalizeLanguage } from '@/i18n'
 import { useAccessibilityStore } from '@/stores/accessibility-store'
 import { useThemeStore } from '@/stores/theme-store'
 
@@ -50,7 +51,6 @@ export function usePreferenceEffects() {
   ])
 
   useEffect(() => {
-    const language = i18n.resolvedLanguage?.startsWith('en') ? 'en' : 'de'
-    document.documentElement.lang = language
+    document.documentElement.lang = normalizeLanguage(i18n.resolvedLanguage)
   }, [i18n.resolvedLanguage])
 }

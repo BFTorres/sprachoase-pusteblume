@@ -14,6 +14,12 @@ const checks = [
     canonical: 'https://sprachoase-pusteblume.de/en/',
     heading: 'English that grows with children.',
   },
+  {
+    language: 'tr',
+    path: resolve('dist/tr/index.html'),
+    canonical: 'https://sprachoase-pusteblume.de/tr/',
+    heading: 'Çocuklarla birlikte büyüyen İngilizce.',
+  },
 ]
 
 for (const check of checks) {
@@ -37,4 +43,4 @@ for (const check of checks) {
   }
 }
 
-console.log('Prerendered German and English documents are valid.')
+console.log('Prerendered German, English and Turkish documents are valid.')

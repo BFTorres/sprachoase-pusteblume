@@ -15,9 +15,15 @@ export function HeroSection() {
     <section
       id="top"
       aria-labelledby="hero-title"
-      className="border-border border-b-2 py-16 sm:py-24"
+      className="border-border relative isolate overflow-hidden border-b-2 py-16 sm:py-24"
     >
-      <Container>
+      <MascotMoment
+        pose="wave"
+        motion="welcome"
+        className="pointer-events-none absolute top-28 -left-20 -z-10 w-44 opacity-[0.12] sm:top-32 sm:-left-16 sm:w-56 sm:opacity-[0.14] xl:top-36 xl:-left-12 xl:w-72"
+      />
+
+      <Container className="relative z-10">
         <div className="grid items-center gap-10 lg:grid-cols-[1.1fr_0.9fr]">
           <div className="min-w-0">
             <p className="text-primary mb-4 text-sm font-black tracking-[0.12em] uppercase">
@@ -45,14 +51,6 @@ export function HeroSection() {
                   {t('hero.secondaryAction')}
                 </a>
               </Button>
-            </div>
-
-            <div className="mt-6 flex min-h-24 items-end justify-end pr-2 sm:min-h-28 sm:pr-8 lg:min-h-32 lg:pr-4">
-              <MascotMoment
-                pose="wave"
-                motion="welcome"
-                className="w-24 sm:w-28 lg:w-32"
-              />
             </div>
           </div>
 

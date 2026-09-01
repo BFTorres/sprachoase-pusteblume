@@ -44,8 +44,9 @@ silhouette, anatomy and brand palette.
 - **Home-screen app icon:** a close-up Pusti face and short stem are used for
   iOS and normal launchers; Android receives a padded maskable export. The
   browser favicon remains the compact flower logo.
-- **Hero welcome:** the wave pose appears as a separate brand companion below
-  the calls to action. It does not overlap or replace the approved photograph.
+- **Hero welcome:** a large, softly faded wave pose peeks in from the left edge
+  as a decorative background layer. It does not consume content space, overlap
+  or replace the approved photograph.
 - **Method spotlight:** the listen pose supports the section's listening and
   speaking message without being repeated across the method cards.
 - **FAQ prompt:** the think pose appears once beside the section introduction,

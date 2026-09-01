@@ -10,13 +10,16 @@ import {
 import { useTranslation } from 'react-i18next'
 import { Container } from '@/components/layout/Container'
 import { Badge } from '@/components/ui/badge'
-
-const phoneDisplay = '0176 2872 9985'
-const phoneHref = '+4917628729985'
-const email = 'pat@sprachoase-pusteblume.de'
+import { siteConfig } from '@/config/site'
+import { createMailtoHref } from '@/lib/contact-links'
 
 export function ContactSection() {
   const { t } = useTranslation()
+  const emailHref = createMailtoHref({
+    email: siteConfig.email,
+    subject: t('contact.email.subject'),
+    body: t('contact.email.body'),
+  })
 
   return (
     <section
@@ -62,25 +65,30 @@ export function ContactSection() {
         <div className="mt-12 grid gap-5 lg:grid-cols-2">
           <article className="border-foreground bg-accent text-accent-foreground shadow-brutal-xl rounded-[2rem] border-2 p-6 sm:p-8">
             <div className="flex items-start justify-between gap-5">
-              <Badge>{t('contact.sms.badge')}</Badge>
+              <Badge>{t('contact.whatsapp.badge')}</Badge>
               <MessageCircle className="size-9" aria-hidden="true" />
             </div>
             <h3 className="mt-8 text-3xl leading-tight font-black">
-              {t('contact.sms.title')}
+              {t('contact.whatsapp.title')}
             </h3>
             <p className="mt-4 max-w-xl leading-relaxed opacity-80">
-              {t('contact.sms.description')}
+              {t('contact.whatsapp.description')}
             </p>
             <p className="mt-7 text-2xl font-black tracking-tight">
-              {phoneDisplay}
+              {siteConfig.phoneDisplay}
             </p>
             <a
-              href={`sms:${phoneHref}`}
+              href={siteConfig.whatsappHref}
+              target="_blank"
+              rel="noopener noreferrer"
               className="border-foreground bg-background text-foreground shadow-brutal mt-6 inline-flex min-h-12 items-center justify-center gap-2 rounded-xl border-2 px-5 py-3 font-black"
             >
               <MessageCircle className="size-5" aria-hidden="true" />
-              {t('contact.sms.action')}
+              {t('contact.whatsapp.action')}
             </a>
+            <p className="mt-5 text-xs leading-relaxed opacity-70">
+              {t('contact.whatsapp.privacy')}
+            </p>
           </article>
 
           <article className="border-foreground bg-background text-foreground shadow-brutal-xl rounded-[2rem] border-2 p-6 sm:p-8">
@@ -95,15 +103,18 @@ export function ContactSection() {
               {t('contact.email.description')}
             </p>
             <p className="mt-7 text-lg font-black break-all sm:text-xl">
-              {email}
+              {siteConfig.email}
             </p>
             <a
-              href={`mailto:${email}`}
+              href={emailHref}
               className="border-foreground bg-primary text-primary-foreground shadow-brutal mt-6 inline-flex min-h-12 items-center justify-center gap-2 rounded-xl border-2 px-5 py-3 font-black"
             >
               <Mail className="size-5" aria-hidden="true" />
               {t('contact.email.action')}
             </a>
+            <p className="text-muted-foreground mt-5 text-xs leading-relaxed">
+              {t('contact.email.privacy')}
+            </p>
           </article>
         </div>
 
@@ -116,7 +127,7 @@ export function ContactSection() {
             <dd className="text-muted-foreground mt-3 leading-relaxed">
               {t('contact.details.hours.value')}
               <br />
-              <a className="font-bold" href={`tel:${phoneHref}`}>
+              <a className="font-bold" href={siteConfig.phoneHref}>
                 <Phone className="mr-2 inline size-4" aria-hidden="true" />
                 {t('contact.details.hours.action')}
               </a>

@@ -14,13 +14,19 @@ const routes = {
     output: templatePath,
     url: `${siteUrl}/`,
     locale: 'de_DE',
-    alternateLocale: 'en_GB',
+    alternateLocales: ['en_GB', 'tr_TR'],
   },
   en: {
     output: resolve(distDirectory, 'en/index.html'),
     url: `${siteUrl}/en/`,
     locale: 'en_GB',
-    alternateLocale: 'de_DE',
+    alternateLocales: ['de_DE', 'tr_TR'],
+  },
+  tr: {
+    output: resolve(distDirectory, 'tr/index.html'),
+    url: `${siteUrl}/tr/`,
+    locale: 'tr_TR',
+    alternateLocales: ['de_DE', 'en_GB'],
   },
 }
 
@@ -58,6 +64,27 @@ function replaceLink(html, selector, value) {
   return html.replace(pattern, `$1${escapedValue}$2`)
 }
 
+function replaceAlternateLocales(html, locales) {
+  const pattern =
+    /<meta\s+property="og:locale:alternate"\s+content="[^"]*"\s*\/?>/g
+  const tags = locales
+    .map(
+      (locale) =>
+        `<meta property="og:locale:alternate" content="${escapeAttribute(locale)}" />`,
+    )
+    .join('\n    ')
+  let inserted = false
+
+  return html.replace(pattern, () => {
+    if (inserted) {
+      return ''
+    }
+
+    inserted = true
+    return tags
+  })
+}
+
 function createDocument(template, language, route, result) {
   let html = template
     .replace('<html lang="de">', `<html lang="${language}">`)
@@ -73,11 +100,7 @@ function createDocument(template, language, route, result) {
   html = replaceMeta(html, 'property="og:description"', result.description)
   html = replaceMeta(html, 'property="og:url"', route.url)
   html = replaceMeta(html, 'property="og:locale"', route.locale)
-  html = replaceMeta(
-    html,
-    'property="og:locale:alternate"',
-    route.alternateLocale,
-  )
+  html = replaceAlternateLocales(html, route.alternateLocales)
   html = replaceMeta(html, 'property="og:image:alt"', result.imageAlt)
   html = replaceMeta(html, 'name="twitter:title"', result.title)
   html = replaceMeta(html, 'name="twitter:description"', result.description)

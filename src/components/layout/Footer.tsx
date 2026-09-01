@@ -7,9 +7,15 @@ import { ImprintDialog } from '@/components/legal/ImprintDialog'
 import { PrivacyDialog } from '@/components/legal/PrivacyDialog'
 import { PrivacySettingsDialog } from '@/components/legal/PrivacySettingsDialog'
 import { siteConfig } from '@/config/site'
+import { createMailtoHref } from '@/lib/contact-links'
 
 export function Footer() {
   const { t } = useTranslation()
+  const emailHref = createMailtoHref({
+    email: siteConfig.email,
+    subject: t('contact.email.subject'),
+    body: t('contact.email.body'),
+  })
 
   return (
     <footer className="bg-foreground text-background border-foreground border-t-2 py-12">
@@ -36,7 +42,7 @@ export function Footer() {
               <li>
                 <a
                   className="hover:bg-background/10 focus-visible:ring-accent inline-flex min-h-11 items-center gap-3 rounded-lg px-3 font-bold focus-visible:ring-2 focus-visible:outline-none"
-                  href={`mailto:${siteConfig.email}`}
+                  href={emailHref}
                 >
                   <Mail aria-hidden="true" className="size-4" />
                   <span className="break-all">{siteConfig.email}</span>
